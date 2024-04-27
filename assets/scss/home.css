@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500;600;700;800&display=swap");
+.base-div {
+  @apply w-full bg-fuchsia-700 flex items-center justify-center;
+}
+
+.nav-div {
+  @apply w-full bg-fuchsia-700 flex items-center justify-center;
+}
+
+.container-div {
+  @apply w-full bg-fuchsia-700 flex items-center justify-center;
+}
+
+.vendors-div {
+  @apply w-full bg-fuchsia-700 flex items-center justify-center;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#f5f5f5];
+}

@@ -1,0 +1,22 @@
+{
+  "name": "web-lvenergysac-prod-001",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel home ",
+    "home": "npx tailwindcss -c ./tailwind.config.js -i ./assets/scss/home.css -o ./assets/css/home.css --watch"
+  },
+  "keywords": [
+    "lvenergysac"
+  ],
+  "author": "ss-freelance",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
+}
