@@ -1,25 +1,147 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500;600;700;800&display=swap");
+.header {
+  @apply sticky w-full top-0 left-0 z-50;
+  @apply bg-[#F0F0F0] text-[#000] font-nunito font-bold shadow-lg;
+}
+.header__inner {
+  @apply container h-20 flex justify-between items-center;
+}
+.header__logo {
+  @apply flex font-bold items-center gap-2 text-xs lg:text-base;
+}
+.header__logo img {
+  @apply w-14;
+}
+.header__icon {
+  @apply justify-self-end lg:hidden;
+}
+.header__icon i {
+  @apply text-2xl;
+}
+.header__arrow {
+  @apply transition-transform duration-300;
+}
+.header__arrow.active {
+  @apply rotate-180;
+}
+.header__item--submenu .header__link {
+  @apply inline-flex items-center justify-center lg:justify-between gap-2;
+}
+.header__item--group {
+  @apply flex gap-4;
+}
+.header__item--group .header__link {
+  @apply text-white bg-primary-300;
+  @apply w-8 h-8 rounded-full flex justify-center items-center;
+  @apply transition-colors duration-300;
+}
+.header__item--group .header__link:hover {
+  @apply bg-primary-300/80;
+}
+.header__link {
+  @apply text-xs uppercase block cursor-pointer;
+  @apply relative py-2 px-4;
+  @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-primary-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
+}
+.header__link:hover, .header__link.active {
+  @apply after:transition-transform after:duration-300 after:scale-x-100;
+}
+
+.nav-desktop {
+  @apply hidden lg:flex;
+}
+.nav-desktop .header__list {
+  @apply flex flex-row justify-center items-center h-full gap-6;
+}
+
+.nav-mobile {
+  @apply col-span-2 text-center;
+  @apply opacity-0 invisible pointer-events-none transition-all duration-300;
+  @apply absolute top-20 left-0 w-full h-[calc(100vh-80px)];
+  @apply bg-primary-100;
+  @apply lg:hidden;
+}
+.nav-mobile.active {
+  @apply opacity-100 visible pointer-events-auto;
+}
+.nav-mobile .header__list {
+  @apply flex flex-col justify-center items-center h-full gap-6;
+}
+
 .base-div {
   @apply w-full bg-fuchsia-700 flex items-center justify-center;
 }
 
-.nav-div {
-  @apply w-full bg-fuchsia-700 flex items-center justify-center;
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.container-div {
-  @apply w-full bg-fuchsia-700 flex items-center justify-center;
+.section-contain {
+  padding: 0 12px;
 }
 
+.scroll-animation-item-multimedia {
+  animation: reveal-contain linear both;
+  animation-timeline: view();
+  animation-range: entry 15% cover 25%;
+}
+.scroll-animation-item-contain {
+  animation: reveal-contain linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+
+.section-images {
+  @apply columns-2 px-5 py-4 gap-4;
+}
+
+.section-images img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  animation: reveal-contain linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+}
+
+@keyframes reveal-contain {
+  from {
+    opacity: 0;
+    translate: 0 50px;
+    scale: 0.5;
+    transition: all;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+@keyframes reveal-multimedia {
+  from {
+    opacity: 0;
+    translate: 0 50px;
+    scale: 0.5;
+    transition: all;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
 .vendors-div {
   @apply w-full bg-fuchsia-700 flex items-center justify-center;
 }
 
-@tailwind base;
 @tailwind components;
+@tailwind base;
 @tailwind utilities;
-
 body {
   @apply bg-[#f5f5f5];
 }

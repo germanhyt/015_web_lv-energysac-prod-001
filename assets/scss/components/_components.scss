@@ -1,3 +1,84 @@
-.nav-div {
-    @apply w-full bg-fuchsia-700 flex items-center justify-center;
+.header {
+  @apply sticky w-full top-0 left-0 z-50;
+  @apply bg-[#F0F0F0] text-[#000] font-nunito font-bold shadow-lg;
+
+  &__inner {
+    @apply container h-20 flex justify-between items-center;
   }
+
+  &__logo {
+    @apply flex font-bold items-center gap-2 text-xs lg:text-base;
+    img {
+      @apply w-14;
+    }
+  }
+
+  &__icon {
+    @apply justify-self-end lg:hidden;
+    i {
+      @apply text-2xl;
+    }
+  }
+
+  &__arrow {
+    @apply transition-transform duration-300;
+
+    &.active {
+      @apply rotate-180;
+    }
+  }
+
+  &__item {
+    &--submenu {
+      .header__link {
+        @apply inline-flex items-center justify-center lg:justify-between gap-2;
+      }
+    }
+
+    &--group {
+      @apply flex gap-4;
+      .header__link {
+        @apply text-white bg-primary-300;
+        @apply w-8 h-8 rounded-full flex justify-center items-center;
+        @apply transition-colors duration-300;
+        &:hover {
+          @apply bg-primary-300/80;
+        }
+      }
+    }
+  }
+
+  &__link {
+    @apply text-xs uppercase block cursor-pointer;
+    @apply relative py-2 px-4;
+    @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-primary-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
+    &:hover,
+    &.active {
+      @apply after:transition-transform after:duration-300 after:scale-x-100;
+    }
+  }
+}
+
+.nav-desktop {
+  @apply hidden lg:flex;
+
+  .header__list {
+    @apply flex flex-row justify-center items-center h-full gap-6;
+  }
+}
+
+.nav-mobile {
+  @apply col-span-2 text-center;
+  @apply opacity-0 invisible pointer-events-none transition-all duration-300;
+  @apply absolute top-20 left-0 w-full h-[calc(100vh-80px)];
+  @apply bg-primary-100;
+  @apply lg:hidden;
+
+  &.active {
+    @apply opacity-100 visible pointer-events-auto;
+  }
+
+  .header__list {
+    @apply flex flex-col justify-center items-center h-full gap-6;
+  }
+}

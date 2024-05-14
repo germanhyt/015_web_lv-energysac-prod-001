@@ -1,5 +1,70 @@
-.container-div {
-  @apply w-full bg-fuchsia-700 flex items-center justify-center;
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
 }
 
+.section-contain {
+  padding: 0 12px;
+}
 
+.scroll-animation-item {
+  &-multimedia {
+    animation: reveal-contain linear both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 25%;
+  }
+
+  &-contain {
+    animation: reveal-contain linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+}
+
+.section-images {
+  @apply columns-2 px-5 py-4 gap-4;
+}
+
+.section-images img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 5px;
+
+  animation: reveal-contain linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+}
+
+@keyframes reveal-contain {
+  from {
+    opacity: 0;
+    translate: 0 50px;
+    scale: 0.5;
+    transition: all;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+@keyframes reveal-multimedia {
+  from {
+    opacity: 0;
+    translate: 0 50px;
+    scale: 0.5;
+    transition: all;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
