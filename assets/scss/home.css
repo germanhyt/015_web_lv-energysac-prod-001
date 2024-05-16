@@ -69,8 +69,62 @@
   @apply flex flex-col justify-center items-center h-full gap-6;
 }
 
-.base-div {
-  @apply w-full bg-fuchsia-700 flex items-center justify-center;
+.swiper--clients {
+  @apply h-[350px] mb-16;
+}
+.swiper--clients .swiper-slide {
+  @apply flex delay-300 w-full h-[200px] border-2 border-black rounded-sm;
+}
+.swiper--clients .swiper-pagination-bullet-active {
+  @apply bg-white;
+}
+.swiper--clients .swiper-wrapper {
+  @apply flex items-center;
+}
+.swiper--clients .custom-bullet {
+  @apply h-4 w-4 bg-orange-600;
+}
+
+.social-networks {
+  @apply z-20 w-20 h-20 fixed hover:scale-[1.1] transition duration-500  md:bottom-32 lg:bottom-5  lg:right-20 hidden lg:flex items-center justify-center rounded-full bg-primary-300;
+}
+.social-networks__link {
+  @apply text-5xl text-white;
+}
+
+.h3, .h2, .h1 {
+  @apply text-[#000] font-bold;
+}
+
+.h1 {
+  @apply text-dynamic-100 text-center;
+}
+.h1__span {
+  @apply text-primary-400;
+}
+.h1--white {
+  @apply text-white;
+}
+
+.h2 {
+  @apply text-dynamic-200;
+}
+.h2--white {
+  @apply text-white;
+}
+.h2__span {
+  @apply text-[#000] text-center;
+}
+
+.h3 {
+  @apply text-dynamic-300 text-center;
+}
+.h3--white {
+  @apply text-white;
+}
+
+.description {
+  @apply text-base lg:text-xl text-white;
 }
 
 html {
@@ -78,10 +132,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-.section-contain {
-  padding: 0 12px;
 }
 
 .scroll-animation-item-multimedia {
@@ -95,6 +145,18 @@ html {
   animation-range: entry 20% cover 30%;
 }
 
+@media (max-width: 1200px) {
+  .scroll-animation-item-multimedia {
+    animation: reveal-multimedia linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 25%;
+  }
+  .scroll-animation-item-contain {
+    animation: reveal-contain linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+  }
+}
 .section-images {
   @apply columns-2 px-5 py-4 gap-4;
 }
@@ -135,6 +197,26 @@ html {
     scale: 1;
   }
 }
+.home-clients {
+  @apply container;
+}
+.home-clients__heading {
+  @apply text-center;
+  @apply grid grid-rows-1 justify-items-center text-center;
+}
+.home-clients__line {
+  @apply w-28 h-[6px] bg-primary-100 rounded-full mx-auto;
+}
+.home-clients__description {
+  @apply mt-4  text-lg;
+}
+.home-clients__figure {
+  @apply w-full rounded-2xl flex items-center;
+}
+.home-clients__img {
+  @apply m-auto;
+}
+
 .vendors-div {
   @apply w-full bg-fuchsia-700 flex items-center justify-center;
 }

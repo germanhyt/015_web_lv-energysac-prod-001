@@ -1,0 +1,41 @@
+%heading-color {
+  @apply text-[#000] font-bold;
+}
+
+.h1 {
+  @extend %heading-color;
+  @apply text-dynamic-100 text-center;
+
+  &__span {
+    @apply text-primary-400;
+  }
+
+  &--white {
+    @apply text-white;
+  }
+}
+
+.h2 {
+  @extend %heading-color;
+  @apply text-dynamic-200;
+
+  &--white {
+    @apply text-white;
+  }
+
+  &__span {
+    @apply text-[#000] text-center;
+  }
+}
+
+.h3 {
+  @extend %heading-color;
+  @apply text-dynamic-300 text-center;
+  &--white {
+    @apply text-white;
+  }
+}
+
+.description {
+  @apply text-base lg:text-xl text-white;
+}

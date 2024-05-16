@@ -9,6 +9,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        "dynamic-100": "clamp(2rem, 1.6vw + 1.7rem, 4.3rem)",
+        "dynamic-200": "clamp(1.125rem, 1.4vw + 0.9rem, 2.5rem)",
+        "dynamic-300": "clamp(1rem, 0.5vw + 0.9rem, 1.5rem)",
+        "dynamic-400": "clamp(0.875rem, 0.1vw + 0.9rem, 1rem)",
+      },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         nunito: ["Nunito", "sans-serif"],
@@ -18,14 +24,6 @@ module.exports = {
         raleway: ["Raleway", "sans-serif"],
         lato: ["Lato", "sans-serif"],
         opensans: ["Open Sans", "sans-serif"],
-      },
-      fontSize: {
-        "dynamic-h3": "clamp(1.15rem, 0.5vw + 1.1rem, 1.875rem)",
-        // Para el card que pertenece al slider de sección envio nacional
-        "dynamic-icon-card-national-shipping":
-          "clamp(1.5rem, 0.7vw + 1.4rem, 2.5rem)",
-        "dynamic-national-shipping-des":
-          "clamp(1.125rem, 0.3vw + 1.1rem, 1.563rem)",
       },
       backgroundImage: {},
       colors: {

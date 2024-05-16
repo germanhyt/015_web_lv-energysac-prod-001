@@ -6,10 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.section-contain {
-  padding: 0 12px;
-}
-
 .scroll-animation-item {
   &-multimedia {
     animation: reveal-contain linear both;
@@ -21,6 +17,22 @@ html {
     animation: reveal-contain linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 30%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .scroll-animation-item {
+    &-multimedia {
+      animation: reveal-multimedia linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 25%;
+    }
+
+    &-contain {
+      animation: reveal-contain linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 30%;
+    }
   }
 }
 
@@ -66,5 +78,30 @@ html {
     opacity: 1;
     translate: 0 0;
     scale: 1;
+  }
+}
+
+.home-clients {
+  @apply container;
+
+  &__heading {
+    @apply text-center;
+    @apply grid grid-rows-1 justify-items-center text-center;
+  }
+
+  &__line {
+    @apply w-28 h-[6px] bg-primary-100 rounded-full mx-auto;
+  }
+
+  &__description {
+    @apply mt-4  text-lg;
+  }
+
+  &__figure {
+    @apply w-full rounded-2xl flex items-center;
+  }
+
+  &__img {
+    @apply m-auto;
   }
 }

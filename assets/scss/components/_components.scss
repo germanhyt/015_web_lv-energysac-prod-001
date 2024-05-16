@@ -82,3 +82,33 @@
     @apply flex flex-col justify-center items-center h-full gap-6;
   }
 }
+
+.swiper {
+  &--clients {
+    @apply h-[350px] mb-16;
+
+    & .swiper-slide {
+      @apply flex delay-300 w-full h-[200px] border-2 border-black rounded-sm;
+    }
+
+    & .swiper-pagination-bullet-active {
+      @apply bg-white;
+    }
+
+    & .swiper-wrapper {
+      @apply flex items-center;
+    }
+
+    & .custom-bullet {
+      @apply h-4 w-4 bg-orange-600;
+    }
+  }
+}
+
+.social-networks {
+  @apply z-20 w-20 h-20 fixed hover:scale-[1.1] transition duration-500  md:bottom-32 lg:bottom-5  lg:right-20 hidden lg:flex items-center justify-center rounded-full bg-primary-300;
+
+  &__link {
+    @apply text-5xl text-white;
+  }
+}
