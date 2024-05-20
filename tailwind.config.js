@@ -41,9 +41,18 @@ module.exports = {
       container: {
         center: true,
         padding: {
-          DEFAULT: "1rem",
-          md: "4rem",
+          DEFAULT: "0rem",
+          md: "0rem",
         },
+      },
+      screens: {
+        xs: "320px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        itm: "1100px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
     },
   },

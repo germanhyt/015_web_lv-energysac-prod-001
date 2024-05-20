@@ -3,7 +3,7 @@
 <header class="header">
     <div class="header__inner">
         <a href="<?php echo constant('HOST') ?>/" class="header__logo">
-            <img src="<?php echo constant('HOST') . '/public/img/logotest.ico'; ?>" alt="Logo">
+            <img src="<?php echo constant('HOST') . '/public/img/logo.svg'; ?>" alt="Logo">
         </a>
         <div class="header__icon">
             <i class="fa-solid fa-bars" id="burger"></i>

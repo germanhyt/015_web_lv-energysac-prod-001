@@ -1,15 +1,18 @@
 .header {
-  @apply sticky w-full top-0 left-0 z-50;
-  @apply bg-[#F0F0F0] text-[#000] font-nunito font-bold shadow-lg;
+  @apply fixed w-full top-0 left-0 z-50;
+  @apply bg-[#FFF] text-[#000] font-nunito font-bold shadow-lg;
 
   &__inner {
-    @apply container h-20 flex justify-between items-center;
+    @apply container h-[120px] flex justify-between items-center;
+    @apply transition-all duration-300;
   }
 
   &__logo {
     @apply flex font-bold items-center gap-2 text-xs lg:text-base;
+
     img {
-      @apply w-14;
+      @apply transition-all duration-300;
+      @apply w-[76px];
     }
   }
 
@@ -28,30 +31,10 @@
     }
   }
 
-  &__item {
-    &--submenu {
-      .header__link {
-        @apply inline-flex items-center justify-center lg:justify-between gap-2;
-      }
-    }
-
-    &--group {
-      @apply flex gap-4;
-      .header__link {
-        @apply text-white bg-primary-300;
-        @apply w-8 h-8 rounded-full flex justify-center items-center;
-        @apply transition-colors duration-300;
-        &:hover {
-          @apply bg-primary-300/80;
-        }
-      }
-    }
-  }
-
   &__link {
-    @apply text-xs uppercase block cursor-pointer;
-    @apply relative py-2 px-4;
-    @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-primary-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
+    @apply text-dynamic-400  block cursor-pointer;
+    @apply relative py-1 px-4;
+    @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-orange-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
     &:hover,
     &.active {
       @apply after:transition-transform after:duration-300 after:scale-x-100;
@@ -64,6 +47,10 @@
 
   .header__list {
     @apply flex flex-row justify-center items-center h-full gap-6;
+
+    li {
+      @apply border-r-2 border-r-orange-500;
+    }
   }
 }
 
@@ -83,12 +70,13 @@
   }
 }
 
+// Swiper
 .swiper {
-  &--clients {
-    @apply h-[350px] mb-16;
+  &--trainings {
+    @apply h-[450px] top-0;
 
     & .swiper-slide {
-      @apply flex delay-300 w-full h-[200px] border-2 border-black rounded-sm;
+      @apply flex delay-300 w-full h-[350px]  border-2 shadow-xl rounded-sm;
     }
 
     & .swiper-pagination-bullet-active {
@@ -99,16 +87,180 @@
       @apply flex items-center;
     }
 
+    & .swiper-pagination {
+      @apply bottom-0;
+    }
+
+    & .custom-bullet {
+      @apply h-4 w-4 bg-orange-600;
+    }
+  }
+
+  &--clients {
+    @apply h-[380px] top-0;
+
+    & .swiper-slide {
+      @apply flex delay-300 w-full h-[250px]  border-2 shadow-xl rounded-sm;
+    }
+
+    & .swiper-pagination-bullet-active {
+      @apply bg-white;
+    }
+
+    & .swiper-wrapper {
+      @apply flex items-center;
+    }
+
+    & .swiper-pagination {
+      @apply bottom-0;
+    }
+
     & .custom-bullet {
       @apply h-4 w-4 bg-orange-600;
     }
   }
 }
 
+// Redes sociales
 .social-networks {
-  @apply z-20 w-20 h-20 fixed hover:scale-[1.1] transition duration-500  md:bottom-32 lg:bottom-5  lg:right-20 hidden lg:flex items-center justify-center rounded-full bg-primary-300;
+  @apply animate-pulse z-20 w-20 h-20 fixed hover:animate-none hover:scale-[1.1] transition duration-500  md:bottom-32 lg:bottom-5  lg:right-20 hidden lg:flex items-center justify-center rounded-full bg-primary-300;
 
   &__link {
     @apply text-5xl text-white;
+  }
+
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.7;
+  }
+}
+
+// Loading...
+.loader {
+  position: absolute;
+  // top: 50%;
+  left: 50%;
+  z-index: 9999;
+  width: 52px;
+  height: 52px;
+  border: 10px solid #a59e9e;
+  border-top: 10px solid #0123e7;
+  border-radius: 50%;
+  // transform: translate(-50%, -50%);
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  @apply relative bg-[#15375B] text-[#FFF];
+
+  &__arrow {
+    @apply absolute left-0 -top-4 right-0 hidden sm:flex w-full z-20;
+
+    a {
+      @apply h-10 w-10;
+      @apply flex justify-center items-center  bg-[#ff8300] text-white;
+      @apply mx-auto rounded-full;
+
+      i {
+        @apply text-xl;
+      }
+    }
+  }
+
+  &__inner {
+    @apply container flex flex-col pt-5;
+  }
+
+  &__title-container {
+    @apply py-5;
+  }
+
+  &__title-container &__title {
+    @apply text-start text-dynamic-300 font-bold;
+  }
+
+  &__content {
+    @apply grid grid-cols-1 gap-10 sm:gap-5 sm:grid-cols-2 itm:grid-cols-3 pb-5;
+  }
+
+  &__content &__contact-list {
+    @apply flex flex-col gap-4;
+  }
+
+  &__content &__contact-list &__contact {
+    @apply flex items-center gap-4;
+
+    i {
+      @apply flex justify-center text-xl;
+    }
+
+    a {
+      @apply break-all;
+    }
+  }
+
+  &__content &__sections-list {
+    ul {
+      @apply flex flex-col justify-start gap-4 sm:pl-12;
+    }
+
+    li {
+      @apply list-none text-dynamic-400 font-bold cursor-pointer;
+    }
+    li:hover {
+      @apply text-[#ff8300];
+    }
+  }
+
+  &__form {
+    @apply flex flex-col gap-4;
+  }
+  &__form &__form-title-container {
+    @apply flex flex-col gap-2 items-start justify-center;
+
+    h4 {
+      @apply text-dynamic-400 font-bold;
+    }
+
+    p {
+      @apply text-dynamic-400;
+    }
+  }
+
+  &__form &__form-content {
+    @apply flex flex-col gap-4;
+  }
+  &__form &__form-content &__form-content-group {
+    @apply flex flex-col gap-2;
+
+    input {
+      @apply w-full p-2 border-2 border-[#15375B] rounded-md text-black;
+    }
+    textarea {
+      @apply w-full p-2 border-2 border-[#15375B] h-[100px] rounded-md text-black;
+    }
+  }
+  &__form &__form-content &__form-content-button {
+    @apply w-full;
+
+    button {
+      @apply bg-[#ff8300] text-white rounded-sm px-5 sm:px-10 py-2;
+    }
+  }
+
+  &__copyright {
+    @apply text-center py-5;
   }
 }

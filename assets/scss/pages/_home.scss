@@ -6,24 +6,441 @@ html {
   scroll-behavior: smooth;
 }
 
+// Home hero
+.home-hero {
+  @apply relative w-full mt-[120px];
+
+  &__figure {
+    @apply relative bg-cover h-[85vh] overflow-hidden;
+  }
+  &__figure img {
+    @apply absolute top-0 left-0 w-full sm:w-screen h-[85vh] sm:h-full bg-cover overflow-hidden;
+  }
+  &__figure::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 85vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+  }
+
+  &__content {
+    @apply w-full;
+  }
+
+  &__content-container {
+    @apply container sm:w-full;
+    @apply z-10 absolute top-0 left-0 right-0;
+    @apply text-start;
+    @apply px-5 sm:px-10;
+    @apply transform translate-y-[15%] sm:translate-y-[10%] text-white;
+  }
+  &__text {
+    @apply w-full itm:w-4/6 flex flex-col gap-4;
+  }
+  &__content &__title {
+    @apply text-dynamic-200 sm:text-dynamic-100 text-white font-bold;
+  }
+  &__content &__description {
+    @apply text-dynamic-400 sm:text-dynamic-300 text-white;
+  }
+
+  &__button {
+    @apply z-10 flex items-center justify-center sm:justify-start py-4 sm:py-8;
+
+    button {
+      @apply bg-[#FF8300];
+      @apply text-dynamic-300 text-white hover:text-black py-1 sm:py-2 px-3 sm:px-4 rounded-sm;
+    }
+
+    // efector hover al button para cambiar de color tipo fading
+    button:hover {
+      // background: linear-gradient(90deg, #f9a81b 50%, #ff9d00 50%);
+      // background-size: 200% 100%;
+      // background-position: right;
+      // transition: all 0.5s;
+
+      background: linear-gradient(to right, #ff8300 50%, #fff 50%);
+      background-size: 200% 100%;
+      background-position: right;
+      transition: all 0.5s ease-in;
+    }
+  }
+}
+
+.home-section-about {
+  @apply w-full 2xl:container flex flex-col-reverse sm:flex-row;
+
+  &__figure {
+    @apply sm:w-1/2;
+
+    img {
+      @apply w-full h-full bg-cover overflow-hidden;
+    }
+  }
+
+  &__content {
+    @apply sm:w-1/2 flex flex-col justify-center items-center sm:items-start py-5 sm:py-0 px-5 sm:px-12;
+
+    h3 {
+      @apply text-[#15375B] text-dynamic-200 font-bold;
+    }
+    p {
+      @apply text-black text-dynamic-300 font-semibold;
+    }
+  }
+}
+
+.home-section-founder {
+  @apply w-full mt-10 sm:mt-20;
+
+  &__container {
+    @apply container flex flex-col sm:flex-row;
+  }
+
+  &__figure {
+    @apply sm:w-1/2;
+
+    img {
+      @apply w-[250px] sm:w-[350px] md:w-[400px] h-[250px] sm:h-[350px] md:h-[400px] mx-auto rounded-full;
+    }
+  }
+
+  &__content {
+    @apply sm:w-1/2 flex flex-col justify-center items-center gap-6 sm:items-start py-5 sm:py-0;
+
+    h3 {
+      @apply text-[#15375B] text-dynamic-200 font-bold text-center sm:text-start;
+    }
+    p {
+      @apply text-black text-dynamic-300 font-semibold text-center sm:text-start;
+    }
+    span {
+      @apply text-dynamic-300 font-semibold text-center sm:text-start;
+    }
+  }
+}
+
+.home-section-pillars {
+  @apply w-full mt-10 sm:my-20;
+
+  &__contain {
+    @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
+
+    h3 {
+      @apply text-[#15375B] text-dynamic-200 font-bold text-center;
+    }
+  }
+
+  &__grid {
+    @apply relative grid grid-cols-1 sm:grid-cols-2 gap-6;
+  }
+
+  &__grid &__item {
+    @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-6 sm:py-12 shadow-xl rounded-sm;
+  }
+
+  &__grid &__item &__title {
+    @apply text-black text-dynamic-200 font-bold;
+  }
+  &__grid &__item &__description {
+    @apply text-black text-dynamic-400 text-center sm:text-start;
+  }
+}
+
+.home-section-benefits {
+  @apply w-full 2xl:container;
+
+  &__title {
+    @apply text-dynamic-200 text-[#15375B] font-bold text-center px-5 sm:px-20 py-5 sm:py-10;
+  }
+
+  &__container {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 itm:grid-cols-4 sm:gap-[1px] place-content-center leading-7;
+  }
+
+  &__card {
+    @apply relative text-[#FFF] h-full bg-cover pt-24 mx-auto;
+  }
+  &__card &__figure {
+    @apply absolute top-0 left-0 w-full h-full z-0;
+  }
+  &__card &__figure img {
+    @apply w-full h-full  bg-no-repeat bg-cover overflow-hidden;
+  }
+  &__card &__figure::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  &__card-content {
+    @apply h-full bg-cover pb-20 z-10;
+
+    &.active {
+      .home-section-benefits__card-icon {
+        @apply transition-all duration-300;
+        i {
+          @apply rotate-180;
+        }
+      }
+
+      .home-section-benefits__card-p {
+        @apply max-h-[700px] px-5 py-2;
+        @apply text-white;
+      }
+    }
+  }
+
+  &__card-content-box {
+    @apply relative w-full h-fit;
+  }
+
+  &__card-icon {
+    @apply sm:hidden w-full px-5 flex justify-between items-center cursor-pointer gap-4 transition-all duration-300;
+
+    span {
+      @apply text-dynamic-300 font-bold;
+    }
+
+    i {
+      @apply w-9 h-9 text-2xl rounded-full text-white flex items-center justify-center;
+    }
+  }
+
+  &__card-h2 {
+    @apply hidden sm:flex;
+    font-weight: bold;
+    position: relative;
+    width: max-content;
+    // outline: 1px solid red;;
+  }
+
+  &__card-p {
+    @apply text-dynamic-400 transition-all relative duration-300 overflow-hidden max-h-0 sm:max-h-full;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  @media (min-width: 640px) {
+    &__card {
+      // background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      //   url(https://res.cloudinary.com/dz0ajaf3i/image/upload/v1710005891/Ecommerce-frontend/istockphoto-922721264-612x612_tvrtke.png);
+      // padding: 6rem 0 0;
+      @apply relative text-[#FFF] h-full bg-cover pt-24 sm:pt-56 mx-auto overflow-hidden;
+
+      transition: transform 500ms ease;
+    }
+
+    &__card:hover {
+      transform: scale(1.05);
+      z-index: 20;
+    }
+
+    &__card-content {
+      @apply h-full bg-cover z-10;
+      padding: 1rem 2rem;
+      background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.3) 10%,
+        hsl(0 0% 0% / 1)
+      );
+
+      transform: translateY(40%);
+      transition: transform 500ms ease;
+    }
+
+    &__card-content > *:not(&__card-content-box) {
+      opacity: 0;
+      transition-delay: 800ms;
+    }
+
+    &__card:hover &__card-content {
+      transform: translateY(0);
+      transition-delay: 500ms;
+    }
+
+    &__card:hover &__card-content > * {
+      opacity: 1;
+    }
+
+    &__card-h2 {
+      font-weight: bold;
+      position: relative;
+      width: max-content;
+      // outline: 1px solid red;
+    }
+
+    &__card-h2::after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      left: calc(1.5rem * -1);
+      bottom: 0;
+      width: 100%;
+      background: #ff8300;
+
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 500ms ease;
+    }
+
+    &__card:hover &__card-h2::after {
+      transform: scaleX(1);
+    }
+
+    &__card-p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.home-section-best-option {
+  @apply w-full mt-10 sm:mt-20;
+
+  &__contain {
+    @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
+
+    h3 {
+      @apply text-[#15375B] text-dynamic-200 font-bold text-center;
+    }
+  }
+
+  &__grid {
+    @apply relative grid grid-cols-1 sm:grid-cols-2 gap-6;
+  }
+
+  &__grid &__item {
+    @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-5 sm:py-10 max-w-[400px] shadow-xl rounded-sm;
+  }
+
+  &__grid &__item &__img {
+    @apply w-full mx-auto rounded-sm;
+  }
+  &__grid &__item &__description {
+    @apply text-black text-dynamic-400 text-center;
+  }
+}
+
+.home-section-filter {
+  @apply py-10 sm:py-20 mt-10 sm:mt-20 bg-[#020202];
+
+  &__inner {
+    @apply container sm:hidden;
+  }
+
+  &__tab-wrapper {
+    @apply mx-auto flex justify-center;
+  }
+
+  &__tabs {
+    @apply container hidden sm:flex sm:justify-center sm:gap-4 sm:flex-wrap;
+  }
+}
+
+.swiper {
+  &--filter {
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      @apply font-bold  text-sm bg-[#ff8300] w-8 h-8  text-white flex justify-center items-center  rounded-full;
+    }
+  }
+}
+
+.btn {
+  @apply transition duration-500;
+
+  &--filter {
+    @apply py-2 px-6 sm:px-2 bg-transparent text-dynamic-300 text-[#FFF];
+    @apply hover:border-b-4 hover:border-[#ff8300];
+
+    &.active {
+      @apply border-b-4 border-[#ff8300] text-dynamic-300 font-bold;
+    }
+  }
+
+  // &--filter-detail {
+  //   @apply py-3 px-7 bg-primary-300 font-bold rounded-full hover:bg-primary-200 text-white leading-[44px];
+  // }
+}
+
+.card-product {
+  @apply bg-white;
+  @apply max-w-[380px];
+  @apply shadow-[10px_10px_50px_rgba(175,175,175,0.25)] rounded-sm;
+
+  &__grid {
+    @apply grid justify-center gap-8 container lg:grid lg:grid-cols-3 xl:grid-cols-4 pt-8;
+  }
+
+  &__title-container {
+    @apply flex flex-col items-center justify-center gap-2 h-28 border-b-4 border-[#ff8300] px-5 sm:px-10;
+  }
+
+  &__title {
+    @apply font-bold lg:font-bold text-[#15375B] text-dynamic-400 text-center;
+  }
+
+  &__content {
+    @apply flex flex-col justify-center gap-6 py-5 sm:py-8 px-5 sm:px-10;
+  }
+  &__content-objective {
+    @apply flex flex-col items-start justify-center gap-2;
+
+    h4 {
+      @apply text-[#15375B] text-dynamic-300 font-bold;
+    }
+    p {
+      @apply text-black text-dynamic-400 font-semibold;
+    }
+  }
+  &__content-about {
+    @apply flex flex-col items-start justify-center gap-2;
+
+    h4 {
+      @apply text-[#15375B] text-dynamic-300 font-bold;
+    }
+
+    //dar estilos a ul con puntos en los li
+    ul {
+      @apply list-disc list-inside;
+
+      li {
+        @apply text-black text-dynamic-400 font-semibold;
+      }
+    }
+  }
+}
+
 .scroll-animation-item {
-  &-multimedia {
-    animation: reveal-contain linear both;
+  &-multimedia-left {
+    animation: reveal-multimedia-left linear both;
     animation-timeline: view();
     animation-range: entry 15% cover 25%;
   }
-
   &-contain {
     animation: reveal-contain linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 30%;
   }
+  &-multimedia-right {
+    animation: reveal-multimedia-right linear both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 25%;
+  }
 }
 
 @media (max-width: 1200px) {
   .scroll-animation-item {
-    &-multimedia {
-      animation: reveal-multimedia linear both;
+    &-multimedia-left {
+      animation: reveal-multimedia-left linear both;
       animation-timeline: view();
       animation-range: entry 10% cover 25%;
     }
@@ -33,6 +450,12 @@ html {
       animation-timeline: view();
       animation-range: entry 10% cover 30%;
     }
+
+    &-multimedia-right {
+      animation: reveal-multimedia-right linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 25%;
+    }
   }
 }
 
@@ -40,22 +463,11 @@ html {
   @apply columns-2 px-5 py-4 gap-4;
 }
 
-.section-images img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 30px;
-  border-radius: 5px;
-
-  animation: reveal-contain linear both;
-  animation-timeline: view();
-  animation-range: entry 10% cover 30%;
-}
-
 @keyframes reveal-contain {
   from {
     opacity: 0;
     translate: 0 50px;
-    scale: 0.5;
+    scale: 0.8;
     transition: all;
   }
 
@@ -66,11 +478,26 @@ html {
   }
 }
 
-@keyframes reveal-multimedia {
+@keyframes reveal-multimedia-right {
   from {
     opacity: 0;
-    translate: 0 50px;
-    scale: 0.5;
+    translate: 200px 0;
+    scale: 0.8;
+    transition: all;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+@keyframes reveal-multimedia-left {
+  from {
+    opacity: 0;
+    translate: -200px 0;
+    scale: 0.8;
     transition: all;
   }
 
@@ -82,19 +509,15 @@ html {
 }
 
 .home-clients {
-  @apply container;
+  @apply container mt-20;
 
   &__heading {
     @apply text-center;
-    @apply grid grid-rows-1 justify-items-center text-center;
-  }
+    @apply grid grid-rows-1 justify-items-center text-center px-5 sm:px-20 itm:px-40;
 
-  &__line {
-    @apply w-28 h-[6px] bg-primary-100 rounded-full mx-auto;
-  }
-
-  &__description {
-    @apply mt-4  text-lg;
+    h3 {
+      @apply text-dynamic-200 text-[#15375B] font-bold;
+    }
   }
 
   &__figure {
@@ -103,5 +526,57 @@ html {
 
   &__img {
     @apply m-auto;
+  }
+}
+
+.home-section-banner {
+  @apply relative w-full mt-20 h-[50vh] sm:h-[65vh];
+
+  &__figure {
+    @apply relative bg-cover h-full overflow-hidden;
+  }
+  &__figure img {
+    @apply absolute top-0 left-0 w-full sm:w-screen h-full bg-cover overflow-hidden;
+  }
+  &__figure::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+  }
+
+  &__content {
+    @apply w-full;
+  }
+
+  &__content-container {
+    @apply container sm:w-full;
+    @apply z-10 absolute top-0 left-0 right-0;
+    @apply px-5 sm:px-10;
+    @apply transform translate-y-[50%];
+  }
+
+  &__title {
+    @apply w-3/4 sm:w-1/2 text-dynamic-200 text-[#FFF]  font-bold text-start;
+  }
+
+  &__content &__btn {
+    @apply z-10 flex items-center  justify-start py-4 sm:py-8;
+
+    button {
+      @apply bg-[#FF8300];
+      @apply text-dynamic-300 text-white hover:text-black py-1 sm:py-2 px-3 sm:px-4 rounded-sm;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #ff8300 50%, #fff 50%);
+      background-size: 200% 100%;
+      background-position: right;
+      transition: all 0.5s ease-in;
+    }
   }
 }
