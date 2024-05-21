@@ -53,7 +53,7 @@ html {
 
     button {
       @apply bg-[#FF8300];
-      @apply text-dynamic-300 text-white hover:text-black py-1 sm:py-2 px-3 sm:px-4 rounded-sm;
+      @apply text-dynamic-300 text-white hover:text-[#ff8300] py-1 sm:py-2 px-3 sm:px-4 rounded-sm;
     }
 
     // efector hover al button para cambiar de color tipo fading
@@ -140,14 +140,14 @@ html {
   }
 
   &__grid &__item {
-    @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-6 sm:py-12 shadow-xl rounded-sm;
+    @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-8 sm:py-16 shadow-xl rounded-sm;
   }
 
   &__grid &__item &__title {
     @apply text-black text-dynamic-200 font-bold;
   }
   &__grid &__item &__description {
-    @apply text-black text-dynamic-400 text-center sm:text-start;
+    @apply text-black text-dynamic-300 text-center;
   }
 }
 
@@ -166,11 +166,12 @@ html {
     @apply relative text-[#FFF] h-full bg-cover pt-24 mx-auto;
   }
   &__card &__figure {
-    @apply absolute top-0 left-0 w-full h-full z-0;
+    @apply absolute top-0 left-0 w-full sm:w-screen h-full sm:h-screen z-0 sm:transform sm:-translate-x-1/3;
   }
   &__card &__figure img {
-    @apply w-full h-full  bg-no-repeat bg-cover overflow-hidden;
+    @apply w-full h-full bg-no-repeat bg-cover overflow-hidden;
   }
+
   &__card &__figure::before {
     content: "";
     position: absolute;
@@ -178,7 +179,7 @@ html {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
 
@@ -225,16 +226,13 @@ html {
   }
 
   &__card-p {
-    @apply text-dynamic-400 transition-all relative duration-300 overflow-hidden max-h-0 sm:max-h-full;
+    @apply text-dynamic-400 sm:text-dynamic-300 py-2 transition-all relative duration-300 overflow-hidden max-h-0 sm:max-h-full;
     color: rgba(255, 255, 255, 0.8);
   }
 
   @media (min-width: 640px) {
     &__card {
-      // background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      //   url(https://res.cloudinary.com/dz0ajaf3i/image/upload/v1710005891/Ecommerce-frontend/istockphoto-922721264-612x612_tvrtke.png);
-      // padding: 6rem 0 0;
-      @apply relative text-[#FFF] h-full bg-cover pt-24 sm:pt-56 mx-auto overflow-hidden;
+      @apply relative text-[#FFF] h-screen bg-cover pt-24 sm:pt-56 mx-auto overflow-hidden;
 
       transition: transform 500ms ease;
     }
@@ -272,6 +270,7 @@ html {
     }
 
     &__card-h2 {
+      @apply text-[25px] break-all pb-1;
       font-weight: bold;
       position: relative;
       width: max-content;
@@ -318,22 +317,48 @@ html {
   }
 
   &__grid &__item {
-    @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-5 sm:py-10 max-w-[400px] shadow-xl rounded-sm;
+    @apply flex flex-col items-center gap-6 px-10 sm:px-12 py-8 sm:py-10 max-w-[500px] shadow-xl rounded-sm;
   }
 
   &__grid &__item &__img {
-    @apply w-full mx-auto rounded-sm;
+    @apply w-full mx-auto rounded-sm max-w-[250px];
   }
   &__grid &__item &__description {
-    @apply text-black text-dynamic-400 text-center;
+    @apply text-black text-dynamic-300 text-center;
   }
 }
 
 .home-section-filter {
-  @apply py-10 sm:py-20 mt-10 sm:mt-20 bg-[#020202];
+  @apply mt-10 sm:mt-20;
+
+  &__title {
+    @apply text-[#15375B] text-dynamic-200 font-bold text-center pb-5 sm:pb-10;
+  }
 
   &__inner {
     @apply container sm:hidden;
+  }
+
+  &__inner-tabs {
+    // @apply relative py-5 sm:py-10 w-full bg-[#15375B] text-[#FFF] animate-none;
+    @apply relative py-5 sm:py-10 w-full;
+  }
+
+  &__inner-tabs &__figure {
+    @apply bg-cover h-full overflow-hidden;
+  }
+  &__inner-tabs &__figure img {
+    @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full bg-cover overflow-hidden;
+  }
+  &__inner-tabs &__figure::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
   }
 
   &__tab-wrapper {
@@ -341,7 +366,7 @@ html {
   }
 
   &__tabs {
-    @apply container hidden sm:flex sm:justify-center sm:gap-4 sm:flex-wrap;
+    @apply relative container hidden sm:flex sm:justify-center sm:gap-4 sm:flex-wrap z-20;
   }
 }
 
@@ -365,13 +390,10 @@ html {
       @apply border-b-4 border-[#ff8300] text-dynamic-300 font-bold;
     }
   }
-
-  // &--filter-detail {
-  //   @apply py-3 px-7 bg-primary-300 font-bold rounded-full hover:bg-primary-200 text-white leading-[44px];
-  // }
 }
 
 .card-product {
+  @apply relative z-20;
   @apply bg-white;
   @apply max-w-[380px];
   @apply shadow-[10px_10px_50px_rgba(175,175,175,0.25)] rounded-sm;
@@ -508,6 +530,27 @@ html {
   }
 }
 
+.home-trainings {
+  @apply container mt-20;
+
+  &__heading {
+    @apply text-center;
+    @apply grid grid-rows-1 justify-items-center text-center px-5 sm:px-20 itm:px-40;
+
+    h3 {
+      @apply text-dynamic-200 text-[#15375B] font-bold;
+    }
+  }
+
+  &__figure {
+    @apply w-full rounded-2xl flex items-center;
+  }
+
+  &__figure &__img {
+    @apply m-auto bg-cover w-full h-full;
+  }
+}
+
 .home-clients {
   @apply container mt-20;
 
@@ -524,16 +567,16 @@ html {
     @apply w-full rounded-2xl flex items-center;
   }
 
-  &__img {
-    @apply m-auto;
+  &__figure &__img {
+    @apply m-auto bg-cover w-full h-full;
   }
 }
 
 .home-section-banner {
-  @apply relative w-full mt-20 h-[50vh] sm:h-[65vh];
+  @apply relative w-full mt-20 h-[50vh] sm:h-[65vh] overflow-hidden;
 
   &__figure {
-    @apply relative bg-cover h-full overflow-hidden;
+    @apply relative bg-cover bg-center object-cover h-screen overflow-hidden my-auto transform -translate-y-44;
   }
   &__figure img {
     @apply absolute top-0 left-0 w-full sm:w-screen h-full bg-cover overflow-hidden;
@@ -569,7 +612,7 @@ html {
 
     button {
       @apply bg-[#FF8300];
-      @apply text-dynamic-300 text-white hover:text-black py-1 sm:py-2 px-3 sm:px-4 rounded-sm;
+      @apply text-dynamic-300 text-white hover:text-[#ff8300] py-1 sm:py-2 px-3 sm:px-4 rounded-sm;
     }
 
     button:hover {

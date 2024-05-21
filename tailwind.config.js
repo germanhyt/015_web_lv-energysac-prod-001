@@ -8,6 +8,13 @@ module.exports = {
     "*.{html,php}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+      nunito: ["Nunito Sans", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
+      barlow: ["Barlow", "sans-serif"],
+    },
     extend: {
       fontSize: {
         "dynamic-100": "clamp(2rem, 1.6vw + 1.7rem, 4.3rem)",
@@ -15,16 +22,7 @@ module.exports = {
         "dynamic-300": "clamp(1rem, 0.5vw + 0.9rem, 1.5rem)",
         "dynamic-400": "clamp(0.875rem, 0.1vw + 0.9rem, 1rem)",
       },
-      fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        nunito: ["Nunito", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
-        raleway: ["Raleway", "sans-serif"],
-        lato: ["Lato", "sans-serif"],
-        opensans: ["Open Sans", "sans-serif"],
-      },
+
       backgroundImage: {},
       colors: {
         "primary-100": "#EDFAE7",

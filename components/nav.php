@@ -12,7 +12,7 @@
         <nav class="nav-mobile" id="menu">
             <ul class="header__list">
                 <li class="header__item ">
-                    <a id="itemActive" class="header__link" <?php $activePage === "/#about-us" ? "active" : "" ?>">
+                    <a id="itemActive" class="header__link <?php $activePage === "/#about-us" ? "active" : "" ?> ">
                         Nosotros
                     </a>
                 </li>

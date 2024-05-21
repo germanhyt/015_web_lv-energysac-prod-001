@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="footer__arrow">
-        <a href="">
+        <a href="#home-hero">
             <i class="fa-solid fa-arrow-up"></i>
         </a>
     </div>
@@ -14,7 +14,7 @@
             <div class="footer__contact-list">
                 <div class="footer__contact">
                     <i class="footer__icon fa-solid fa-location-dot"></i>
-                    <a href="" target="_blank">
+                    <a href="https://maps.app.goo.gl/Cm3mHZbS6aXrwaMM6" target="_blank">
                         Jr. Carlos rodrigo 1047 Urbanización Roma
                         <br class="" /> Lima - Perú
                     </a>
@@ -34,15 +34,15 @@
             </div>
             <div class="footer__sections-list">
                 <ul>
-                    <li class="footer__li"><a href="">Nosotros</a></li>
-                    <li class="footer__li"><a href="">Clientes</a></li>
-                    <li class="footer__li"><a href="">Información de Cursos</a></li>
-                    <li class="footer__li"><a href="">Beneficios</a></li>
+                    <li class="footer__li"><a href="#about-us">Nosotros</a></li>
+                    <li class="footer__li"><a href="#benefits">Clientes</a></li>
+                    <li class="footer__li"><a href="#courses">Información de Cursos</a></li>
+                    <li class="footer__li"><a href="#customers">Beneficios</a></li>
                 </ul>
             </div>
             <div class="footer__form">
                 <div class="footer__form-title-container">
-                    <h4 class="footer__form-title">Escribemos</h4>
+                    <h4 class="footer__form-title">Escríbenos</h4>
                     <p class="footer__form-description">Si gustas también puedes mandarnos un correo y solicitar la información que necesites.</p>
                 </div>
                 <form id="form-footer" class="footer__form-content">

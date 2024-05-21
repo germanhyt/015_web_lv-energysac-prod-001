@@ -18,11 +18,18 @@ itemsLinks.forEach((item) => {
   item.addEventListener("click", () => {
     if (item.classList.contains("active")) {
       item.classList.remove("active");
+
+      burgerIcon.classList.remove("fa-times");
+      burgerIcon.classList.add("fa-bars");
     } else {
       itemsLinks.forEach((item) => {
         item.classList.remove("active");
       });
       item.classList.add("active");
+
+      burgerIcon.classList.remove("fa-times");
+      burgerIcon.classList.add("fa-bars");
+      navMenu.classList.remove("active");
     }
   });
 });
@@ -32,9 +39,14 @@ const logo = document.querySelector(".header__logo img");
 const header = document.querySelector(".header__inner");
 const headerHeight = header.offsetHeight; // capturamos el height del header
 let lastScrollY = window.scrollY; // capturamos la posicion del scroll
+let btnWatch = document.querySelector(".social-networks");
+let footer = document.querySelector(".footer");
 window.addEventListener("scroll", () => {
   // console.log("scrolling", window.scrollY, "lastScrollY", lastScrollY);
-  if (window.scrollY > 96 && lastScrollY <= 96) {
+  if (
+    window.scrollY > 96
+    // && lastScrollY <= 96
+  ) {
     header.style.height = "96px";
     logo.style.width = "56px";
   } else if (window.scrollY <= 96 && lastScrollY > 96) {
@@ -42,4 +54,14 @@ window.addEventListener("scroll", () => {
     logo.style.width = "76px";
   }
   lastScrollY = window.scrollY;
+
+  // cuando el btn de whatsapp llegue al footer, se ocultara
+  if (
+    window.scrollY + window.innerHeight >= footer.offsetTop ||
+    window.outerWidth <= 1024
+  ) {
+    btnWatch.style.display = "none";
+  } else {
+    btnWatch.style.display = "flex";
+  }
 });

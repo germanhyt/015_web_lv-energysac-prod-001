@@ -141,46 +141,48 @@ var swiperClientes = new Swiper(".swiper--clients", {
 });
 swiperClientes.init();
 
-
-
-
 // -------------------- Formulario  ------------------------------
-
-const form = document.getElementById("form-footer")
+const form = document.getElementById("form-footer");
 // const modelo_morral = document.getElementById("morral").innerHTML
 const whatsapp = "+51910139973";
 
-form.addEventListener("submit", (e)=> {
-  e.preventDefault()
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-  const formData = new FormData(form)
+  const formData = new FormData(form);
 
-  formData.append("cantidad", counter.count)
-  formData.append("precio", precio.textContent)
+  const empresa = formData.get("empresa");
+  const representante = formData.get("representante");
+  const mensaje = formData.get("mensaje");
 
-  const nombres = formData.get("nombres");
-  const color = formData.get("colores");
-  const correo = formData.get("correo");
-
-  const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+  // const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+  const regexNombre = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
   const errors = [];
-  
-  regexEmail.test(correo) ? null : errors.push("Correo no valido");
-  nombres.length <= 2 ? errors.push("El nombre debe ser mayor a 2 letras") : null;
 
-  if(errors.length > 0) {
+  regexNombre.test(representante)
+    ? null
+    : errors.push("Nombre del representante vacío o errado");
+  representante.length <= 2
+    ? errors.push(" El nombre debe ser mayor a 2 letras")
+    : null;
+
+  if (errors.length > 0) {
     Swal.fire({
-      icon: 'error',
-      title: 'Datos ingresados no válidos',
+      icon: "error",
+      title: "Datos ingresados no válidos",
       text: errors,
-      confirmButtonText:'Cerrar',
+      confirmButtonText: "Cerrar",
     });
-  }else {
-    Swal.fire("¡Gracias, su pedido fue enviado correctamente!", '', 'success')
-    const text = `Hola 👋, quiero comprar:%0A*Modelo:* ${modelo_morral}%0A*Cantidad:* ${counter.count}%0A*Color:* ${color}%0A*Precio por Unidad:* S./${precioOriginal}%0A*Total a pagar:* S./${precio.textContent}%0A%0A*Mis datos son:*%0A*Nombres:* ${nombres}%0A*Correo:* ${correo}%0A`
+  } else {
+    Swal.fire("¡Gracias, su pedido fue enviado correctamente!", "", "success");
+    // const text = `Hola 👋, quiero comprar:%0A*Modelo:* ${modelo_morral}%0A*Cantidad:* ${counter.count}%0A*Color:* ${color}%0A*Precio por Unidad:* S./${precioOriginal}%0A*Total a pagar:* S./${precio.textContent}%0A%0A*Mis datos son:*%0A*Nombres:* ${nombres}%0A*Correo:* ${correo}%0A`;
+    const text = `"Hola 👋, soy *${representante}* de la empresa *${
+      empresa ?? "-"
+    }*: %0A ${mensaje} .`;
 
     const url = `https://api.whatsapp.com/send?phone=${whatsapp}&text=${text}`;
+
     window.open(url, "_blank");
     form.reset();
   }
-})
+});
