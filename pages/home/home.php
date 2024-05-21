@@ -48,7 +48,7 @@
             </div>
         </div>
     </div>
-
+    
     <section id="about-us" class="home-section-about ">
         <!-- <div class="home-section-about__container"> -->
         <figure class="home-section-about__figure scroll-animation-item-multimedia-left ">
