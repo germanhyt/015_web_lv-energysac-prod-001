@@ -106,7 +106,7 @@ html {
   }
 
   &__figure {
-    @apply sm:w-1/2;
+    @apply flex items-center;
 
     img {
       @apply w-[250px] sm:w-[350px] md:w-[400px] h-[250px] sm:h-[350px] md:h-[400px] mx-auto rounded-full;
@@ -460,7 +460,7 @@ html {
   }
 
   &-multimedia-right {
-    animation: reveal-multimedia-right linear both;
+    animation: reveal-multimedia-right-mobile linear both;
     animation-timeline: view();
     animation-range: entry 10% cover 25%;
   }
@@ -512,6 +512,21 @@ html {
     opacity: 0;
     translate: 200px 0;
     scale: 0.8;
+    transition: all;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+@keyframes reveal-multimedia-right-mobile {
+  from {
+    opacity: 0;
+    translate: 0 0;
+    scale: 0.4;
     transition: all;
   }
 

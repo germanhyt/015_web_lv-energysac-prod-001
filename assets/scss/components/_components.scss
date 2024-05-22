@@ -8,7 +8,7 @@
   }
 
   &__logo {
-    @apply flex font-bold items-center gap-2 text-xs lg:text-base;
+    @apply flex font-bold items-center gap-2 text-xs lg:text-base z-50;
 
     img {
       @apply transition-all duration-300;
@@ -58,7 +58,7 @@
 .nav-mobile {
   @apply col-span-2 text-center;
   @apply opacity-0 invisible pointer-events-none transition-all duration-300;
-  @apply absolute top-20 left-0 w-full h-[calc(100vh-80px)];
+  @apply absolute top-[96px] left-0 w-full h-[calc(100vh-96px)];
   @apply bg-[#FFF];
   @apply lg:hidden;
 

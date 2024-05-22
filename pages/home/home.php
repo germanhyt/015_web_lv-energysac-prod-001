@@ -75,8 +75,8 @@
                 </p>
                 <span class="">Eduardo Lozano / Fundador.</span>
             </div>
-            <figure class="home-section-founder__figure  ">
-                <img class="scroll-animation-item-multimedia-right" src="<?php echo constant("HOST") ?>/public/img/founder.png" alt="img">
+            <figure class="home-section-founder__figure scroll-animation-item-multimedia-right">
+                <img class="t" src="<?php echo constant("HOST") ?>/public/img/founder.png" alt="img">
             </figure>
         </div>
     </section>
