@@ -11,10 +11,10 @@ html {
   @apply relative w-full mt-[120px];
 
   &__figure {
-    @apply relative bg-cover h-[85vh] overflow-hidden;
+    @apply relative bg-cover h-[75vh] sm:h-[85vh] overflow-hidden;
   }
   &__figure img {
-    @apply absolute top-0 left-0 w-full sm:w-screen h-[85vh] sm:h-full bg-cover overflow-hidden;
+    @apply absolute top-0 left-0 w-full sm:w-screen h-[85vh] sm:h-full;
   }
   &__figure::before {
     content: "";
@@ -72,13 +72,17 @@ html {
 }
 
 .home-section-about {
-  @apply w-full 2xl:container  max-h-[100vh]  flex flex-col-reverse sm:flex-row bg-primary-100;
+  @apply bg-primary-100;
+
+  &__container {
+    @apply max-h-[100vh] w-full 2xl:container flex flex-col-reverse sm:flex-row;
+  }
 
   &__figure {
     @apply sm:w-1/2 bg-cover overflow-hidden;
 
     img {
-      @apply w-full sm:h-screen;
+      @apply w-full h-full;
     }
   }
 
@@ -128,7 +132,7 @@ html {
   @apply w-full mt-10 sm:my-20;
 
   &__contain {
-    @apply container flex flex-col justify-center items-start gap-3 sm:gap-6;
+    @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
 
     h3 {
       @apply text-primary-100 text-dynamic-200 font-bold text-center font-barlow;
@@ -307,7 +311,7 @@ html {
   @apply w-full mt-10 sm:mt-20;
 
   &__contain {
-    @apply container flex flex-col justify-center items-start gap-3 sm:gap-6;
+    @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
 
     h3 {
       @apply text-primary-100 text-dynamic-200 font-bold text-start font-barlow;
@@ -446,38 +450,40 @@ html {
   &-multimedia-left {
     animation: reveal-multimedia-left linear both;
     animation-timeline: view();
-    animation-range: entry 15% cover 25%;
+    animation-range: entry 10% cover 25%;
   }
+
   &-contain {
     animation: reveal-contain linear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 30%;
+    animation-range: entry 10% cover 30%;
   }
+
   &-multimedia-right {
     animation: reveal-multimedia-right linear both;
     animation-timeline: view();
-    animation-range: entry 15% cover 25%;
+    animation-range: entry 10% cover 25%;
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 640px) {
   .scroll-animation-item {
     &-multimedia-left {
       animation: reveal-multimedia-left linear both;
       animation-timeline: view();
-      animation-range: entry 10% cover 25%;
+      animation-range: entry 15% cover 25%;
     }
 
     &-contain {
       animation: reveal-contain linear both;
       animation-timeline: view();
-      animation-range: entry 10% cover 30%;
+      animation-range: entry 20% cover 30%;
     }
 
     &-multimedia-right {
       animation: reveal-multimedia-right linear both;
       animation-timeline: view();
-      animation-range: entry 10% cover 25%;
+      animation-range: entry 15% cover 25%;
     }
   }
 }

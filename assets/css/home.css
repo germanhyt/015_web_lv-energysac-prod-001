@@ -416,7 +416,7 @@
 .footer{
   position: relative;
   --tw-bg-opacity: 1;
-  background-color: rgb(26 26 26 / var(--tw-bg-opacity));
+  background-color: rgb(21 55 91 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -721,7 +721,7 @@
 
 .h1__span{
   --tw-text-opacity: 1;
-  color: rgb(51 112 84 / var(--tw-text-opacity));
+  color: rgb(21 55 91 / var(--tw-text-opacity));
 }
 
 .h1--white{
@@ -783,9 +783,15 @@ html {
 
 .home-hero__figure{
   position: relative;
-  height: 85vh;
+  height: 75vh;
   overflow: hidden;
   background-size: cover;
+}
+
+@media (min-width: 640px){
+  .home-hero__figure{
+    height: 85vh;
+  }
 }
 
 .home-hero__figure img{
@@ -794,8 +800,6 @@ html {
   left: 0px;
   height: 85vh;
   width: 100%;
-  overflow: hidden;
-  background-size: cover;
 }
 
 @media (min-width: 640px){
@@ -1001,16 +1005,19 @@ html {
 }
 
 .home-section-about{
-  display: flex;
-  max-height: 100vh;
-  width: 100%;
-  flex-direction: column-reverse;
   --tw-bg-opacity: 1;
   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
 }
 
+.home-section-about__container{
+  display: flex;
+  max-height: 100vh;
+  width: 100%;
+  flex-direction: column-reverse;
+}
+
 @media (min-width: 1600px){
-  .home-section-about{
+  .home-section-about__container{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -1019,50 +1026,50 @@ html {
   }
 
   @media (min-width: 320px){
-    .home-section-about{
+    .home-section-about__container{
       max-width: 320px;
     }
   }
 
   @media (min-width: 640px){
-    .home-section-about{
+    .home-section-about__container{
       max-width: 640px;
     }
   }
 
   @media (min-width: 768px){
-    .home-section-about{
+    .home-section-about__container{
       max-width: 768px;
     }
   }
 
   @media (min-width: 1024px){
-    .home-section-about{
+    .home-section-about__container{
       max-width: 1024px;
     }
   }
 
   @media (min-width: 1100px){
-    .home-section-about{
+    .home-section-about__container{
       max-width: 1100px;
     }
   }
 
   @media (min-width: 1280px){
-    .home-section-about{
+    .home-section-about__container{
       max-width: 1280px;
     }
   }
 
   @media (min-width: 1600px){
-    .home-section-about{
+    .home-section-about__container{
       max-width: 1600px;
     }
   }
 }
 
 @media (min-width: 640px){
-  .home-section-about{
+  .home-section-about__container{
     flex-direction: row;
   }
 }
@@ -1079,13 +1086,8 @@ html {
 }
 
 .home-section-about__figure img{
+  height: 100%;
   width: 100%;
-}
-
-@media (min-width: 640px){
-  .home-section-about__figure img{
-    height: 100vh;
-  }
 }
 
 .home-section-about__content{
@@ -1351,7 +1353,7 @@ html {
 .home-section-pillars__contain{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 0.75rem;
 }
@@ -1841,7 +1843,7 @@ html {
 .home-section-best-option__contain{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 0.75rem;
 }
@@ -2397,38 +2399,38 @@ html {
 .scroll-animation-item-multimedia-left {
   animation: reveal-multimedia-left linear both;
   animation-timeline: view();
-  animation-range: entry 15% cover 25%;
+  animation-range: entry 10% cover 25%;
 }
 
 .scroll-animation-item-contain {
   animation: reveal-contain linear both;
   animation-timeline: view();
-  animation-range: entry 20% cover 30%;
+  animation-range: entry 10% cover 30%;
 }
 
 .scroll-animation-item-multimedia-right {
   animation: reveal-multimedia-right linear both;
   animation-timeline: view();
-  animation-range: entry 15% cover 25%;
+  animation-range: entry 10% cover 25%;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 640px) {
   .scroll-animation-item-multimedia-left {
     animation: reveal-multimedia-left linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 25%;
+    animation-range: entry 15% cover 25%;
   }
 
   .scroll-animation-item-contain {
     animation: reveal-contain linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 30%;
+    animation-range: entry 20% cover 30%;
   }
 
   .scroll-animation-item-multimedia-right {
     animation: reveal-multimedia-right linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 25%;
+    animation-range: entry 15% cover 25%;
   }
 }
 

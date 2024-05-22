@@ -51,17 +51,17 @@
     </div>
 
     <section id="about-us" class="home-section-about ">
-        <!-- <div class="home-section-about__container"> -->
-        <figure class="home-section-about__figure scroll-animation-item-multimedia-left ">
-            <img src="<?php echo constant("HOST") ?>/public/img/about.jpg" alt="img">
-        </figure>
-        <div class="home-section-about__content scroll-animation-item-contain ">
-            <h3 class="">L&V ENERGY</h3>
-            <p class="">
-                Somos un centro de capacitación técnica dirigido al personal que efectúa trabajos en redes de energía eléctrica de media y baja tensión, cuyo propósito es contribuir con el desarrollo energético del país, ofreciendo asesoría especializada que permita la continuidad del suministro de energía eléctrica a nivel nacional.
-            </p>
+        <div class="home-section-about__container">
+            <figure class="home-section-about__figure scroll-animation-item-multimedia-left ">
+                <img class="" src="<?php echo constant("HOST") ?>/public/img/about.jpg" alt="img">
+            </figure>
+            <div class="home-section-about__content scroll-animation-item-contain ">
+                <h3 class="">L&V ENERGY</h3>
+                <p class="">
+                    Somos un centro de capacitación técnica dirigido al personal que efectúa trabajos en redes de energía eléctrica de media y baja tensión, cuyo propósito es contribuir con el desarrollo energético del país, ofreciendo asesoría especializada que permita la continuidad del suministro de energía eléctrica a nivel nacional.
+                </p>
+            </div>
         </div>
-        <!-- </div> -->
     </section>
 
     <section id="about-us-founder" class="home-section-founder">
@@ -75,8 +75,8 @@
                 </p>
                 <span class="">Eduardo Lozano / Fundador.</span>
             </div>
-            <figure class="home-section-founder__figure scroll-animation-item-multimedia-right ">
-                <img class="" src="<?php echo constant("HOST") ?>/public/img/founder.png" alt="img">
+            <figure class="home-section-founder__figure  ">
+                <img class="scroll-animation-item-multimedia-right" src="<?php echo constant("HOST") ?>/public/img/founder.png" alt="img">
             </figure>
         </div>
     </section>
