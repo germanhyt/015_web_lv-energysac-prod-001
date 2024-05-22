@@ -34,9 +34,8 @@
             <div class="home-hero__content-container">
                 <div class="home-hero__text">
                     <h1 class="home-hero__title">
-                        Capacitaciones para trabajos
-                        en redes de ditribución de energía
-                        eléctrica </h1>
+                        Capacitaciones para trabajos en redes de distribución de energía eléctrica.
+                    </h1>
                     <p class="home-hero__description">Accede a la mejor preparación para tus trabajadores con L&V ENERGY, te ofrecemos una capacitación de alto nivel con especialistas altamente calificados que impulsarán a tu empresa a obtener los mejores resultados</p>
                 </div>
 
@@ -270,7 +269,7 @@
 
     <section id="customers" class="home-clients scroll-animation-item-contain">
         <div class="home-clients__heading">
-            <h3>Estas empresas ya cuentan con un personal capacitado por nosotros</h3>
+            <h3>Empresas que ya cuentan con un personal capacitado por nosotros</h3>
         </div>
 
         <div class="swiper swiper--clients">
