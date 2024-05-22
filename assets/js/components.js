@@ -172,9 +172,17 @@ form.addEventListener("submit", (e) => {
       title: "Datos ingresados no válidos",
       text: errors,
       confirmButtonText: "Cerrar",
+      confirmButtonColor: "#ff0808",
     });
   } else {
-    Swal.fire("¡Gracias, su pedido fue enviado correctamente!", "", "success");
+    Swal.fire({
+      icon: "success",
+      title: "Mensaje enviado",
+      text: "¡Gracias, En breve nos comunicaremos contigo",
+      confirmButtonText: "Cerrar",
+      confirmButtonColor: "#3085d6",
+    });
+
     // const text = `Hola 👋, quiero comprar:%0A*Modelo:* ${modelo_morral}%0A*Cantidad:* ${counter.count}%0A*Color:* ${color}%0A*Precio por Unidad:* S./${precioOriginal}%0A*Total a pagar:* S./${precio.textContent}%0A%0A*Mis datos son:*%0A*Nombres:* ${nombres}%0A*Correo:* ${correo}%0A`;
     const text = `"Hola 👋, soy *${representante}* de la empresa *${
       empresa ?? "-"

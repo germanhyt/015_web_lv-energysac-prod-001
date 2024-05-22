@@ -16,7 +16,7 @@
 }
 .header__logo img {
   @apply transition-all duration-300;
-  @apply w-[76px];
+  @apply w-[92px];
 }
 .header__icon {
   @apply justify-self-end lg:hidden;
@@ -136,7 +136,7 @@
   }
 }
 .footer {
-  @apply relative bg-[#15375B] text-[#FFF];
+  @apply relative bg-primary-100 text-[#FFF];
 }
 .footer__arrow {
   @apply absolute left-0 -top-4 right-0 hidden sm:flex w-full z-20;
@@ -300,17 +300,17 @@ html {
   @apply w-full itm:w-4/6 flex flex-col gap-4;
 }
 .home-hero__content .home-hero__title {
-  @apply text-dynamic-200 sm:text-dynamic-100 text-white font-bold;
+  @apply text-dynamic-200 sm:text-dynamic-100 text-white font-bold font-barlow;
 }
 .home-hero__content .home-hero__description {
-  @apply text-dynamic-400 sm:text-dynamic-300 text-white;
+  @apply text-dynamic-400 sm:text-dynamic-300 text-white font-barlow;
 }
 .home-hero__button {
   @apply z-10 flex items-center justify-center sm:justify-start py-4 sm:py-8;
 }
 .home-hero__button button {
   @apply bg-[#FF8300];
-  @apply text-dynamic-300 text-white hover:text-[#ff8300] py-1 sm:py-2 px-3 sm:px-4 rounded-sm;
+  @apply text-dynamic-300 text-white hover:text-[#ff8300] py-1 sm:py-2 px-3 sm:px-4 rounded-sm font-barlow;
 }
 .home-hero__button button:hover {
   background: linear-gradient(to right, #ff8300 50%, #fff 50%);
@@ -320,22 +320,22 @@ html {
 }
 
 .home-section-about {
-  @apply w-full 2xl:container flex flex-col-reverse sm:flex-row;
+  @apply w-full 2xl:container  max-h-[100vh]  flex flex-col-reverse sm:flex-row bg-primary-100;
 }
 .home-section-about__figure {
-  @apply sm:w-1/2;
+  @apply sm:w-1/2 bg-cover overflow-hidden;
 }
 .home-section-about__figure img {
-  @apply w-full h-full bg-cover overflow-hidden;
+  @apply w-full sm:h-screen;
 }
 .home-section-about__content {
-  @apply sm:w-1/2 flex flex-col justify-center items-center sm:items-start py-5 sm:py-0 px-5 sm:px-12;
+  @apply sm:w-1/2 flex flex-col justify-center items-start py-5 sm:py-0 px-5 sm:px-12;
 }
 .home-section-about__content h3 {
-  @apply text-[#15375B] text-dynamic-200 font-bold;
+  @apply text-primary-300 text-dynamic-200 font-bold font-barlow;
 }
 .home-section-about__content p {
-  @apply text-black text-dynamic-300 font-semibold;
+  @apply text-primary-300 text-dynamic-300 font-semibold font-barlow pr-12;
 }
 
 .home-section-founder {
@@ -354,23 +354,23 @@ html {
   @apply sm:w-1/2 flex flex-col justify-center items-center gap-6 sm:items-start py-5 sm:py-0;
 }
 .home-section-founder__content h3 {
-  @apply text-[#15375B] text-dynamic-200 font-bold text-center sm:text-start;
+  @apply text-primary-100 text-dynamic-200 font-bold text-center sm:text-start font-barlow;
 }
 .home-section-founder__content p {
-  @apply text-black text-dynamic-300 font-semibold text-center sm:text-start;
+  @apply text-primary-100 text-dynamic-300 font-semibold text-center sm:text-start font-barlow;
 }
 .home-section-founder__content span {
-  @apply text-dynamic-300 font-semibold text-center sm:text-start;
+  @apply text-dynamic-300 font-semibold text-center sm:text-start font-barlow;
 }
 
 .home-section-pillars {
   @apply w-full mt-10 sm:my-20;
 }
 .home-section-pillars__contain {
-  @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
+  @apply container flex flex-col justify-center items-start gap-3 sm:gap-6;
 }
 .home-section-pillars__contain h3 {
-  @apply text-[#15375B] text-dynamic-200 font-bold text-center;
+  @apply text-primary-100 text-dynamic-200 font-bold text-center font-barlow;
 }
 .home-section-pillars__grid {
   @apply relative grid grid-cols-1 sm:grid-cols-2 gap-6;
@@ -379,17 +379,17 @@ html {
   @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-8 sm:py-16 shadow-xl rounded-sm;
 }
 .home-section-pillars__grid .home-section-pillars__item .home-section-pillars__title {
-  @apply text-black text-dynamic-200 font-bold;
+  @apply text-primary-100 text-dynamic-200 font-bold font-barlow;
 }
 .home-section-pillars__grid .home-section-pillars__item .home-section-pillars__description {
-  @apply text-black text-dynamic-300 text-center;
+  @apply text-primary-100 text-dynamic-300 text-center font-barlow;
 }
 
 .home-section-benefits {
   @apply w-full 2xl:container;
 }
 .home-section-benefits__title {
-  @apply text-dynamic-200 text-[#15375B] font-bold text-center px-5 sm:px-20 py-5 sm:py-10;
+  @apply sm:max-w-[75vw] mx-auto text-dynamic-200 text-primary-100 font-bold text-center py-5 sm:py-10 font-barlow;
 }
 .home-section-benefits__container {
   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 itm:grid-cols-4 sm:gap-[1px] place-content-center leading-7;
@@ -430,7 +430,8 @@ html {
   @apply relative w-full h-fit;
 }
 .home-section-benefits__card-icon {
-  @apply sm:hidden w-full px-5 flex justify-between items-center cursor-pointer gap-4 transition-all duration-300;
+  @apply w-full sm:hidden px-5 flex justify-between items-center;
+  @apply cursor-pointer gap-4 transition-all duration-300;
 }
 .home-section-benefits__card-icon span {
   @apply text-dynamic-300 font-bold;
@@ -439,14 +440,15 @@ html {
   @apply w-9 h-9 text-2xl rounded-full text-white flex items-center justify-center;
 }
 .home-section-benefits__card-h2 {
-  @apply hidden sm:flex;
+  @apply hidden sm:flex font-barlow;
   font-weight: bold;
   position: relative;
   width: -moz-max-content;
   width: max-content;
 }
 .home-section-benefits__card-p {
-  @apply text-dynamic-400 sm:text-dynamic-300 py-2 transition-all relative duration-300 overflow-hidden max-h-0 sm:max-h-full;
+  @apply text-dynamic-400 font-barlow;
+  @apply sm:text-dynamic-300 py-2 transition-all relative duration-300 overflow-hidden max-h-0 sm:max-h-full;
   color: rgba(255, 255, 255, 0.8);
 }
 @media (min-width: 640px) {
@@ -507,35 +509,35 @@ html {
   @apply w-full mt-10 sm:mt-20;
 }
 .home-section-best-option__contain {
-  @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
+  @apply container flex flex-col justify-center items-start gap-3 sm:gap-6;
 }
 .home-section-best-option__contain h3 {
-  @apply text-[#15375B] text-dynamic-200 font-bold text-center;
+  @apply text-primary-100 text-dynamic-200 font-bold text-start font-barlow;
 }
 .home-section-best-option__grid {
-  @apply relative grid grid-cols-1 sm:grid-cols-2 gap-6;
+  @apply relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 itm:grid-cols-4 gap-6;
 }
 .home-section-best-option__grid .home-section-best-option__item {
-  @apply flex flex-col items-center gap-6 px-10 sm:px-12 py-8 sm:py-10 max-w-[500px] shadow-xl rounded-sm;
+  @apply flex flex-col items-center gap-6 px-10 sm:px-12 py-8 sm:py-10 max-w-[400px] shadow-xl rounded-sm;
 }
 .home-section-best-option__grid .home-section-best-option__item .home-section-best-option__img {
   @apply w-full mx-auto rounded-sm max-w-[250px];
 }
 .home-section-best-option__grid .home-section-best-option__item .home-section-best-option__description {
-  @apply text-black text-dynamic-300 text-center;
+  @apply text-primary-100 text-dynamic-400 text-center font-barlow;
 }
 
 .home-section-filter {
   @apply mt-10 sm:mt-20;
 }
 .home-section-filter__title {
-  @apply text-[#15375B] text-dynamic-200 font-bold text-center pb-5 sm:pb-10;
+  @apply text-primary-100 text-dynamic-200 font-bold text-center pb-5 sm:pb-10 font-barlow;
 }
 .home-section-filter__inner {
   @apply container sm:hidden;
 }
 .home-section-filter__inner-tabs {
-  @apply relative py-5 sm:py-10 w-full;
+  @apply relative py-5 sm:py-10  w-full;
 }
 .home-section-filter__inner-tabs .home-section-filter__figure {
   @apply bg-cover h-full overflow-hidden;
@@ -554,19 +556,22 @@ html {
   z-index: 10;
 }
 .home-section-filter__tab-wrapper {
-  @apply mx-auto flex justify-center;
+  @apply flex justify-center;
 }
 .home-section-filter__tabs {
-  @apply relative container hidden sm:flex sm:justify-center sm:gap-4 sm:flex-wrap z-20;
+  @apply relative container hidden sm:flex sm:justify-center sm:gap-4 sm:flex-wrap  z-20;
 }
 
+.swiper {
+  @apply z-20;
+}
 .swiper--filter .swiper-button-prev::after,
 .swiper--filter .swiper-button-next::after {
-  @apply font-bold  text-sm bg-[#ff8300] w-8 h-8  text-white flex justify-center items-center  rounded-full;
+  @apply font-bold  text-sm bg-[#ff8300] w-8 h-8 text-white flex justify-center items-center  rounded-full;
 }
 
 .btn {
-  @apply transition duration-500;
+  @apply z-30  sm:transition-all duration-150 ease-in-out;
 }
 .btn--filter {
   @apply py-2 px-6 sm:px-2 bg-transparent text-dynamic-300 text-[#FFF];
@@ -579,7 +584,7 @@ html {
 .card-product {
   @apply relative z-20;
   @apply bg-white;
-  @apply max-w-[380px];
+  @apply max-w-[380px] min-h-[350px] sm:min-h-[550px];
   @apply shadow-[10px_10px_50px_rgba(175,175,175,0.25)] rounded-sm;
 }
 .card-product__grid {
@@ -589,7 +594,7 @@ html {
   @apply flex flex-col items-center justify-center gap-2 h-28 border-b-4 border-[#ff8300] px-5 sm:px-10;
 }
 .card-product__title {
-  @apply font-bold lg:font-bold text-[#15375B] text-dynamic-400 text-center;
+  @apply font-bold lg:font-bold text-primary-100 text-dynamic-400 text-center font-barlow;
 }
 .card-product__content {
   @apply flex flex-col justify-center gap-6 py-5 sm:py-8 px-5 sm:px-10;
@@ -598,22 +603,22 @@ html {
   @apply flex flex-col items-start justify-center gap-2;
 }
 .card-product__content-objective h4 {
-  @apply text-[#15375B] text-dynamic-300 font-bold;
+  @apply text-primary-100 text-dynamic-300 font-bold font-barlow;
 }
 .card-product__content-objective p {
-  @apply text-black text-dynamic-400 font-semibold;
+  @apply text-primary-100 text-dynamic-400 font-semibold font-barlow;
 }
 .card-product__content-about {
   @apply flex flex-col items-start justify-center gap-2;
 }
 .card-product__content-about h4 {
-  @apply text-[#15375B] text-dynamic-300 font-bold;
+  @apply text-primary-100 text-dynamic-300 font-bold font-barlow;
 }
 .card-product__content-about ul {
   @apply list-disc list-inside;
 }
 .card-product__content-about ul li {
-  @apply text-black text-dynamic-400 font-semibold;
+  @apply text-primary-100 text-dynamic-400 font-semibold;
 }
 
 .scroll-animation-item-multimedia-left {
@@ -700,7 +705,7 @@ html {
   @apply grid grid-rows-1 justify-items-center text-center px-5 sm:px-20 itm:px-40;
 }
 .home-trainings__heading h3 {
-  @apply text-dynamic-200 text-[#15375B] font-bold;
+  @apply text-dynamic-200 text-primary-100 font-bold font-barlow;
 }
 .home-trainings__figure {
   @apply w-full rounded-2xl flex items-center;
@@ -717,7 +722,7 @@ html {
   @apply grid grid-rows-1 justify-items-center text-center px-5 sm:px-20 itm:px-40;
 }
 .home-clients__heading h3 {
-  @apply text-dynamic-200 text-[#15375B] font-bold;
+  @apply text-dynamic-200 text-primary-100 font-bold font-barlow;
 }
 .home-clients__figure {
   @apply w-full rounded-2xl flex items-center;
@@ -727,13 +732,13 @@ html {
 }
 
 .home-section-banner {
-  @apply relative w-full mt-20 h-[50vh] sm:h-[65vh] overflow-hidden;
+  @apply relative w-full mt-20 h-[50vh] sm:h-[72vh] overflow-hidden;
 }
 .home-section-banner__figure {
-  @apply relative bg-cover bg-center object-cover h-screen overflow-hidden my-auto transform -translate-y-44;
+  @apply relative bg-cover bg-center h-screen overflow-hidden transform -translate-y-32;
 }
 .home-section-banner__figure img {
-  @apply absolute top-0 left-0 w-full sm:w-screen h-full bg-cover overflow-hidden;
+  @apply absolute top-0 left-0 w-full sm:w-screen h-full bg-cover;
 }
 .home-section-banner__figure::before {
   content: "";
@@ -755,7 +760,7 @@ html {
   @apply transform translate-y-[50%];
 }
 .home-section-banner__title {
-  @apply w-3/4 sm:w-1/2 text-dynamic-200 text-[#FFF]  font-bold text-start;
+  @apply w-3/4 sm:w-1/2 text-dynamic-200 text-[#FFF]  font-bold text-start font-barlow;
 }
 .home-section-banner__content .home-section-banner__btn {
   @apply z-10 flex items-center  justify-start py-4 sm:py-8;

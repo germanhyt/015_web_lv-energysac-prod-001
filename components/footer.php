@@ -42,8 +42,8 @@
             </div>
             <div class="footer__form">
                 <div class="footer__form-title-container">
-                    <h4 class="footer__form-title">Escríbenos</h4>
-                    <p class="footer__form-description">Si gustas también puedes mandarnos un correo y solicitar la información que necesites.</p>
+                    <h4 class="footer__form-title">Contáctanos</h4>
+                    <p class="footer__form-description">Solicita más información sobre nuestros cursos y con gusto te atenderemos.</p>
                 </div>
                 <form id="form-footer" class="footer__form-content">
                     <div class="footer__form-content-group">

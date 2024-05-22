@@ -34,34 +34,67 @@ itemsLinks.forEach((item) => {
   });
 });
 
-// Luego de scrollear hacia abajo, el header cambia de height y el logo
+/* Eventos para el header y btn de Whatsapp */
 const logo = document.querySelector(".header__logo img");
 const header = document.querySelector(".header__inner");
 const headerHeight = header.offsetHeight; // capturamos el height del header
-let lastScrollY = window.scrollY; // capturamos la posicion del scroll
 let btnWatch = document.querySelector(".social-networks");
 let footer = document.querySelector(".footer");
-window.addEventListener("scroll", () => {
+let lastScrollY = window.scrollY; // capturamos la posicion del scroll
+let lastInnerWidth = window.innerWidth;
+
+function onScrollNavbar() {
   // console.log("scrolling", window.scrollY, "lastScrollY", lastScrollY);
   if (
     window.scrollY > 96
     // && lastScrollY <= 96
   ) {
     header.style.height = "96px";
-    logo.style.width = "56px";
+    logo.style.width = "92px";
   } else if (window.scrollY <= 96 && lastScrollY > 96) {
     header.style.height = "120px";
-    logo.style.width = "76px";
+    logo.style.width = "106px";
   }
   lastScrollY = window.scrollY;
+}
 
-  // cuando el btn de whatsapp llegue al footer, se ocultara
-  if (
-    window.scrollY + window.innerHeight >= footer.offsetTop ||
-    window.outerWidth <= 1024
-  ) {
+function onResizeBtn() {
+  let innerwidth = window.innerWidth;
+  // console.log("resize1", innerwidth);
+  if (innerwidth <= 1024) {
     btnWatch.style.display = "none";
   } else {
     btnWatch.style.display = "flex";
   }
+
+  if (lastScrollY + window.innerHeight >= footer.offsetTop) {
+    btnWatch.style.display = "none";
+  }
+
+  lastInnerWidth = innerwidth;
+}
+
+function onScrollBtn() {
+  console.log("window.innerWidth", lastInnerWidth);
+  // console.log(" window.scrollY ", window.scrollY);
+  // console.log(" window.innerHeight ", window.innerHeight);
+  // console.log(" footer.offsetTop ", footer.offsetTop);
+  if (lastScrollY + window.innerHeight >= footer.offsetTop) {
+    btnWatch.style.display = "none";
+  } else {
+    btnWatch.style.display = "flex";
+  }
+
+  if (lastInnerWidth <= 1024) {
+    btnWatch.style.display = "none";
+  }
+}
+
+window.addEventListener("scroll", () => {
+  onScrollNavbar();
+  onScrollBtn();
+});
+
+window.addEventListener("resize", () => {
+  onResizeBtn();
 });

@@ -16,7 +16,7 @@ dist-ssr
 .vscode/*
 .vscode/extensions.json
 
-public/css/*.css
+assets/css/*.css
 public/scss/*.css
 
 .idea

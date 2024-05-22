@@ -42,10 +42,10 @@ html {
     @apply w-full itm:w-4/6 flex flex-col gap-4;
   }
   &__content &__title {
-    @apply text-dynamic-200 sm:text-dynamic-100 text-white font-bold;
+    @apply text-dynamic-200 sm:text-dynamic-100 text-white font-bold font-barlow;
   }
   &__content &__description {
-    @apply text-dynamic-400 sm:text-dynamic-300 text-white;
+    @apply text-dynamic-400 sm:text-dynamic-300 text-white font-barlow;
   }
 
   &__button {
@@ -53,7 +53,7 @@ html {
 
     button {
       @apply bg-[#FF8300];
-      @apply text-dynamic-300 text-white hover:text-[#ff8300] py-1 sm:py-2 px-3 sm:px-4 rounded-sm;
+      @apply text-dynamic-300 text-white hover:text-[#ff8300] py-1 sm:py-2 px-3 sm:px-4 rounded-sm font-barlow;
     }
 
     // efector hover al button para cambiar de color tipo fading
@@ -72,24 +72,24 @@ html {
 }
 
 .home-section-about {
-  @apply w-full 2xl:container flex flex-col-reverse sm:flex-row;
+  @apply w-full 2xl:container  max-h-[100vh]  flex flex-col-reverse sm:flex-row bg-primary-100;
 
   &__figure {
-    @apply sm:w-1/2;
+    @apply sm:w-1/2 bg-cover overflow-hidden;
 
     img {
-      @apply w-full h-full bg-cover overflow-hidden;
+      @apply w-full sm:h-screen;
     }
   }
 
   &__content {
-    @apply sm:w-1/2 flex flex-col justify-center items-center sm:items-start py-5 sm:py-0 px-5 sm:px-12;
+    @apply sm:w-1/2 flex flex-col justify-center items-start py-5 sm:py-0 px-5 sm:px-12;
 
     h3 {
-      @apply text-[#15375B] text-dynamic-200 font-bold;
+      @apply text-primary-300 text-dynamic-200 font-bold font-barlow;
     }
     p {
-      @apply text-black text-dynamic-300 font-semibold;
+      @apply text-primary-300 text-dynamic-300 font-semibold font-barlow pr-12;
     }
   }
 }
@@ -113,13 +113,13 @@ html {
     @apply sm:w-1/2 flex flex-col justify-center items-center gap-6 sm:items-start py-5 sm:py-0;
 
     h3 {
-      @apply text-[#15375B] text-dynamic-200 font-bold text-center sm:text-start;
+      @apply text-primary-100 text-dynamic-200 font-bold text-center sm:text-start font-barlow;
     }
     p {
-      @apply text-black text-dynamic-300 font-semibold text-center sm:text-start;
+      @apply text-primary-100 text-dynamic-300 font-semibold text-center sm:text-start font-barlow;
     }
     span {
-      @apply text-dynamic-300 font-semibold text-center sm:text-start;
+      @apply text-dynamic-300 font-semibold text-center sm:text-start font-barlow;
     }
   }
 }
@@ -128,10 +128,10 @@ html {
   @apply w-full mt-10 sm:my-20;
 
   &__contain {
-    @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
+    @apply container flex flex-col justify-center items-start gap-3 sm:gap-6;
 
     h3 {
-      @apply text-[#15375B] text-dynamic-200 font-bold text-center;
+      @apply text-primary-100 text-dynamic-200 font-bold text-center font-barlow;
     }
   }
 
@@ -144,10 +144,10 @@ html {
   }
 
   &__grid &__item &__title {
-    @apply text-black text-dynamic-200 font-bold;
+    @apply text-primary-100 text-dynamic-200 font-bold font-barlow;
   }
   &__grid &__item &__description {
-    @apply text-black text-dynamic-300 text-center;
+    @apply text-primary-100 text-dynamic-300 text-center font-barlow;
   }
 }
 
@@ -155,7 +155,7 @@ html {
   @apply w-full 2xl:container;
 
   &__title {
-    @apply text-dynamic-200 text-[#15375B] font-bold text-center px-5 sm:px-20 py-5 sm:py-10;
+    @apply sm:max-w-[75vw] mx-auto text-dynamic-200 text-primary-100 font-bold text-center py-5 sm:py-10 font-barlow;
   }
 
   &__container {
@@ -206,7 +206,8 @@ html {
   }
 
   &__card-icon {
-    @apply sm:hidden w-full px-5 flex justify-between items-center cursor-pointer gap-4 transition-all duration-300;
+    @apply w-full sm:hidden px-5 flex justify-between items-center;
+    @apply cursor-pointer gap-4 transition-all duration-300;
 
     span {
       @apply text-dynamic-300 font-bold;
@@ -218,7 +219,7 @@ html {
   }
 
   &__card-h2 {
-    @apply hidden sm:flex;
+    @apply hidden sm:flex font-barlow;
     font-weight: bold;
     position: relative;
     width: max-content;
@@ -226,7 +227,8 @@ html {
   }
 
   &__card-p {
-    @apply text-dynamic-400 sm:text-dynamic-300 py-2 transition-all relative duration-300 overflow-hidden max-h-0 sm:max-h-full;
+    @apply text-dynamic-400 font-barlow;
+    @apply sm:text-dynamic-300 py-2 transition-all relative duration-300 overflow-hidden max-h-0 sm:max-h-full;
     color: rgba(255, 255, 255, 0.8);
   }
 
@@ -305,26 +307,26 @@ html {
   @apply w-full mt-10 sm:mt-20;
 
   &__contain {
-    @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
+    @apply container flex flex-col justify-center items-start gap-3 sm:gap-6;
 
     h3 {
-      @apply text-[#15375B] text-dynamic-200 font-bold text-center;
+      @apply text-primary-100 text-dynamic-200 font-bold text-start font-barlow;
     }
   }
 
   &__grid {
-    @apply relative grid grid-cols-1 sm:grid-cols-2 gap-6;
+    @apply relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 itm:grid-cols-4 gap-6;
   }
 
   &__grid &__item {
-    @apply flex flex-col items-center gap-6 px-10 sm:px-12 py-8 sm:py-10 max-w-[500px] shadow-xl rounded-sm;
+    @apply flex flex-col items-center gap-6 px-10 sm:px-12 py-8 sm:py-10 max-w-[400px] shadow-xl rounded-sm;
   }
 
   &__grid &__item &__img {
     @apply w-full mx-auto rounded-sm max-w-[250px];
   }
   &__grid &__item &__description {
-    @apply text-black text-dynamic-300 text-center;
+    @apply text-primary-100 text-dynamic-400 text-center font-barlow;
   }
 }
 
@@ -332,7 +334,7 @@ html {
   @apply mt-10 sm:mt-20;
 
   &__title {
-    @apply text-[#15375B] text-dynamic-200 font-bold text-center pb-5 sm:pb-10;
+    @apply text-primary-100 text-dynamic-200 font-bold text-center pb-5 sm:pb-10 font-barlow;
   }
 
   &__inner {
@@ -341,7 +343,7 @@ html {
 
   &__inner-tabs {
     // @apply relative py-5 sm:py-10 w-full bg-[#15375B] text-[#FFF] animate-none;
-    @apply relative py-5 sm:py-10 w-full;
+    @apply relative py-5 sm:py-10  w-full;
   }
 
   &__inner-tabs &__figure {
@@ -362,25 +364,27 @@ html {
   }
 
   &__tab-wrapper {
-    @apply mx-auto flex justify-center;
+    @apply flex justify-center;
   }
 
   &__tabs {
-    @apply relative container hidden sm:flex sm:justify-center sm:gap-4 sm:flex-wrap z-20;
+    @apply relative container hidden sm:flex sm:justify-center sm:gap-4 sm:flex-wrap  z-20;
   }
 }
 
 .swiper {
+  @apply z-20;
+
   &--filter {
     .swiper-button-prev::after,
     .swiper-button-next::after {
-      @apply font-bold  text-sm bg-[#ff8300] w-8 h-8  text-white flex justify-center items-center  rounded-full;
+      @apply font-bold  text-sm bg-[#ff8300] w-8 h-8 text-white flex justify-center items-center  rounded-full;
     }
   }
 }
 
 .btn {
-  @apply transition duration-500;
+  @apply z-30  sm:transition-all duration-150 ease-in-out;
 
   &--filter {
     @apply py-2 px-6 sm:px-2 bg-transparent text-dynamic-300 text-[#FFF];
@@ -395,21 +399,18 @@ html {
 .card-product {
   @apply relative z-20;
   @apply bg-white;
-  @apply max-w-[380px];
+  @apply max-w-[380px] min-h-[350px] sm:min-h-[550px];
   @apply shadow-[10px_10px_50px_rgba(175,175,175,0.25)] rounded-sm;
 
   &__grid {
     @apply grid justify-center gap-8 container lg:grid lg:grid-cols-3 xl:grid-cols-4 pt-8;
   }
-
   &__title-container {
     @apply flex flex-col items-center justify-center gap-2 h-28 border-b-4 border-[#ff8300] px-5 sm:px-10;
   }
-
   &__title {
-    @apply font-bold lg:font-bold text-[#15375B] text-dynamic-400 text-center;
+    @apply font-bold lg:font-bold text-primary-100 text-dynamic-400 text-center font-barlow;
   }
-
   &__content {
     @apply flex flex-col justify-center gap-6 py-5 sm:py-8 px-5 sm:px-10;
   }
@@ -417,17 +418,17 @@ html {
     @apply flex flex-col items-start justify-center gap-2;
 
     h4 {
-      @apply text-[#15375B] text-dynamic-300 font-bold;
+      @apply text-primary-100 text-dynamic-300 font-bold font-barlow;
     }
     p {
-      @apply text-black text-dynamic-400 font-semibold;
+      @apply text-primary-100 text-dynamic-400 font-semibold font-barlow;
     }
   }
   &__content-about {
     @apply flex flex-col items-start justify-center gap-2;
 
     h4 {
-      @apply text-[#15375B] text-dynamic-300 font-bold;
+      @apply text-primary-100 text-dynamic-300 font-bold font-barlow;
     }
 
     //dar estilos a ul con puntos en los li
@@ -435,7 +436,7 @@ html {
       @apply list-disc list-inside;
 
       li {
-        @apply text-black text-dynamic-400 font-semibold;
+        @apply text-primary-100 text-dynamic-400 font-semibold;
       }
     }
   }
@@ -538,7 +539,7 @@ html {
     @apply grid grid-rows-1 justify-items-center text-center px-5 sm:px-20 itm:px-40;
 
     h3 {
-      @apply text-dynamic-200 text-[#15375B] font-bold;
+      @apply text-dynamic-200 text-primary-100 font-bold font-barlow;
     }
   }
 
@@ -559,7 +560,7 @@ html {
     @apply grid grid-rows-1 justify-items-center text-center px-5 sm:px-20 itm:px-40;
 
     h3 {
-      @apply text-dynamic-200 text-[#15375B] font-bold;
+      @apply text-dynamic-200 text-primary-100 font-bold font-barlow;
     }
   }
 
@@ -573,13 +574,13 @@ html {
 }
 
 .home-section-banner {
-  @apply relative w-full mt-20 h-[50vh] sm:h-[65vh] overflow-hidden;
+  @apply relative w-full mt-20 h-[50vh] sm:h-[72vh] overflow-hidden;
 
   &__figure {
-    @apply relative bg-cover bg-center object-cover h-screen overflow-hidden my-auto transform -translate-y-44;
+    @apply relative bg-cover bg-center h-screen overflow-hidden transform -translate-y-32;
   }
   &__figure img {
-    @apply absolute top-0 left-0 w-full sm:w-screen h-full bg-cover overflow-hidden;
+    @apply absolute top-0 left-0 w-full sm:w-screen h-full bg-cover;
   }
   &__figure::before {
     content: "";
@@ -604,7 +605,7 @@ html {
   }
 
   &__title {
-    @apply w-3/4 sm:w-1/2 text-dynamic-200 text-[#FFF]  font-bold text-start;
+    @apply w-3/4 sm:w-1/2 text-dynamic-200 text-[#FFF]  font-bold text-start font-barlow;
   }
 
   &__content &__btn {

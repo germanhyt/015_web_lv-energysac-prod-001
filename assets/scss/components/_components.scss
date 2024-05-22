@@ -12,7 +12,7 @@
 
     img {
       @apply transition-all duration-300;
-      @apply w-[76px];
+      @apply w-[92px];
     }
   }
 
@@ -124,7 +124,7 @@
 
 // Redes sociales
 .social-networks {
-  @apply animate-pulse z-40 w-20 h-20 fixed hover:animate-none hover:scale-[1.1] transition duration-500  md:bottom-32 lg:bottom-5  lg:right-20 ;
+  @apply animate-pulse z-40 w-20 h-20 fixed hover:animate-none hover:scale-[1.1] transition duration-500  md:bottom-32 lg:bottom-5  lg:right-20;
   @apply hidden lg:flex items-center justify-center rounded-full bg-[#24d367];
   // estylos para que desaparezca mas suave
   @apply transition-all duration-500;
@@ -167,7 +167,7 @@
 }
 
 .footer {
-  @apply relative bg-[#15375B] text-[#FFF];
+  @apply relative bg-primary-100 text-[#FFF];
 
   &__arrow {
     @apply absolute left-0 -top-4 right-0 hidden sm:flex w-full z-20;

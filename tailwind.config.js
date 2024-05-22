@@ -25,9 +25,9 @@ module.exports = {
 
       backgroundImage: {},
       colors: {
-        "primary-100": "#EDFAE7",
-        "primary-200": "#71C79F",
-        "primary-300": "#49A078",
+        "primary-100": "#1A1A1A",
+        "primary-200": "#FF8300",
+        "primary-300": "#FFFFFF",
         "primary-400": "#337054",
         "primary-500": "#C7C7C7",
         "primary-600": "#4E4E4E",
@@ -40,7 +40,6 @@ module.exports = {
         center: true,
         padding: {
           DEFAULT: "0rem",
-          md: "0rem",
         },
       },
       screens: {
@@ -50,7 +49,8 @@ module.exports = {
         lg: "1024px",
         itm: "1100px",
         xl: "1280px",
-        "2xl": "1536px",
+        "2xl": "1600px",
+        // "2xl": "1536px",
       },
     },
   },
