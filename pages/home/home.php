@@ -28,7 +28,7 @@
 
     <div id="home-hero" class="home-hero">
         <figure class="home-hero__figure">
-            <img src="<?php echo constant("HOST") ?>/public/img/header-bg.jpg" alt="img">
+            <img src="<?php echo constant("HOST") ?>/public/img/header-bg.png" alt="img">
         </figure>
         <div class="home-hero__content">
             <div class="home-hero__content-container">
@@ -184,19 +184,19 @@
             <h3>¿Por qué somos tu mejor opción?</h3>
             <div class="home-section-best-option__grid">
                 <div class="home-section-best-option__item">
-                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-1.png" alt="img">
+                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-1.svg" alt="img">
                     <p class="home-section-best-option__description">Capacitamos desde la excelencia priorizando tu seguridad en el campo.</p>
                 </div>
                 <div class="home-section-best-option__item">
-                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-2.png" alt="img">
+                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-2.svg" alt="img">
                     <p class="home-section-best-option__description">Contamos con personal altamente calificado y con experiencia en el mercado peruano.</p>
                 </div>
                 <div class="home-section-best-option__item">
-                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-3.png" alt="img">
+                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-3.svg" alt="img">
                     <p class="home-section-best-option__description">Brindamos un servicio de calidad y garantía, basado en la experiencia y trayectoria de nuestros capacitadores.</p>
                 </div>
                 <div class="home-section-best-option__item">
-                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-4.png" alt="img">
+                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-4.svg" alt="img">
                     <p class="home-section-best-option__description">Aprenderás y/o reforzarás tanto los conocimientos teóricos de tus trabajadores como sus habilidades en el campo.</p>
                 </div>
             </div>

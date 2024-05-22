@@ -187,6 +187,12 @@
     @apply container flex flex-col pt-5 px-3 sm:px-0;
   }
 
+  @media (min-height: 500px) {
+    &__inner {
+      @apply px-2;
+    }
+  }
+
   &__title-container {
     @apply py-5;
   }
