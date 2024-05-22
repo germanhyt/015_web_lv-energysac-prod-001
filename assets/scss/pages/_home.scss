@@ -72,7 +72,7 @@ html {
 }
 
 .home-section-about {
-  @apply bg-primary-100;
+  @apply bg-primary-400;
 
   &__container {
     @apply max-h-[100vh] w-full 2xl:container flex flex-col-reverse sm:flex-row;
@@ -106,7 +106,7 @@ html {
   }
 
   &__figure {
-    @apply flex items-center;
+    @apply flex items-center justify-center mx-auto;
 
     img {
       @apply w-[250px] sm:w-[350px] md:w-[400px] h-[250px] sm:h-[350px] md:h-[400px] mx-auto rounded-full;
@@ -323,14 +323,14 @@ html {
   }
 
   &__grid &__item {
-    @apply flex flex-col items-center gap-6 px-10 sm:px-12 py-8 sm:py-10 max-w-[400px] shadow-xl rounded-sm;
+    @apply flex flex-col items-center gap-6 px-6 sm:px-8 py-8 sm:py-10 max-w-[400px] shadow-xl rounded-sm;
   }
 
   &__grid &__item &__img {
-    @apply w-full mx-auto rounded-sm max-w-[250px];
+    @apply w-full mx-auto rounded-sm max-w-[150px];
   }
   &__grid &__item &__description {
-    @apply text-primary-100 text-dynamic-400 text-center font-barlow;
+    @apply text-primary-100 text-dynamic-300 text-center font-barlow;
   }
 }
 
@@ -347,14 +347,15 @@ html {
 
   &__inner-tabs {
     // @apply relative py-5 sm:py-10 w-full bg-[#15375B] text-[#FFF] animate-none;
-    @apply relative py-5 sm:py-10  w-full;
+    @apply relative py-5 sm:py-10 w-full h-full itm:overflow-hidden;
   }
 
   &__inner-tabs &__figure {
     @apply bg-cover h-full overflow-hidden;
   }
   &__inner-tabs &__figure img {
-    @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full bg-cover overflow-hidden;
+    // @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full bg-cover overflow-hidden;
+    @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full itm:h-[2300px] bg-cover overflow-hidden;
   }
   &__inner-tabs &__figure::before {
     content: "";
@@ -402,6 +403,7 @@ html {
 
 .card-product {
   @apply relative z-20;
+  @apply mx-3 sm:mx-0;
   @apply bg-white;
   @apply max-w-[380px] min-h-[350px] sm:min-h-[550px];
   @apply shadow-[10px_10px_50px_rgba(175,175,175,0.25)] rounded-sm;
@@ -410,10 +412,10 @@ html {
     @apply grid justify-center gap-8 container lg:grid lg:grid-cols-3 xl:grid-cols-4 pt-8;
   }
   &__title-container {
-    @apply flex flex-col items-center justify-center gap-2 h-28 border-b-4 border-[#ff8300] px-5 sm:px-10;
+    @apply flex flex-col items-center justify-center gap-2 px-5 sm:px-8 h-36 py-2  border-b-4 border-[#ff8300];
   }
   &__title {
-    @apply font-bold lg:font-bold text-primary-100 text-dynamic-400 text-center font-barlow;
+    @apply font-bold lg:font-bold text-primary-100 text-dynamic-300 text-center font-barlow;
   }
   &__content {
     @apply flex flex-col justify-center gap-6 py-5 sm:py-8 px-5 sm:px-10;
@@ -598,10 +600,10 @@ html {
   @apply relative w-full mt-20 h-[50vh] sm:h-[72vh] overflow-hidden;
 
   &__figure {
-    @apply relative bg-cover bg-center h-screen overflow-hidden transform -translate-y-32;
+    @apply relative bg-cover bg-center h-screen overflow-hidden transform -translate-y-44;
   }
   &__figure img {
-    @apply absolute top-0 left-0 w-full sm:w-screen h-full bg-cover;
+    @apply absolute top-0 left-0 w-full sm:w-screen h-full itm:h-[900px];
   }
   &__figure::before {
     content: "";

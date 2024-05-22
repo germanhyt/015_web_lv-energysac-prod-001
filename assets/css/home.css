@@ -523,7 +523,16 @@
 .footer__inner{
   display: flex;
   flex-direction: column;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   padding-top: 1.25rem;
+}
+
+@media (min-width: 640px){
+  .footer__inner{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .footer__title-container{
@@ -1007,7 +1016,7 @@ html {
 
 .home-section-about{
   --tw-bg-opacity: 1;
-  background-color: rgb(26 26 26 / var(--tw-bg-opacity));
+  background-color: rgb(21 55 91 / var(--tw-bg-opacity));
 }
 
 .home-section-about__container{
@@ -1202,8 +1211,11 @@ html {
 }
 
 .home-section-founder__figure{
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .home-section-founder__figure img{
@@ -1897,8 +1909,8 @@ html {
   align-items: center;
   gap: 1.5rem;
   border-radius: 0.125rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
@@ -1908,8 +1920,8 @@ html {
 
 @media (min-width: 640px){
   .home-section-best-option__grid .home-section-best-option__item{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
@@ -1919,14 +1931,14 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 250px;
+  max-width: 150px;
   border-radius: 0.125rem;
 }
 
 .home-section-best-option__grid .home-section-best-option__item .home-section-best-option__description{
   text-align: center;
   font-family: Barlow, sans-serif;
-  font-size: clamp(0.875rem, 0.1vw + 0.9rem, 1rem);
+  font-size: clamp(1rem, 0.5vw + 0.9rem, 1.5rem);
   --tw-text-opacity: 1;
   color: rgb(26 26 26 / var(--tw-text-opacity));
 }
@@ -2015,6 +2027,7 @@ html {
 
 .home-section-filter__inner-tabs{
   position: relative;
+  height: 100%;
   width: 100%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -2024,6 +2037,12 @@ html {
   .home-section-filter__inner-tabs{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1100px){
+  .home-section-filter__inner-tabs{
+    overflow: hidden;
   }
 }
 
@@ -2047,6 +2066,12 @@ html {
 @media (min-width: 640px){
   .home-section-filter__inner-tabs .home-section-filter__figure img{
     width: 100vw;
+  }
+}
+
+@media (min-width: 1100px){
+  .home-section-filter__inner-tabs .home-section-filter__figure img{
+    height: 2300px;
   }
 }
 
@@ -2201,6 +2226,18 @@ html {
 .card-product{
   position: relative;
   z-index: 20;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+@media (min-width: 640px){
+  .card-product{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.card-product{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   min-height: 350px;
@@ -2292,7 +2329,7 @@ html {
 
 .card-product__title-container{
   display: flex;
-  height: 7rem;
+  height: 9rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -2302,19 +2339,21 @@ html {
   border-color: rgb(255 131 0 / var(--tw-border-opacity));
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media (min-width: 640px){
   .card-product__title-container{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 .card-product__title{
   text-align: center;
   font-family: Barlow, sans-serif;
-  font-size: clamp(0.875rem, 0.1vw + 0.9rem, 1rem);
+  font-size: clamp(1rem, 0.5vw + 0.9rem, 1.5rem);
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(26 26 26 / var(--tw-text-opacity));
@@ -2721,7 +2760,7 @@ html {
 .home-section-banner__figure{
   position: relative;
   height: 100vh;
-  --tw-translate-y: -8rem;
+  --tw-translate-y: -11rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   overflow: hidden;
   background-size: cover;
@@ -2734,12 +2773,17 @@ html {
   left: 0px;
   height: 100%;
   width: 100%;
-  background-size: cover;
 }
 
 @media (min-width: 640px){
   .home-section-banner__figure img{
     width: 100vw;
+  }
+}
+
+@media (min-width: 1100px){
+  .home-section-banner__figure img{
+    height: 900px;
   }
 }
 

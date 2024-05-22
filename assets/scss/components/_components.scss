@@ -184,7 +184,7 @@
   }
 
   &__inner {
-    @apply container flex flex-col pt-5;
+    @apply container flex flex-col pt-5 px-3 sm:px-0;
   }
 
   &__title-container {

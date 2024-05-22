@@ -33,17 +33,17 @@ accordions.map((accordion) => {
 // Filtros de Mixitup
 const filterActive = document.querySelectorAll(".btn--filter");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.querySelector(".btn--filter");
-  const filter = btn.getAttribute("data-filter");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const btn = document.querySelector(".btn--filter");
+//   const filter = btn.getAttribute("data-filter");
 
-  mixerPorfolio.filter(filter);
+//   mixerPorfolio.filter(filter);
 
-  if (filter === "modulo-capacitaciones") {
-    btn.classList.add("active");
-    btn.click();
-  }
-});
+//   if (filter === "modulo-capacitaciones") {
+//     btn.classList.add("active");
+//     btn.click();
+//   }
+// });
 
 filterActive.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -59,7 +59,7 @@ let mixerPorfolio = mixitup(".card-product__grid", {
     target: ".card-product",
   },
   animation: {
-    duration: 300,
+    duration: 400,
   },
 });
 
