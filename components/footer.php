@@ -15,8 +15,8 @@
                 <div class="footer__contact">
                     <i class="footer__icon fa-solid fa-location-dot"></i>
                     <a href="https://maps.app.goo.gl/Cm3mHZbS6aXrwaMM6" target="_blank">
-                        Jr. Carlos rodrigo 1047 Urbanización Roma
-                        <br class="" /> Lima - Perú
+                        Lima - Perú
+                        <!-- <br class="" /> Lima - Perú -->
                     </a>
                 </div>
                 <div class="footer__contact">

@@ -48,11 +48,11 @@ $filterTabs = [
   ],
   [
     "id" => "modulo-asesorias",
-    "title" => "Asesorias",
+    "title" => "Asesorías",
   ],
   [
     "id" => "modulo-inspeccion",
-    "title" => "Inspeccción",
+    "title" => "Inspección",
   ]
 ];
 
@@ -90,7 +90,8 @@ $products = [
     "consiste" => [
       "Capacitación y entrenamiento técnico de personal para trabajos en obras y  mantenimiento en redes aéreas  desenergizadas.",
       "Formación técnica de jefes de cuadrillas para TST.",
-      "Formación de supervisores para  cuadrillas de TST. Formación de inspectores para redes  aérea de  media tensión (MT)."
+      "Formación de supervisores para  cuadrillas de TST.",
+      "Formación de inspectores para redes aérea de media tensión (MT)."
     ]
   ],
   [
@@ -110,7 +111,7 @@ $products = [
     "title" => "Operador de Brazo Hidráulico (BH)",
     "objetivo" => "Formación técnica para la operación adecuada de los brazos hidráulicos (BH).",
     "consiste" => [
-      "Capacitación teórico - práctica para la certificación de los operadores de BH que laboran en la cercanía o en contacto con el sistema de distribución de energía eléctrica.",
+      "Capacitación teórico-práctica para la certificación de los operadores de BH que laboran en la cercanía o en contacto con el sistema de distribución de energía eléctrica.",
     ]
   ],
   [

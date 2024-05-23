@@ -1,6 +1,6 @@
 .header {
   @apply fixed w-full top-0 left-0 z-50;
-  @apply bg-[#FFF] text-[#000] font-nunito font-bold shadow-lg;
+  @apply bg-[#FFF] text-[#000]  shadow-lg;
 
   &__inner {
     @apply container h-[120px] flex justify-between items-center;
@@ -32,7 +32,7 @@
   }
 
   &__link {
-    @apply text-dynamic-400 font-barlow block cursor-pointer;
+    @apply text-dynamic-350 font-barlow block cursor-pointer font-semibold;
     @apply relative py-1 px-4;
     @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-[#FF8300] after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
     &:hover,
@@ -167,18 +167,18 @@
 }
 
 .footer {
-  @apply relative bg-primary-400 text-[#FFF];
+  @apply relative bg-primary-400 text-[#FFF] font-barlow;
 
   &__arrow {
     @apply absolute left-0 -top-4 right-0 hidden sm:flex w-full z-20;
 
     a {
-      @apply h-10 w-10;
+      @apply h-12 w-12;
       @apply flex justify-center items-center bg-[#FF8300] text-white hover:scale-[1.1] transition-all duration-300;
       @apply mx-auto rounded-full;
 
       i {
-        @apply text-xl;
+        @apply text-2xl;
       }
     }
   }
@@ -206,14 +206,14 @@
   }
 
   &__content &__contact-list {
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-4 text-dynamic-300;
   }
 
   &__content &__contact-list &__contact {
     @apply flex items-center gap-4;
 
     i {
-      @apply flex justify-center text-xl;
+      @apply flex justify-center text-xl min-w-5;
     }
 
     a {
@@ -230,7 +230,7 @@
       @apply flex flex-col justify-start gap-4 sm:pl-12;
     }
     li {
-      @apply list-none text-dynamic-400 font-bold cursor-pointer;
+      @apply list-none text-dynamic-300 font-semibold cursor-pointer;
     }
     li:hover {
       @apply text-[#ff8300];
@@ -244,7 +244,7 @@
     @apply flex flex-col gap-2 items-start justify-center;
 
     h4 {
-      @apply text-dynamic-400 font-bold;
+      @apply text-dynamic-300 font-semibold;
     }
 
     p {

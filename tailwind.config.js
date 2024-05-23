@@ -20,6 +20,7 @@ module.exports = {
         "dynamic-100": "clamp(2rem, 1.6vw + 1.7rem, 4.3rem)",
         "dynamic-200": "clamp(1.125rem, 1.4vw + 0.9rem, 2.5rem)",
         "dynamic-300": "clamp(1rem, 0.5vw + 0.9rem, 1.5rem)",
+        "dynamic-350": "clamp(0.925rem, 0.3vw + 0.9rem, 1.2rem)",
         "dynamic-400": "clamp(0.875rem, 0.1vw + 0.9rem, 1rem)",
       },
 

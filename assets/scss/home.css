@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 .header {
   @apply fixed w-full top-0 left-0 z-50;
-  @apply bg-[#FFF] text-[#000] font-nunito font-bold shadow-lg;
+  @apply bg-[#FFF] text-[#000]  shadow-lg;
 }
 .header__inner {
   @apply container h-[120px] flex justify-between items-center;
@@ -31,7 +31,7 @@
   @apply rotate-180;
 }
 .header__link {
-  @apply text-dynamic-400 font-barlow block cursor-pointer;
+  @apply text-dynamic-350 font-barlow block cursor-pointer font-semibold;
   @apply relative py-1 px-4;
   @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-[#FF8300] after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
 }
@@ -136,18 +136,18 @@
   }
 }
 .footer {
-  @apply relative bg-primary-400 text-[#FFF];
+  @apply relative bg-primary-400 text-[#FFF] font-barlow;
 }
 .footer__arrow {
   @apply absolute left-0 -top-4 right-0 hidden sm:flex w-full z-20;
 }
 .footer__arrow a {
-  @apply h-10 w-10;
+  @apply h-12 w-12;
   @apply flex justify-center items-center bg-[#FF8300] text-white hover:scale-[1.1] transition-all duration-300;
   @apply mx-auto rounded-full;
 }
 .footer__arrow a i {
-  @apply text-xl;
+  @apply text-2xl;
 }
 .footer__inner {
   @apply container flex flex-col pt-5 px-3 sm:px-0;
@@ -167,13 +167,13 @@
   @apply grid grid-cols-1 gap-10 sm:gap-5 sm:grid-cols-2 itm:grid-cols-3 pb-5;
 }
 .footer__content .footer__contact-list {
-  @apply flex flex-col gap-4;
+  @apply flex flex-col gap-4 text-dynamic-300;
 }
 .footer__content .footer__contact-list .footer__contact {
   @apply flex items-center gap-4;
 }
 .footer__content .footer__contact-list .footer__contact i {
-  @apply flex justify-center text-xl;
+  @apply flex justify-center text-xl min-w-5;
 }
 .footer__content .footer__contact-list .footer__contact a {
   @apply break-all;
@@ -185,7 +185,7 @@
   @apply flex flex-col justify-start gap-4 sm:pl-12;
 }
 .footer__content .footer__sections-list li {
-  @apply list-none text-dynamic-400 font-bold cursor-pointer;
+  @apply list-none text-dynamic-300 font-semibold cursor-pointer;
 }
 .footer__content .footer__sections-list li:hover {
   @apply text-[#ff8300];
@@ -197,7 +197,7 @@
   @apply flex flex-col gap-2 items-start justify-center;
 }
 .footer__form .footer__form-title-container h4 {
-  @apply text-dynamic-400 font-bold;
+  @apply text-dynamic-300 font-semibold;
 }
 .footer__form .footer__form-title-container p {
   @apply text-dynamic-400;
@@ -313,6 +313,7 @@ html {
 }
 .home-hero__button button {
   @apply bg-[#FF8300];
+  @apply font-barlow;
   @apply text-dynamic-300 text-white hover:text-[#ff8300] py-1 sm:py-2 px-3 sm:px-4 rounded-sm font-barlow;
 }
 .home-hero__button button:hover {
@@ -570,7 +571,7 @@ html {
   @apply w-full mt-10 sm:mt-20;
 }
 .home-section-best-option__contain {
-  @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
+  @apply container flex flex-col justify-center items-center gap-3 sm:gap-7;
 }
 .home-section-best-option__contain h3 {
   @apply text-primary-100 text-dynamic-200 font-bold text-start font-barlow;
@@ -592,10 +593,10 @@ html {
 }
 
 .home-section-filter {
-  @apply mt-10 sm:mt-20;
+  @apply mt-10 sm:mt-20 font-barlow;
 }
 .home-section-filter__title {
-  @apply text-primary-100 text-dynamic-200 font-bold text-center pb-5 sm:pb-10 font-barlow;
+  @apply text-primary-100 text-dynamic-200 font-bold text-center pb-5 sm:pb-10;
 }
 .home-section-filter__inner {
   @apply container sm:hidden;
@@ -656,7 +657,7 @@ html {
   @apply grid justify-center gap-8 container lg:grid lg:grid-cols-3 xl:grid-cols-4 pt-8;
 }
 .card-product__title-container {
-  @apply flex flex-col items-center justify-center gap-2 px-5 sm:px-8 h-36 py-2  border-b-4 border-[#ff8300];
+  @apply h-36 sm:min-h-40  flex flex-col items-center justify-center gap-2 px-5 sm:px-8 py-2  border-b-4 border-[#ff8300];
 }
 .card-product__title {
   @apply font-bold lg:font-bold text-primary-100 text-dynamic-300 text-center font-barlow;
@@ -665,7 +666,7 @@ html {
   @apply flex flex-col justify-center gap-6 py-5 sm:py-8 px-5 sm:px-10;
 }
 .card-product__content-objective {
-  @apply flex flex-col items-start justify-center gap-2;
+  @apply flex flex-col items-start justify-center gap-2 sm:min-h-[130px];
 }
 .card-product__content-objective h4 {
   @apply text-primary-100 text-dynamic-300 font-bold font-barlow;

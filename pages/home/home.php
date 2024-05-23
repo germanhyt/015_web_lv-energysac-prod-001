@@ -34,9 +34,11 @@
             <div class="home-hero__content-container">
                 <div class="home-hero__text">
                     <h1 class="home-hero__title">
-                        Capacitaciones para trabajos en redes de distribución de energía eléctrica.
+                        Capacitaciones para trabajos en redes de distribución de energía eléctrica
                     </h1>
-                    <p class="home-hero__description">Accede a la mejor preparación para tus trabajadores con L&V ENERGY, te ofrecemos una capacitación de alto nivel con especialistas altamente calificados que impulsarán a tu empresa a obtener los mejores resultados</p>
+                    <p class="home-hero__description">
+                        Accede a la mejor preparación para tus trabajadores con L&V ENERGY. Te ofrecemos una capacitación de alto nivel con especialistas altamente calificados que impulsarán a tu empresa a obtener los mejores resultados.
+                    </p>
                 </div>
 
                 <div class="home-hero__button">
@@ -161,7 +163,7 @@
             </div>
             <div class="home-section-benefits__card">
                 <figure class="home-section-benefits__figure">
-                    <img class="" src="<?php echo constant("HOST") ?>/public/img/benefit-4.png" alt="img">
+                    <img class="" src="<?php echo constant("HOST") ?>/public/img/benefit-4.jpg" alt="img">
                 </figure>
                 <div class="home-section-benefits__card-content">
                     <div class="home-section-benefits__card-content-box">
@@ -253,7 +255,7 @@
                                 <p><?php echo $product["objetivo"] ?></p>
                             </div>
                             <div class="card-product__content-about">
-                                <h4>¿En qué consiste?</h4>
+                                <h4>Descripción</h4>
                                 <ul>
                                     <?php foreach ($product["consiste"] as $consiste) : ?>
                                         <li><?php echo $consiste ?></li>

@@ -54,6 +54,7 @@ html {
 
     button {
       @apply bg-[#FF8300];
+      @apply font-barlow;
       @apply text-dynamic-300 text-white hover:text-[#ff8300] py-1 sm:py-2 px-3 sm:px-4 rounded-sm font-barlow;
     }
 
@@ -229,6 +230,11 @@ html {
     @apply w-full h-full bg-no-repeat bg-cover overflow-hidden;
   }
 
+  // apuntar al 4 hijo
+  // &__container:nth-child(4) &__card &__figure {
+  //   @apply absolute top-0 left-0 w-full sm:w-screen h-full sm:h-screen z-0 sm:transform sm:-translate-x-0;
+  // }
+
   &__card &__figure::before {
     content: "";
     position: absolute;
@@ -374,7 +380,7 @@ html {
   @apply w-full mt-10 sm:mt-20;
 
   &__contain {
-    @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
+    @apply container flex flex-col justify-center items-center gap-3 sm:gap-7;
 
     h3 {
       @apply text-primary-100 text-dynamic-200 font-bold text-start font-barlow;
@@ -402,10 +408,10 @@ html {
 }
 
 .home-section-filter {
-  @apply mt-10 sm:mt-20;
+  @apply mt-10 sm:mt-20 font-barlow;
 
   &__title {
-    @apply text-primary-100 text-dynamic-200 font-bold text-center pb-5 sm:pb-10 font-barlow;
+    @apply text-primary-100 text-dynamic-200 font-bold text-center pb-5 sm:pb-10;
   }
 
   &__inner {
@@ -479,7 +485,7 @@ html {
     @apply grid justify-center gap-8 container lg:grid lg:grid-cols-3 xl:grid-cols-4 pt-8;
   }
   &__title-container {
-    @apply flex flex-col items-center justify-center gap-2 px-5 sm:px-8 h-36 py-2  border-b-4 border-[#ff8300];
+    @apply h-36 sm:min-h-40  flex flex-col items-center justify-center gap-2 px-5 sm:px-8 py-2  border-b-4 border-[#ff8300];
   }
   &__title {
     @apply font-bold lg:font-bold text-primary-100 text-dynamic-300 text-center font-barlow;
@@ -488,7 +494,7 @@ html {
     @apply flex flex-col justify-center gap-6 py-5 sm:py-8 px-5 sm:px-10;
   }
   &__content-objective {
-    @apply flex flex-col items-start justify-center gap-2;
+    @apply flex flex-col items-start justify-center gap-2 sm:min-h-[130px];
 
     h4 {
       @apply text-primary-100 text-dynamic-300 font-bold font-barlow;

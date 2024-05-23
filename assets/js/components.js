@@ -156,15 +156,20 @@ form.addEventListener("submit", (e) => {
   const mensaje = formData.get("mensaje");
 
   // const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-  const regexNombre = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+  const regexNotEmpty = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
   const errors = [];
 
-  regexNombre.test(representante)
+  regexNotEmpty.test(representante)
     ? null
-    : errors.push("Nombre del representante vacío o errado");
-  representante.length <= 2
-    ? errors.push(" El nombre debe ser mayor a 2 letras")
-    : null;
+    : errors.push(" Nombre del representante vacío o errado");
+  regexNotEmpty.test(empresa)
+    ? null
+    : errors.push(" Nombre de la empresa vacío o errado");
+  regexNotEmpty.test(mensaje) ? null : errors.push(" Mensaje vacío o errado");
+
+  if (errors.length > 0) {
+    errors.push(" Debe contener más de 2 letras");
+  }
 
   if (errors.length > 0) {
     Swal.fire({
