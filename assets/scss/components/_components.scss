@@ -1,6 +1,6 @@
 .header {
   @apply fixed w-full top-0 left-0 z-50;
-  @apply bg-[#FFF] text-[#000]  shadow-lg;
+  @apply bg-[#FFF] text-primary-100  shadow-lg font-barlow;
 
   &__inner {
     @apply container h-[120px] flex justify-between items-center;
@@ -32,13 +32,13 @@
   }
 
   &__link {
-    @apply text-dynamic-350 font-barlow block cursor-pointer font-semibold;
+    @apply text-dynamic-350  block cursor-pointer font-semibold;
     @apply relative py-1 px-4;
-    @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-[#FF8300] after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
+    @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-primary-200 after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
     &:hover,
     &.active {
       // @apply after:transition-transform after:duration-300 after:scale-x-100;
-      @apply text-[#FF8300];
+      @apply text-primary-200;
     }
   }
 }
@@ -50,7 +50,7 @@
     @apply flex flex-row justify-center items-center h-full gap-6;
 
     li {
-      @apply border-r-2 border-r-[#FF8300];
+      @apply border-r-2 border-r-primary-200;
     }
   }
 }
@@ -117,7 +117,7 @@
     }
 
     & .custom-bullet {
-      @apply h-4 w-4 bg-orange-600;
+      @apply h-4 w-4 bg-primary-200;
     }
   }
 }
@@ -174,7 +174,7 @@
 
     a {
       @apply h-12 w-12;
-      @apply flex justify-center items-center bg-[#FF8300] text-white hover:scale-[1.1] transition-all duration-300;
+      @apply flex justify-center items-center bg-primary-200 text-white hover:scale-[1.1] transition-all duration-300;
       @apply mx-auto rounded-full;
 
       i {
@@ -222,7 +222,7 @@
   }
 
   &__content &__contact-list &__contact:hover {
-    @apply text-[#ff8300];
+    @apply text-primary-200;
   }
 
   &__content &__sections-list {
@@ -269,7 +269,7 @@
     @apply w-full;
 
     button {
-      @apply bg-[#ff8300] text-white hover:text-[#ff8300] rounded-sm px-5 sm:px-10 py-2;
+      @apply bg-primary-200 text-white hover:text-primary-200 rounded-sm px-5 sm:px-10 py-2;
     }
 
     button:hover {

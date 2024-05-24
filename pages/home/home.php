@@ -77,7 +77,7 @@
                 <span class="">Eduardo Lozano / Fundador.</span>
             </div>
             <figure class="home-section-founder__figure scroll-animation-item-multimedia-right">
-                <img class="t" src="<?php echo constant("HOST") ?>/public/img/founder.png" alt="img">
+                <img class="" src="<?php echo constant("HOST") ?>/public/img/founder.png" alt="img">
             </figure>
         </div>
     </section>
@@ -221,9 +221,15 @@
             <div class="home-section-filter__inner swiper swiper--filter">
                 <div class="swiper-wrapper">
                     <?php foreach ($filterTabs as $key => $filterTab) : ?>
+
                         <div class="swiper-slide">
                             <div class="home-section-filter__tab-wrapper">
-                                <button class="btn btn--filter <?= ($key === 0) ? "active" : "" ?>" data-filter=".<?= $filterTab["id"] ?>"><?= $filterTab["title"] ?></button>
+
+                                <!-- <button class="btn btn--filter active" data-filter="all">Todos</button> -->
+                                <button class="btn btn--filter 
+                                    <?= ($key === 0) ? "active" : "" ?>" data-filter=".<?= $filterTab["id"] ?>">
+                                    <?= $filterTab["title"] ?>
+                                </button>
                             </div>
                         </div>
                     <?php endforeach ?>

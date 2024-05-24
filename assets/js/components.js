@@ -33,18 +33,6 @@ accordions.map((accordion) => {
 // Filtros de Mixitup
 const filterActive = document.querySelectorAll(".btn--filter");
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const btn = document.querySelector(".btn--filter");
-//   const filter = btn.getAttribute("data-filter");
-
-//   mixerPorfolio.filter(filter);
-
-//   if (filter === "modulo-capacitaciones") {
-//     btn.classList.add("active");
-//     btn.click();
-//   }
-// });
-
 filterActive.forEach((btn) => {
   btn.addEventListener("click", () => {
     filterActive.forEach((btn) => {
@@ -54,6 +42,18 @@ filterActive.forEach((btn) => {
   });
 });
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const btn = document.querySelector(".btn--filter");
+//   const filter = btn.getAttribute("data-filter");
+
+//   mixerPorfolio.filter(filter);
+//   console.log("filter", filter);
+//   if (filter === ".modulo-capacitaciones") {
+//     btn.classList.add("active");
+//     btn.click();
+//   }
+// });
+
 let mixerPorfolio = mixitup(".card-product__grid", {
   selectors: {
     target: ".card-product",
@@ -61,6 +61,11 @@ let mixerPorfolio = mixitup(".card-product__grid", {
   animation: {
     duration: 400,
   },
+  // animation: {
+  //   enable: false,
+  //   effects: "fade translateZ(-100px)",
+  //   duration: 200,
+  // },
 });
 
 // Swiper de Filters en vversión mobile
@@ -76,6 +81,35 @@ const swiperFilter = new Swiper(".swiper--filter", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+swiperFilter.init();
+
+// Al cambiar de slide se actualiza el filtro
+const btnsFilter = document.querySelectorAll(".btn--filter");
+swiperFilter.on("slideChange", function () {
+  swiperFilter.update();
+  let btn = document.querySelector(".swiper-slide-active .btn--filter");
+  let filter = btn.getAttribute("data-filter");
+
+  const filtervalue = filter.split(".")[1];
+  console.log("filtervalue", filtervalue);
+  console.log("btnsFilter", btnsFilter);
+
+  mixerPorfolio.filter(filter);
+
+  btnsFilter.forEach((btn) => {
+    if (btn.getAttribute("data-filter") === filter) {
+      btn.click();
+    }
+  });
+
+  btnsFilter.forEach((btn) => {
+    if (btn.getAttribute("data-filter") === filter) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
 });
 
 var swiperCapacitaciones = new Swiper(".swiper--trainings", {

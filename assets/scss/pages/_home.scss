@@ -8,13 +8,13 @@ html {
 
 // Home hero
 .home-hero {
-  @apply relative w-full mt-[120px];
+  @apply relative w-full mt-[120px] overflow-hidden;
 
   &__figure {
-    @apply relative bg-cover h-[70vh] sm:h-[90vh] overflow-hidden;
+    @apply relative bg-cover w-[950px] sm:w-full h-[70vh] sm:h-[90vh] overflow-hidden;
   }
   &__figure img {
-    @apply absolute top-0 left-0 w-screen h-full xs:h-[90vh] 2xl:h-full;
+    @apply absolute top-0 left-0 w-full sm:w-screen h-full xs:h-[90vh] transform -translate-x-1/3 sm:translate-x-0;
   }
   &__figure::before {
     content: "";
@@ -25,6 +25,19 @@ html {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     z-index: 10;
+  }
+
+  @media (max-width: 640px) {
+    &__figure::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 800px;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 10;
+    }
   }
 
   &__content {
@@ -428,7 +441,7 @@ html {
   }
   &__inner-tabs &__figure img {
     // @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full bg-cover overflow-hidden;
-    @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full itm:h-[2300px] bg-cover overflow-hidden;
+    @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full itm:h-[2350px]  bg-cover overflow-hidden;
   }
   &__inner-tabs &__figure::before {
     content: "";
@@ -670,10 +683,10 @@ html {
 }
 
 .home-section-banner {
-  @apply relative w-full mt-20 h-[50vh] sm:h-[60vh] lg:h-[70vh]  max-h-full overflow-hidden;
+  @apply relative w-full mt-20 h-[50vh] sm:h-[60vh] lg:h-[70vh]  max-h-full overflow-hidden font-barlow;
 
   &__figure {
-    @apply relative bg-cover bg-center h-screen overflow-hidden transform -translate-y-40;
+    @apply relative bg-cover bg-center h-screen overflow-hidden w-[850px] sm:w-full transform -translate-y-36 sm:-translate-y-40 -translate-x-28 sm:translate-x-0;
   }
   &__figure img {
     @apply absolute top-0 left-0 w-full sm:w-screen h-full itm:h-[900px] 2xl:h-full;
