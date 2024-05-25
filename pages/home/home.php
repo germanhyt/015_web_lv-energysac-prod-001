@@ -262,11 +262,13 @@
                             </div>
                             <div class="card-product__content-about">
                                 <h4>Descripción</h4>
-                                <ul>
-                                    <?php foreach ($product["consiste"] as $consiste) : ?>
-                                        <li><?php echo $consiste ?></li>
-                                    <?php endforeach ?>
-                                </ul>
+                                <div>
+                                    <ul>
+                                        <?php foreach ($product["consiste"] as $consiste) : ?>
+                                            <li><?php echo $consiste ?></li>
+                                        <?php endforeach ?>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
