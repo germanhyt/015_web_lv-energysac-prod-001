@@ -47,11 +47,10 @@
     <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/vendors/all.min.css">
     <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/vendors/sweetalert2.min.css">
     <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/vendors/swiper-bundle.min.css" />
-    <!-- <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/home.css"> -->
+    <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/home.css">
     <script>
         let getTimeHead = "?t=" + new Date().getTime();
 
-        // importar home.css
         let link = document.createElement("link");
         link.rel = "stylesheet";
         link.href = "<?php echo constant('HOST') ?>/assets/css/home.css" + getTimeHead;
@@ -240,7 +239,7 @@
                 </div>
                 <div class="home-section-best-option__item">
                     <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-2.svg" alt="img">
-                    <p class="home-section-best-option__description">L & V Energy formará a tu personal promoviendo el trabajo en equipo y siguiendo los lineamientos del RESESATE y demás normativas.</p>
+                    <p class="home-section-best-option__description">L&V Energy formará a tu personal promoviendo el trabajo en equipo y siguiendo los lineamientos del RESESATE y demás normativas.</p>
                 </div>
                 <div class="home-section-best-option__item">
                     <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-4.svg" alt="img">
