@@ -1,3 +1,17 @@
+
+
+#loading {
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0) url(../../public/img/loading.gif) no-repeat center
+    center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 2000;
+}
+
 .header {
   @apply fixed w-full top-0 left-0 z-50;
   @apply bg-[#FFF] text-primary-100  shadow-lg font-barlow;
@@ -74,10 +88,10 @@
 // Swiper
 .swiper {
   &--trainings {
-    @apply h-[480px] sm:h-[450px] top-0 transition-all duration-500;
+    @apply h-[480px] sm:h-[470px] top-0 transition-all duration-500;
 
     & .swiper-slide {
-      @apply bottom-10 sm:bottom-0 flex delay-300 w-full h-[300px] sm:h-[350px]  border-2 shadow-xl rounded-sm;
+      @apply bottom-10 sm:bottom-5 flex delay-300 w-full h-[300px] sm:h-[350px]  border-2 shadow-xl rounded-sm;
     }
 
     & .swiper-pagination-bullet-active {
@@ -90,6 +104,7 @@
 
     & .swiper-pagination {
       @apply -bottom-5 sm:bottom-0;
+      @apply sm:px-10 itm:px-60;
     }
 
     & .custom-bullet {

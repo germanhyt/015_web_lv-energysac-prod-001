@@ -1,17 +1,4 @@
-let loader = document.querySelector(".loader");
-let section = document.querySelector("#section");
-let overlay = document.querySelector("#overlay");
-
-// logica para vez mientras no cargue el contenido de la pagina renderice el loader
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    overlay.style.display = "none";
-    section.style.display = "none";
-  }, 2000);
-});
-
 // Lógica para el acordeón
-
 const accordions = [
   ...document.getElementsByClassName("home-section-benefits__card-content"),
 ];

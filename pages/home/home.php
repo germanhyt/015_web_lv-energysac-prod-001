@@ -1,23 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-PE" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="no-js">
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <?php
     include_once(__DIR__ . "/../../config/config/config.php")
     ?>
 
-    <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/vendors/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/home.css">
+    <!-- titulo adecuado a la web segun SEO -->
+    <title>
+        L&V ENERGY | Capacitaciones en redes de distribución de energía eléctrica
+    </title>
+
+    <!-- SEO -->
+    <meta name="title" content="L&V ENERGY | Capacitaciones en redes de distribución de energía eléctrica">
+    <meta name="description" content="En L&V ENERGY, te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
+    <meta name="keywords" content="capacitaciones, redes de distribución, energía eléctrica, capacitaciones en redes de distribución, capacitaciones en energía eléctrica, capacitaciones en redes de distribución de energía eléctrica, capacitaciones en energía eléctrica en Perú, capacitaciones en redes de distribución de energía eléctrica en Perú, capacitaciones en energía eléctrica en Lima, capacitaciones en redes de distribución de energía eléctrica en Lima, capacitaciones en energía eléctrica en Perú, capacitaciones en redes de distribución de energía eléctrica en Perú, capacitaciones en energía eléctrica en Lima, capacitaciones en redes de distribución de energía eléctrica en Lima, capacitaciones en energía eléctrica en Perú, capacitaciones en redes de distribución de energía eléctrica en Perú, capacitaciones en energía eléctrica en Lima, capacitaciones en redes de distribución de energía eléctrica en Lima">
+
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="alias" value="L&VENERGY-capacitaciones" data-alias="L&VENERGY-capacitaciones">
+    <meta name="author" content="https://lyvenergy.com">
+
+    <link rel="dns-prefetch" href="https://lyvenergy.com/">
+    <link rel="preconnect" href="https://lyvenergy.com/" crossorigin="">
+
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lyvenergy.com/#courses">
+    <meta property="og:site_name" content="L&VENERGY">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="https://lyvenergy.com">
+    <meta property="og:title" content="Capacitaciones en redes de distribución de energía eléctrica">
+    <meta property="og:description" content="En L&V ENERGY, te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
+
+    <!-- Icon -->
+    <link rel="icon" href="<?php echo constant('HOST') ?>/public/img/icon.png" type="image/png" />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/vendors/all.min.css">
     <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/vendors/sweetalert2.min.css">
+    <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/vendors/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/home.css"> -->
+    <script>
+        let getTimeHead = "?t=" + new Date().getTime();
+
+        // importar home.css
+        let link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "<?php echo constant('HOST') ?>/assets/css/home.css" + getTimeHead;
+        document.head.appendChild(link);
+    </script>
 
 </head>
 
 <body>
+
+    <!-- // loading -->
+    <div id="loading" class="loading"></div>
+
     <?php
     include_once(__DIR__ . "/../../components/nav.php");
 
@@ -127,7 +174,7 @@
             </div>
             <div class="home-section-benefits__card">
                 <figure class="home-section-benefits__figure">
-                    <img class="" src="<?php echo constant("HOST") ?>/public/img/benefit-2.jpg" alt="">
+                    <img class="" src="<?php echo constant("HOST") ?>/public/img/benefit-2.jpg" alt="img">
                 </figure>
                 <div class="home-section-benefits__card-content">
                     <div class="home-section-benefits__card-content-box">
@@ -337,27 +384,32 @@
         </div>
     </section>
 
-
-    <!-- <section className="relative w-screen h-screen flex items-center justify-center"> -->
-    <!-- <div id="overlay" class="overlay"> -->
-    <!-- <div class="loader"> -->
-    <!-- <span>Loading...</span> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </section> -->
-    <!-- <section id="section" class="section">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ipsum recusandae voluptate suscipit fuga neque tenetur voluptas, ut voluptatum voluptates aspernatur ipsa eaque, soluta et repudiandae fugit minus! Molestiae, quo quidem quibusdam, quae quas voluptates atque officiis ullam dolorem assumenda ad tempore facilis cumque, exercitationem illo? Illum consectetur doloremque veritatis nobis voluptatum obcaecati suscipit ipsam recusandae pariatur, nihil nulla cupiditate similique fugit nostrum, aliquam facere repudiandae a aspernatur placeat dolore eaque quas voluptatem rem? Dolores enim nobis, dicta exercitationem odio illum, repellendus in fuga sapiente eos deserunt illo, harum ab iure? Est cupiditate omnis libero vitae alias. Esse ipsa assumenda, aspernatur temporibus natus quidem iure voluptatem maiores eaque labore nihil at explicabo alias repellendus qui hic aliquam consectetur quibusdam? Nesciunt ducimus nisi vero esse quisquam dignissimos impedit quia, quam debitis veniam aperiam ad dolores eum adipisci necessitatibus facere cum, commodi totam itaque. Possimus, quod rerum! Cum voluptas ipsum possimus officia expedita hic praesentium veniam odio temporibus nostrum inventore vitae, exercitationem tempora quo impedit sed minus dicta perferendis eligendi minima, nam eveniet aliquam veritatis reprehenderit! Asperiores nemo voluptatum, suscipit, odio temporibus accusamus dolorum necessitatibus voluptatem quis in vel esse id fugiat? Fuga illo est quaerat impedit aspernatur reiciendis soluta harum temporibus itaque beatae non voluptatibus rerum veniam consequuntur odio perspiciatis libero optio dolorem, cupiditate ex nostrum hic nemo! Consequatur debitis nemo quod quis modi repellat nulla numquam, officia vero iste eligendi nihil quia ipsa expedita quaerat nam repudiandae distinctio ut, consectetur veniam quisquam. Voluptatibus laudantium, mollitia explicabo optio possimus, adipisci modi, soluta neque harum amet debitis! Tempora facilis nisi veritatis rerum quaerat laudantium modi. Odio quibusdam ullam voluptate molestiae ratione pariatur ad illo! Quod vitae deleniti nobis. Perspiciatis vel possimus ipsum natus veniam sunt? Id a cumque consequuntur aperiam nam eligendi non voluptatibus atque cupiditate nemo deserunt, cum distinctio ipsam. Veritatis.</section> -->
-
-
     <!-- // importar el footer.php -->
     <?php include_once(__DIR__ . "/../../components/footer.php"); ?>
 
 
+
     <script src="https://kit.fontawesome.com/760e3cbc52.js" crossorigin="anonymous"></script>
-    <script src="<?php echo constant("HOST") ?>/assets/js/header.js"></script>
-    <script src="<?php echo constant('HOST') ?>/assets/js/vendors/mixitup.min.js"></script>
     <script src="<?php echo constant('HOST') ?>/assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="<?php echo constant('HOST') ?>/assets/js/vendors/mixitup.min.js"></script>
     <script src="<?php echo constant("HOST") ?>/assets/js/vendors/sweetalert2.min.js"></script>
-    <script src="<?php echo constant("HOST") ?>/assets/js/components.js"></script>
+    <script>
+        let getTimeBody = "?t=" + new Date().getTime();
+
+        let script = document.createElement("script"); // header
+        script.src = "<?php echo constant("HOST") ?>/assets/js/header.js" + getTimeBody;
+        document.body.appendChild(script);
+
+        let script2 = document.createElement("script");
+        script2.src = "<?php echo constant("HOST") ?>/assets/js/components.js" + getTimeBody;
+        document.body.appendChild(script2);
+
+        let loading = document.getElementById("loading");
+        window.addEventListener('load', () => {
+            loading.style.display = 'none';
+        })
+    </script>
+
 
 </body>
 
