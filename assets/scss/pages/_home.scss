@@ -8,7 +8,7 @@ html {
 
 // Home hero
 .home-hero {
-  @apply relative w-full mt-[120px] overflow-hidden;
+  @apply relative w-full mt-[130px] overflow-hidden;
 
   &__figure {
     @apply relative bg-cover w-[950px] sm:w-full h-[70vh] sm:h-[90vh] overflow-hidden;
@@ -401,11 +401,11 @@ html {
   }
 
   &__grid {
-    @apply relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 itm:grid-cols-4 gap-6;
+    @apply relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 itm:grid-cols-5 gap-6;
   }
 
   &__grid &__item {
-    @apply flex flex-col items-center gap-6 px-6 sm:px-8 py-8 sm:py-10 max-w-[400px] shadow-xl rounded-sm;
+    @apply flex flex-col items-center gap-6 px-6 sm:px-4 py-6 sm:py-8 max-w-[400px] shadow-xl rounded-sm;
   }
 
   &__grid &__item:hover {
@@ -416,7 +416,7 @@ html {
     @apply w-full mx-auto rounded-sm max-w-[150px];
   }
   &__grid &__item &__description {
-    @apply text-primary-100 text-dynamic-300 text-center font-barlow;
+    @apply text-primary-100 text-dynamic-400 text-center font-barlow;
   }
 }
 
@@ -441,7 +441,7 @@ html {
   }
   &__inner-tabs &__figure img {
     // @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full bg-cover overflow-hidden;
-    @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full itm:min-h-[2350px] itm:h-[2500px]  bg-cover overflow-hidden;
+    @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full itm:min-h-[2350px] itm:h-[2600px]  bg-cover overflow-hidden;
   }
   &__inner-tabs &__figure::before {
     content: "";
@@ -502,7 +502,7 @@ html {
     @apply grid justify-center gap-8 container lg:grid lg:grid-cols-3 xl:grid-cols-4 pt-8;
   }
   &__title-container {
-    @apply h-36 sm:min-h-40  flex flex-col items-center justify-center gap-2 px-5 sm:px-8 py-2  border-b-4 border-[#ff8300];
+    @apply h-36 sm:h-[180px] sm:min-h-44  flex flex-col items-center justify-center gap-2 px-5 sm:px-8 py-4  border-b-4 border-[#ff8300];
   }
   &__title {
     @apply font-bold lg:font-bold text-primary-100 text-dynamic-300 text-center font-barlow;
@@ -517,7 +517,7 @@ html {
       @apply text-primary-100 text-dynamic-300 font-bold font-barlow;
     }
     p {
-      @apply text-primary-100 text-dynamic-400 font-semibold font-barlow;
+      @apply text-primary-100 text-dynamic-400  font-barlow;
     }
   }
   &__content-about {
@@ -535,7 +535,7 @@ html {
         @apply list-disc list-item;
 
         li {
-          @apply text-primary-100 text-dynamic-400 font-semibold mr-4;
+          @apply text-primary-100 text-dynamic-400 mr-4;
         }
       }
     }
@@ -653,10 +653,14 @@ html {
 
   &__heading {
     @apply text-center;
-    @apply grid grid-rows-1 justify-items-center text-center px-5 sm:px-20 itm:px-40;
+    @apply grid grid-rows-1 justify-items-center gap-2 text-center px-0 sm:px-20 itm:px-32;
 
     h3 {
       @apply text-dynamic-200 text-primary-100 font-bold font-barlow;
+    }
+
+    p{
+      @apply text-dynamic-300 text-primary-100 font-barlow;
     }
   }
 

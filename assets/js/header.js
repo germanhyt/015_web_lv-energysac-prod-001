@@ -49,11 +49,11 @@ function onScrollNavbar() {
     window.scrollY > 96
     // && lastScrollY <= 96
   ) {
-    header.style.height = "96px";
-    logo.style.width = "92px";
+    header.style.height = "115px";
+    logo.style.width = "120px";
   } else if (window.scrollY <= 96 && lastScrollY > 96) {
-    header.style.height = "120px";
-    logo.style.width = "106px";
+    header.style.height = "130px";
+    logo.style.width = "130px";
   }
   lastScrollY = window.scrollY;
 }

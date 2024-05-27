@@ -37,8 +37,7 @@
                         Capacitaciones para trabajos en redes de distribución de energía eléctrica
                     </h1>
                     <p class="home-hero__description">
-                        Accede a la mejor preparación para tus trabajadores con L&V ENERGY. Te ofrecemos una capacitación de alto nivel con especialistas altamente calificados que impulsarán a tu empresa a obtener los mejores resultados.
-                    </p>
+                        Accede a la mejor preparación para tus trabajadores con L&V ENERGY. Te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados </p>
                 </div>
 
                 <div class="home-hero__button">
@@ -72,8 +71,7 @@
                     Guiados por el legado de nuestro fundador, nos comprometemos a ofrecer un servicio de calidad que refleje su visión y valores.
                 </h3>
                 <p class="">
-                    “Disciplina, compromiso y seguridad, es lo que define nuestro método de enseñanza como L&V ENERGY”.
-                </p>
+                    “Disciplina, compromiso y seguridad son los pilares de nuestro método de enseñanza en L&V ENERGY”. </p>
                 <span class="">Eduardo Lozano / Fundador.</span>
             </div>
             <figure class="home-section-founder__figure scroll-animation-item-multimedia-right">
@@ -89,13 +87,13 @@
                 <div class="home-section-pillars__item">
                     <h4 class="home-section-pillars__title">Visión</h4>
                     <p class="home-section-pillars__description">
-                        Brindar una asesoría de calidad que busque desarrollar las competencias y habilidades necesarias para realizar las actividades de manera segura y efectiva.
+                        Ser el principal centro de capacitación peruano que colabore con las empresas del mercado de energía electrica para el suministro continuo y seguro de energía eléctrica a nivel nacional.
                     </p>
                 </div>
                 <div class="home-section-pillars__item">
                     <h4 class="home-section-pillars__title">Misión</h4>
                     <p class="home-section-pillars__description">
-                        Ser el principal centro de capacitación peruano que colabore con las empresas del mercado de energía electrica para el suministro continuo y seguro de energía eléctrica a nivel nacional.
+                        Brindar una asesoría de calidad que busque desarrollar las competencias y habilidades necesarias para realizar las actividades de manera segura y efectiva.
                     </p>
                 </div>
             </div>
@@ -129,7 +127,7 @@
             </div>
             <div class="home-section-benefits__card">
                 <figure class="home-section-benefits__figure">
-                    <img class="" src="<?php echo constant("HOST") ?>/public/img/benefit-2.png" alt="">
+                    <img class="" src="<?php echo constant("HOST") ?>/public/img/benefit-2.jpg" alt="">
                 </figure>
                 <div class="home-section-benefits__card-content">
                     <div class="home-section-benefits__card-content-box">
@@ -191,15 +189,19 @@
                 </div>
                 <div class="home-section-best-option__item">
                     <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-2.svg" alt="img">
-                    <p class="home-section-best-option__description">Contamos con personal altamente calificado y con experiencia en el mercado peruano.</p>
+                    <p class="home-section-best-option__description">Nuestros instructores son altamente calificados en el mercado peruano y pioneros en trabajos en líneas energizadas en el país desde 1997.</p>
                 </div>
                 <div class="home-section-best-option__item">
-                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-3.svg" alt="img">
-                    <p class="home-section-best-option__description">Brindamos un servicio de calidad y garantía, basado en la experiencia y trayectoria de nuestros capacitadores.</p>
+                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-2.svg" alt="img">
+                    <p class="home-section-best-option__description">L & V Energy formará a tu personal promoviendo el trabajo en equipo y siguiendo los lineamientos del RESESATE y demás normativas.</p>
                 </div>
                 <div class="home-section-best-option__item">
                     <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-4.svg" alt="img">
                     <p class="home-section-best-option__description">Aprenderás y/o reforzarás tanto los conocimientos teóricos de tus trabajadores como sus habilidades en el campo.</p>
+                </div>
+                <div class="home-section-best-option__item">
+                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-2.svg" alt="img">
+                    <p class="home-section-best-option__description">Nuestra metodología permitirá que tu personal sea certificado bajo los mejores estándares de enseñanza.</p>
                 </div>
             </div>
         </div>
@@ -211,7 +213,7 @@
 
 
     <section id="courses" class="home-section-filter ">
-        <h3 class="home-section-filter__title scroll-animation-item-contain">Te ofrecemos 3 módulos de cursos</h3>
+        <h3 class="home-section-filter__title scroll-animation-item-contain">Nuestros Servicios</h3>
 
         <div class="home-section-filter__inner-tabs">
             <figure class="home-section-filter__figure">
@@ -279,7 +281,7 @@
 
     <section id="customers" class="home-clients scroll-animation-item-contain">
         <div class="home-clients__heading">
-            <h3>Empresas que ya cuentan con un personal capacitado por nosotros</h3>
+            <h3>Nuestros clientes</h3>
         </div>
 
         <div class="swiper swiper--clients">
@@ -299,6 +301,7 @@
     <section id="courses-trainings" class="home-trainings scroll-animation-item-contain">
         <div class="home-trainings__heading">
             <h3>Nuestras capacitaciones</h3>
+            <p>Formamos al personal siguiendo los lineamientos establecidos en el Reglamento de Salud y Seguridad en el Trabajo con Electricidad (RESESATE), Código Nacional de Electricidad, normativas y legislaciones vigentes.</p>
         </div>
 
         <div class="swiper swiper--trainings">
@@ -306,7 +309,7 @@
                 <?php foreach ($trainings as $training) : ?>
                     <div class="swiper-slide">
                         <figure class="home-trainings__figure">
-                            <img class="home-trainings__img" src="<?php echo constant("HOST") ?>/public/img/<?php echo $training['img']; ?>" alt="<?= $training['alt']; ?>">
+                            <img class="home-trainings__img" src="<?php echo constant("HOST") ?>/public/img/capacitaciones/<?php echo $training['img']; ?>" alt="<?= $training['alt']; ?>">
                         </figure>
                     </div>
                 <?php endforeach ?>

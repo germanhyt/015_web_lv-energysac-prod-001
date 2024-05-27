@@ -2,23 +2,203 @@
 <?php
 
 $trainings = [
+  // enumerar gasta el 50 con el mismo formato anterior
   [
-    "img" => "capacitacion-2.png",
+    "img" => "Nuestras capacitaciones1.jpg",
     "alt" => "capacitacion",
   ],
   [
-    "img" => "capacitacion-1.png",
+    "img" => "Nuestras capacitaciones2.jpg",
     "alt" => "capacitacion",
   ],
   [
-    "img" => "capacitacion-3.png",
+    "img" => "Nuestras capacitaciones3.jpg",
     "alt" => "capacitacion",
   ],
   [
-    "img" => "capacitacion-4.png",
+    "img" => "Nuestras capacitaciones4.jpg",
     "alt" => "capacitacion",
-  ]
-
+  ],
+  [
+    "img" => "Nuestras capacitaciones5.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones6.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones7.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones8.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones9.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones10.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones11.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones12.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones13.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones14.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones15.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones16.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones17.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones18.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones19.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones20.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones21.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones22.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones23.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones24.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones25.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones27.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones28.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones29.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones30.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones31.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones32.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones33.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones34.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones35.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones36.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones37.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones38.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones39.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones40.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones41.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones42.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones43.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones44.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones45.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones46.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones47.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones48.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones49.jpg",
+    "alt" => "capacitacion",
+  ],
+  [
+    "img" => "Nuestras capacitaciones50.jpg",
+    "alt" => "capacitacion",
+  ],
 ];
 
 $clients = [
@@ -52,7 +232,7 @@ $filterTabs = [
   ],
   [
     "id" => "modulo-inspeccion",
-    "title" => "Inspección",
+    "title" => "Inspecciones",
   ]
 ];
 
@@ -62,7 +242,7 @@ $products = [
     "title" => "Reciclaje de trabajos en circuitos eléctricos sin tensión (TST) y con tensión (TCT)",
     "objetivo" => "Asegurar la eficiencia del sistema de suministro eléctrico.",
     "consiste" => [
-      "Auditoría de los trabajos realizados en campo por el personal (cuadrillas).",
+      "Análisis de los trabajos realizados en campo por el personal (cuadrillas).",
       "Inspecciones programadas a los trabajos de rutina en el campo, verificando el cumplimiento de procedimientos y protocolos de seguridad, ASTs, y condiciones de equipamiento del personal y unidades utilizadas (brazos hidráulicos-BH)."
     ]
   ],
@@ -77,7 +257,17 @@ $products = [
   ],
   [
     "id_category" => "modulo-asesorias",
-    "title" => "Mantenimiento de subestaciones",
+    "title" => "Asesoramiento especializado",
+    "objetivo" => "Brindar asesoramiento técnico sobre trabajos específicos ejecutados en las redes eléctricas.",
+    "consiste" => [
+      "Análisis de las condiciones, materiales, herramientas y unidades de transporte involucradas en el trabajo realizado.",
+      "Elaboración del informe respectivo a cargo de nuestro personal experto.",
+      "Coordinación con las jefaturas correspondientes para identificar las oportunidades de mejora y promover las mejores prácticas."
+    ]
+  ],
+  [
+    "id_category" => "modulo-capacitaciones",
+    "title" => "Mantenimientos en caliente de subestaciones",
     "objetivo" => "Verificar las óptimas condiciones de operatividad del servicio.",
     "consiste" => [
       "Entrenamiento de personal para el cambio de transformadores en subestaciones convencionales y aéreas.",

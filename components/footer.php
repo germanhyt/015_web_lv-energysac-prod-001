@@ -22,7 +22,7 @@
                 <div class="footer__contact">
                     <i class="footer__icon fa-solid fa-phone"></i>
                     <div class="footer__row">
-                        <a href="https://api.whatsapp.com/send?phone=+951733305&text=hola,%20¿qué%20tal,%20deseo%20más%20información?" target="_blank">951 733 305</a>
+                        <a href="https://api.whatsapp.com/send?phone=+951733305&text=hola,%20¿qué%20tal,%20deseo%20más%20información?" target="_blank">948 030 253</a>
                     </div>
                 </div>
                 <div class="footer__contact">
@@ -35,9 +35,9 @@
             <div class="footer__sections-list">
                 <ul>
                     <li class="footer__li"><a href="#about-us">Nosotros</a></li>
-                    <li class="footer__li"><a href="#benefits">Clientes</a></li>
-                    <li class="footer__li"><a href="#courses">Información de Cursos</a></li>
-                    <li class="footer__li"><a href="#customers">Beneficios</a></li>
+                    <li class="footer__li"><a href="#benefits">Beneficios</a></li>
+                    <li class="footer__li"><a href="#courses">Cursos</a></li>
+                    <li class="footer__li"><a href="#customers">Clientes</a></li>
                 </ul>
             </div>
             <div class="footer__form">

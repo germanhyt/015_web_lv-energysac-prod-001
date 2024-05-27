@@ -178,7 +178,7 @@ swiperClientes.init();
 // -------------------- Formulario  ------------------------------
 const form = document.getElementById("form-footer");
 // const modelo_morral = document.getElementById("morral").innerHTML
-const whatsapp = "+51910139973";
+const whatsapp = "+51948030253";
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();

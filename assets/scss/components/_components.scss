@@ -3,7 +3,7 @@
   @apply bg-[#FFF] text-primary-100  shadow-lg font-barlow;
 
   &__inner {
-    @apply container h-[120px] flex justify-between items-center;
+    @apply container h-[130px] flex justify-between items-center;
     @apply transition-all duration-300;
   }
 
@@ -12,7 +12,7 @@
 
     img {
       @apply transition-all duration-300;
-      @apply w-[92px];
+      @apply w-[130px];
     }
   }
 
@@ -32,8 +32,8 @@
   }
 
   &__link {
-    @apply text-dynamic-350  block cursor-pointer font-semibold;
-    @apply relative py-1 px-4;
+    @apply text-dynamic-300  block cursor-pointer font-bold;
+    @apply relative py-0 px-8;
     @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-primary-200 after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
     &:hover,
     &.active {
@@ -47,7 +47,7 @@
   @apply hidden lg:flex;
 
   .header__list {
-    @apply flex flex-row justify-center items-center h-full gap-6;
+    @apply flex flex-row justify-center items-center h-full;
 
     li {
       @apply border-r-2 border-r-primary-200;
@@ -74,10 +74,10 @@
 // Swiper
 .swiper {
   &--trainings {
-    @apply h-[450px] top-0 transition-all duration-500;
+    @apply h-[480px] sm:h-[450px] top-0 transition-all duration-500;
 
     & .swiper-slide {
-      @apply flex delay-300 w-full h-[350px]  border-2 shadow-xl rounded-sm;
+      @apply bottom-10 sm:bottom-0 flex delay-300 w-full h-[300px] sm:h-[350px]  border-2 shadow-xl rounded-sm;
     }
 
     & .swiper-pagination-bullet-active {
@@ -89,7 +89,7 @@
     }
 
     & .swiper-pagination {
-      @apply bottom-0;
+      @apply -bottom-5 sm:bottom-0;
     }
 
     & .custom-bullet {
@@ -98,10 +98,10 @@
   }
 
   &--clients {
-    @apply h-[380px] top-0 transition-all duration-500;
+    @apply h-[280px] sm:h-[320px] top-0 transition-all duration-500;
 
     & .swiper-slide {
-      @apply flex delay-300 w-full h-[250px]  border-2 shadow-xl rounded-sm;
+      @apply flex delay-300 w-full h-[180px] sm:h-[220px]  border-2 shadow-xl rounded-sm;
     }
 
     & .swiper-pagination-bullet-active {
