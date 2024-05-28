@@ -162,6 +162,25 @@ var swiperClientes = new Swiper(".swiper--clients", {
 });
 swiperClientes.init();
 
+// Swiper de section about
+var swiperAbout = new Swiper(".swiper--about", {
+  loop: true,
+  effect: "slider",
+  grabCursor: true,
+  spaceBetween: 1,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    bulletClass: "swiper-pagination-bullet custom-bullet",
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+});
+swiperAbout.init();
+
 // -------------------- Formulario  ------------------------------
 const form = document.getElementById("form-footer");
 // const modelo_morral = document.getElementById("morral").innerHTML

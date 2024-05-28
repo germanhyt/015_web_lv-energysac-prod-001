@@ -6,9 +6,9 @@
     </div>
     <div class="footer__inner">
         <div class="footer__title-container">
-            <h3 class="footer__title">
+            <div class="footer__title">
                 L&V ENERGY
-            </h3>
+            </div>
         </div>
         <div class="footer__content">
             <div class="footer__contact-list">
@@ -30,6 +30,12 @@
                     <div>
                         <a href="mailto:dv.zubiate@outlook.com">dv.zubiate@outlook.com</a>
                     </div>
+                </div>
+                <div style="display: none;">
+                    <a href="https://pe.linkedin.com/in/eduardo-lozano-5b516984"><button>
+                            Linkedin
+                        </button></a>
+                    <a href=""><button></button></a>
                 </div>
             </div>
             <div class="footer__sections-list">

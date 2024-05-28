@@ -133,24 +133,24 @@ html {
 }
 
 .home-section-about {
-  @apply bg-primary-300;
+  @apply bg-primary-300 pt-20;
 
   &__container {
-    @apply max-h-[100vh] w-full 2xl:container flex flex-col-reverse sm:flex-row;
+    @apply max-h-[100vh] w-full xl:container flex flex-col-reverse sm:flex-row;
   }
 
   &__figure {
-    @apply sm:w-1/2 bg-cover overflow-hidden;
+    @apply w-screen sm:w-full h-full bg-cover overflow-hidden;
 
     img {
-      @apply w-full h-full;
+      @apply w-screen sm:w-full h-full bg-cover overflow-hidden;
     }
   }
 
   &__content {
     @apply sm:w-1/2 flex flex-col justify-center items-center sm:items-start py-5 sm:py-0 px-5 sm:px-12;
 
-    h3 {
+    h2 {
       @apply text-primary-100 text-dynamic-200 font-bold font-barlow;
     }
     p {
@@ -158,9 +158,13 @@ html {
     }
   }
 
-  @media (max-height: 340px) {
+  @media (max-height: 450px) {
     &__container {
-      @apply max-h-full;
+      @apply flex flex-col-reverse gap-4 max-h-full;
+    }
+
+    &__content {
+      @apply w-full;
     }
   }
 }
@@ -183,7 +187,7 @@ html {
   &__content {
     @apply sm:w-1/2 flex flex-col justify-center items-center gap-6 sm:items-start py-5 sm:py-0 px-2 sm:px-4;
 
-    h3 {
+    div {
       @apply text-primary-100 text-dynamic-200 font-bold text-center sm:text-start font-barlow;
     }
     p {
@@ -200,10 +204,9 @@ html {
 
   &__contain {
     @apply container flex flex-col justify-center items-center gap-3 sm:gap-6;
-
-    h3 {
-      @apply text-primary-100 text-dynamic-200 font-bold text-center font-barlow;
-    }
+  }
+  &__contain &__contain-title {
+    @apply text-primary-100 text-dynamic-200 font-bold text-center font-barlow;
   }
 
   &__grid {
@@ -394,10 +397,10 @@ html {
 
   &__contain {
     @apply container flex flex-col justify-center items-center gap-3 sm:gap-7;
+  }
 
-    h3 {
-      @apply text-primary-100 text-dynamic-200 font-bold text-center font-barlow;
-    }
+  &__contain &__contain-title {
+    @apply text-primary-100 text-dynamic-200 font-bold text-center font-barlow;
   }
 
   &__grid {
@@ -433,7 +436,7 @@ html {
 
   &__inner-tabs {
     // @apply relative py-5 sm:py-10 w-full bg-[#15375B] text-[#FFF] animate-none;
-    @apply relative py-5 sm:py-10 w-full h-full itm:overflow-hidden;
+    @apply relative py-5 sm:py-10 w-full h-full sm:overflow-hidden;
   }
 
   &__inner-tabs &__figure {
@@ -441,7 +444,7 @@ html {
   }
   &__inner-tabs &__figure img {
     // @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full bg-cover overflow-hidden;
-    @apply absolute top-0 left-0 right-0 w-full sm:w-screen h-full itm:min-h-[2350px] itm:h-[2600px]  bg-cover overflow-hidden;
+    @apply absolute top-0 left-0 right-0  w-full sm:w-screen h-full  itm:h-[3200px] bg-cover  overflow-hidden;
   }
   &__inner-tabs &__figure::before {
     content: "";
@@ -499,7 +502,7 @@ html {
   @apply shadow-[10px_10px_50px_rgba(175,175,175,0.25)] rounded-sm;
 
   &__grid {
-    @apply grid justify-center gap-8 container lg:grid lg:grid-cols-3 xl:grid-cols-4 pt-8;
+    @apply grid justify-center gap-6 container sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-8;
   }
   &__title-container {
     @apply h-36 sm:h-[180px] sm:min-h-44  flex flex-col items-center justify-center gap-2 px-5 sm:px-8 py-4  border-b-4 border-[#ff8300];
@@ -513,21 +516,21 @@ html {
   &__content-objective {
     @apply flex flex-col items-start justify-center gap-2 sm:min-h-[130px];
 
-    h4 {
+    &-title {
       @apply text-primary-100 text-dynamic-300 font-bold font-barlow;
     }
-    p {
+    &-description {
       @apply text-primary-100 text-dynamic-400  font-barlow;
     }
   }
   &__content-about {
     @apply flex flex-col items-start justify-center gap-2;
 
-    h4 {
+    &-title {
       @apply text-primary-100 text-dynamic-300 font-bold font-barlow;
     }
 
-    div {
+    &-description {
       @apply pl-4;
 
       //dar estilos a ul con puntos en los li
@@ -655,11 +658,11 @@ html {
     @apply text-center;
     @apply grid grid-rows-1 justify-items-center gap-2 text-center px-0 sm:px-20 itm:px-32;
 
-    h3 {
+    div {
       @apply text-dynamic-200 text-primary-100 font-bold font-barlow;
     }
 
-    p{
+    p {
       @apply text-dynamic-300 text-primary-100 font-barlow;
     }
   }
@@ -674,13 +677,13 @@ html {
 }
 
 .home-clients {
-  @apply container mt-20;
+  @apply container pt-20;
 
   &__heading {
     @apply text-center;
     @apply grid grid-rows-1 justify-items-center text-center px-5 sm:px-20 itm:px-40;
 
-    h3 {
+    div {
       @apply text-dynamic-200 text-primary-100 font-bold font-barlow;
     }
   }

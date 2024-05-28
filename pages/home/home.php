@@ -6,6 +6,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- SEO -->
+    <meta name="title" content="L &amp; V ENERGY S.A.C | Capacitaciones en distribución de energía eléctrica">
+    <meta name="description" content="En L &amp; V ENERGY, te ofrecemos capacitaciiones de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
+
+    <?php
+    include_once(__DIR__ . "/../../assets/data/keywords.php");
+    ?>
+
+
+    <!-- Fuente: https://es.semrush.com/blog/seo-para-imagenes/ -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="alias" value="L&VENERGY-capacitaciones" data-alias="L&VENERGY-capacitaciones">
+    <meta name="author" content="https://lyvenergy.com">
+    <link rel="alternate" type="application/rss+xml" title="L & V Energy S.A.C >> Courses" href="https://lyvenergy.com/#courses">
+    <meta property="og:type" content="article">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://www.universidadperu.com/empresas/l-v-energy.php" crossorigin="">
+
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+
+    <meta property="fb:admins" content="727542943">
+    <link rel="canonical" href="https://lyvenergy.com/" />
+
+    <meta property="og:title" content="L &amp; V Energy S.A.C.">
+    <meta property="og:url" content="https://lyvenergy.com/#courses">
+    <meta property="og:site_name" content="L &amp; V ENERGY">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lyvenergy.com">
+    <meta property="og:title" content="L &amp; V ENERGY | Capacitaciones en distribución de energía eléctrica">
+    <meta property="og:description" content="En L &amp; V ENERGY S.A.C., te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
+    <meta property="og:image" content="https://lyvenergy.com/public/img/logo.svg">
+    <meta property="og:image:secure_url" content="https://lyvenergy.com/public/img/logo.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Capacitaciones en redes de distribución de energía eléctrica">
+    <meta property="og:locale" content="es_PE">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lyvenergy">
+    <meta name="twitter:creator" content="@lyvenergy">
+    <meta name="twitter:url" content="https://lyvenergy.com">
+    <meta name="twitter:title" content="Capacitaciones en redes de distribución de energía eléctrica">
+    <meta name="twitter:description" content="En L&V ENERGY, te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
+    <meta name="twitter:image" content="https://lyvenergy.com/public/img/header-bg.png">
+    <meta name="twitter:image:alt" content="Capacitaciones en redes de distribución de energía eléctrica">
+
+    <link data-rh="true" type="image/x-icon" rel="apple-touch-icon" href="https://www.lyvenergy.com/public/img/favicon.ico" sizes="16x16">
+
+    <meta property="fb:app_id" content="1670810126502653">
 
     <?php
     include_once(__DIR__ . "/../../config/config/config.php")
@@ -13,35 +65,17 @@
 
     <!-- titulo adecuado a la web segun SEO -->
     <title>
-        L&V ENERGY | Capacitaciones en redes de distribución de energía eléctrica
+        L&amp;V ENERGY | Capacitaciones en distribución eléctrica
     </title>
 
-    <!-- SEO -->
-    <meta name="title" content="L&V ENERGY | Capacitaciones en redes de distribución de energía eléctrica">
-    <meta name="description" content="En L&V ENERGY, te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
-    <meta name="keywords" content="capacitaciones, redes de distribución, energía eléctrica, capacitaciones en redes de distribución, capacitaciones en energía eléctrica, capacitaciones en redes de distribución de energía eléctrica, capacitaciones en energía eléctrica en Perú, capacitaciones en redes de distribución de energía eléctrica en Perú, capacitaciones en energía eléctrica en Lima, capacitaciones en redes de distribución de energía eléctrica en Lima, capacitaciones en energía eléctrica en Perú, capacitaciones en redes de distribución de energía eléctrica en Perú, capacitaciones en energía eléctrica en Lima, capacitaciones en redes de distribución de energía eléctrica en Lima, capacitaciones en energía eléctrica en Perú, capacitaciones en redes de distribución de energía eléctrica en Perú, capacitaciones en energía eléctrica en Lima, capacitaciones en redes de distribución de energía eléctrica en Lima">
-
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="alias" value="L&VENERGY-capacitaciones" data-alias="L&VENERGY-capacitaciones">
-    <meta name="author" content="https://lyvenergy.com">
-
-    <link rel="dns-prefetch" href="https://lyvenergy.com/">
-    <link rel="preconnect" href="https://lyvenergy.com/" crossorigin="">
-
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lyvenergy.com/#courses">
-    <meta property="og:site_name" content="L&VENERGY">
-    <meta property="og:type" content="Website">
-    <meta property="og:url" content="https://lyvenergy.com">
-    <meta property="og:title" content="Capacitaciones en redes de distribución de energía eléctrica">
-    <meta property="og:description" content="En L&V ENERGY, te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
 
     <!-- Icon -->
-    <link rel="icon" href="<?php echo constant('HOST') ?>/public/img/icon.png" type="image/png" />
+    <link rel="icon" href="https://www.lyvenergy.com/public/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="32x32">
+    <link rel="icon" href="https://www.lyvenergy.com/public/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="192x192">
+    <link rel="shortcut icon" href="https://www.lyvenergy.com/public/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="32x32">
+    <link rel="shortcut icon" href="https://www.lyvenergy.com/public/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="48x48">
+    <link rel="shortcut icon" href="https://www.lyvenergy.com/public/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="192x192">
+
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/vendors/all.min.css">
@@ -56,6 +90,26 @@
         link.href = "<?php echo constant('HOST') ?>/assets/css/home.css" + getTimeHead;
         document.head.appendChild(link);
     </script>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TQ5PRZTZ');
+    </script>
+    <!-- End Google Tag Manager -->
 
 </head>
 
@@ -72,18 +126,22 @@
     include_once(__DIR__ . "/../../components/social-networks.php");
     ?>
 
-    <div id="home-hero" class="home-hero">
+    <div itemscope itemtype="https://schema.org/Organization" id="home-hero" class="home-hero">
         <figure class="home-hero__figure">
             <img src="<?php echo constant("HOST") ?>/public/img/header-bg.png" alt="img">
         </figure>
         <div class="home-hero__content">
             <div class="home-hero__content-container">
                 <div class="home-hero__text">
-                    <h1 class="home-hero__title">
+                    <h1 itemprop="name" class="home-hero__title">
                         Capacitaciones para trabajos en redes de distribución de energía eléctrica
                     </h1>
-                    <p class="home-hero__description">
-                        Accede a la mejor preparación para tus trabajadores con L&V ENERGY. Te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados </p>
+                    <p itemprop="description" class="home-hero__description">
+                        <a href="https://lyvenergy.com/#courses" target="_blank">
+                            Accede
+                        </a>
+                        a la mejor preparación para tus trabajadores con L&V ENERGY. Te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados
+                    </p>
                 </div>
 
                 <div class="home-hero__button">
@@ -96,13 +154,25 @@
         </div>
     </div>
 
-    <section id="about-us" class="home-section-about ">
+    <section id="about-us" class="home-section-about">
         <div class="home-section-about__container">
-            <figure class="home-section-about__figure scroll-animation-item-multimedia-left ">
+            <!-- <figure class="home-section-about__figure scroll-animation-item-multimedia-left ">
                 <img class="" src="<?php echo constant("HOST") ?>/public/img/about.jpg" alt="img">
-            </figure>
+            </figure> -->
+            <div class="swiper swiper--about scroll-animation-item-multimedia-left">
+                <div class="swiper-wrapper">
+                    <?php foreach ($aboutus as $about) : ?>
+                        <div class="swiper-slide">
+                            <figure class="home-section-about__figure">
+                                <img class="home-section-about__img" src="<?php echo $about['img']; ?>" alt="<?= $about['alt']; ?>">
+                            </figure>
+                        </div>
+                    <?php endforeach ?>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
             <div class="home-section-about__content scroll-animation-item-contain ">
-                <h3 class="">L&V ENERGY</h3>
+                <h2 class="">L&V ENERGY</h2>
                 <p class="">
                     Somos un centro de capacitación técnica dirigido al personal que efectúa trabajos en redes de energía eléctrica de media y baja tensión, cuyo propósito es contribuir con el desarrollo energético del país, ofreciendo asesoría especializada que permita la continuidad del suministro de energía eléctrica a nivel nacional.
                 </p>
@@ -113,9 +183,9 @@
     <section id="about-us-founder" class="home-section-founder">
         <div class="home-section-founder__container">
             <div class="home-section-founder__content scroll-animation-item-contain">
-                <h3 class="">
+                <div class="">
                     Guiados por el legado de nuestro fundador, nos comprometemos a ofrecer un servicio de calidad que refleje su visión y valores.
-                </h3>
+                </div>
                 <p class="">
                     “Disciplina, compromiso y seguridad son los pilares de nuestro método de enseñanza en L&V ENERGY”. </p>
                 <span class="">Eduardo Lozano / Fundador.</span>
@@ -128,16 +198,16 @@
 
     <section id="about-us-pillars" class="home-section-pillars">
         <div class="home-section-pillars__contain scroll-animation-item-contain">
-            <h3 class="">Nuestros Pilares</h3>
+            <div class="home-section-pillars__contain-title">Nuestros Pilares</div>
             <div class="home-section-pillars__grid">
                 <div class="home-section-pillars__item">
-                    <h4 class="home-section-pillars__title">Visión</h4>
+                    <div class="home-section-pillars__title">Visión</div>
                     <p class="home-section-pillars__description">
                         Ser el principal centro de capacitación peruano que colabore con las empresas del mercado de energía electrica para el suministro continuo y seguro de energía eléctrica a nivel nacional.
                     </p>
                 </div>
                 <div class="home-section-pillars__item">
-                    <h4 class="home-section-pillars__title">Misión</h4>
+                    <div class="home-section-pillars__title">Misión</div>
                     <p class="home-section-pillars__description">
                         Brindar una asesoría de calidad que busque desarrollar las competencias y habilidades necesarias para realizar las actividades de manera segura y efectiva.
                     </p>
@@ -151,7 +221,7 @@
     ?>
 
     <section id="benefits" class="home-section-benefits scroll-animation-item-contain">
-        <h3 class="home-section-benefits__title">Potenciar el crecimiento de tus trabajadores, brindará a tu equipo beneficios como...</h3>
+        <div class="home-section-benefits__title">Potenciar el crecimiento de tus trabajadores, brindará a tu equipo beneficios como...</div>
         <div class="home-section-benefits__container">
             <div class=" home-section-benefits__card">
                 <figure class="home-section-benefits__figure">
@@ -159,7 +229,7 @@
                 </figure>
                 <div class="home-section-benefits__card-content">
                     <div class="home-section-benefits__card-content-box">
-                        <h2 class="home-section-benefits__card-h2">Eficiencia</h2>
+                        <div class="home-section-benefits__card-h2">Eficiencia</div>
                         <div class="home-section-benefits__card-icon ">
                             <span class=""> Eficiencia</span>
                             <i class="fa-solid fa-caret-down"></i>
@@ -177,7 +247,7 @@
                 </figure>
                 <div class="home-section-benefits__card-content">
                     <div class="home-section-benefits__card-content-box">
-                        <h2 class="home-section-benefits__card-h2">Calidad Operativa</h2>
+                        <div class="home-section-benefits__card-h2">Calidad Operativa</div>
                         <div class="home-section-benefits__card-icon">
                             <span class="">Calidad Operativa</span>
                             <i class="fa-solid fa-caret-down"></i>
@@ -194,7 +264,7 @@
                 </figure>
                 <div class="home-section-benefits__card-content">
                     <div class="home-section-benefits__card-content-box">
-                        <h2 class="home-section-benefits__card-h2">Desarrollo Profesional</h2>
+                        <div class="home-section-benefits__card-h2">Desarrollo Profesional</div>
                         <div class="home-section-benefits__card-icon">
                             <span class=""> Desarrollo Profesional</span>
                             <i class="fa-solid fa-caret-down"></i>
@@ -211,7 +281,7 @@
                 </figure>
                 <div class="home-section-benefits__card-content">
                     <div class="home-section-benefits__card-content-box">
-                        <h2 class="home-section-benefits__card-h2">Competitividad</h2>
+                        <div class="home-section-benefits__card-h2">Competitividad</div>
                         <div class="home-section-benefits__card-icon">
                             <span class=""> Competitividad</span>
                             <i class="fa-solid fa-caret-down"></i>
@@ -227,7 +297,7 @@
 
     <section id="benefits-best-option" class="home-section-best-option">
         <div class="home-section-best-option__contain scroll-animation-item-contain">
-            <h3>¿Por qué somos tu mejor opción?</h3>
+            <div class="home-section-best-option__contain-title">¿Por qué somos tu mejor opción?</div>
             <div class="home-section-best-option__grid">
                 <div class="home-section-best-option__item">
                     <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-1.svg" alt="img">
@@ -263,7 +333,8 @@
 
         <div class="home-section-filter__inner-tabs">
             <figure class="home-section-filter__figure">
-                <img src="<?php echo constant("HOST") ?>/public/img/courses-bg.png" alt="img">
+                <!-- <img src="<?php echo constant("HOST") ?>/public/img/courses-bg.png" alt="img"> -->
+                <img src="https://i.postimg.cc/4N6c8qDg/courses-bg.png" alt="bg-filter-courses">
             </figure>
 
             <div class="home-section-filter__inner swiper swiper--filter">
@@ -301,16 +372,16 @@
                 <?php foreach ($products as $key => $product) : ?>
                     <div class="card-product mix <?php echo $product["id_category"] ?>">
                         <div class="card-product__title-container">
-                            <h3 class="card-product__title"><?php echo $product["title"] ?></h3>
+                            <div class="card-product__title"><?php echo $product["title"] ?></div>
                         </div>
                         <div class="card-product__content">
                             <div class="card-product__content-objective">
-                                <h4>Objetivo</h4>
-                                <p><?php echo $product["objetivo"] ?></p>
+                                <div class="card-product__content-objective-title">Objetivo</div>
+                                <p class="card-product__content-objective-description"><?php echo $product["objetivo"] ?></p>
                             </div>
                             <div class="card-product__content-about">
-                                <h4>Descripción</h4>
-                                <div>
+                                <div class="card-product__content-about-title">Descripción</div>
+                                <div class="card-product__content-about-description">
                                     <ul>
                                         <?php foreach ($product["consiste"] as $consiste) : ?>
                                             <li><?php echo $consiste ?></li>
@@ -327,7 +398,7 @@
 
     <section id="customers" class="home-clients scroll-animation-item-contain">
         <div class="home-clients__heading">
-            <h3>Nuestros clientes</h3>
+            <div>Nuestros clientes</div>
         </div>
 
         <div class="swiper swiper--clients">
@@ -346,7 +417,7 @@
 
     <section id="courses-trainings" class="home-trainings scroll-animation-item-contain">
         <div class="home-trainings__heading">
-            <h3>Nuestras capacitaciones</h3>
+            <div>Nuestras capacitaciones</div>
             <p>Formamos al personal siguiendo los lineamientos establecidos en el Reglamento de Salud y Seguridad en el Trabajo con Electricidad (RESESATE), Código Nacional de Electricidad, normativas y legislaciones vigentes.</p>
         </div>
 
@@ -355,7 +426,8 @@
                 <?php foreach ($trainings as $training) : ?>
                     <div class="swiper-slide">
                         <figure class="home-trainings__figure">
-                            <img class="home-trainings__img" src="<?php echo constant("HOST") ?>/public/img/capacitaciones/<?php echo $training['img']; ?>" alt="<?= $training['alt']; ?>">
+                            <!-- <img class="home-trainings__img" src="<?php echo constant("HOST") ?>/public/img/capacitaciones/<?php echo $training['img']; ?>" alt="<?= $training['alt']; ?>"> -->
+                            <img class="home-trainings__img" src="<?php echo $training['img']; ?>" alt="<?= $training['alt']; ?>">
                         </figure>
                     </div>
                 <?php endforeach ?>
@@ -370,9 +442,9 @@
         </figure>
         <div class="home-section-banner__content ">
             <div class="home-section-banner__content-container scroll-animation-item-multimedia-left">
-                <h3 class="home-section-banner__title ">
+                <div class="home-section-banner__title ">
                     Comienza a potenciar el desempeño de tu equipo con nosotros
-                </h3>
+                </div>
 
                 <div class="home-section-banner__btn">
                     <a target="_blank" href="https://api.whatsapp.com/send?phone=+910139973&text=Hola👋,%20me%20puede%20brindar%20más%20información">
@@ -382,6 +454,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- // importar el footer.php -->
     <?php include_once(__DIR__ . "/../../components/footer.php"); ?>
@@ -409,7 +482,9 @@
         })
     </script>
 
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ5PRZTZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
