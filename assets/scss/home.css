@@ -33,7 +33,7 @@
   @apply justify-self-end lg:hidden;
 }
 .header__icon i {
-  @apply text-2xl;
+  @apply text-4xl;
 }
 .header__arrow {
   @apply transition-transform duration-300;

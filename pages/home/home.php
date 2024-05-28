@@ -145,7 +145,7 @@
                 </div>
 
                 <div class="home-hero__button">
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+910139973&text=Hola👋,%20me%20puede%20brindar%20más%20información"><button>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+51948030253&text=Hola👋,%20me%20puede%20brindar%20más%20información"><button>
                             Comunícate con nosotros
                         </button>
                     </a>
@@ -447,7 +447,7 @@
                 </div>
 
                 <div class="home-section-banner__btn">
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+910139973&text=Hola👋,%20me%20puede%20brindar%20más%20información">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+51948030253&text=Hola👋,%20me%20puede%20brindar%20más%20información">
                         <button class="">Comunícate con nosotros</button>
                     </a>
                 </div>

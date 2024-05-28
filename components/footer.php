@@ -14,7 +14,7 @@
             <div class="footer__contact-list">
                 <div class="footer__contact">
                     <i class="footer__icon fa-solid fa-location-dot"></i>
-                    <a href="https://maps.app.goo.gl/Cm3mHZbS6aXrwaMM6" target="_blank">
+                    <a href="https://maps.app.goo.gl/PE4zb8ikHm68DLX98" target="_blank">
                         Lima - Perú
                         <!-- <br class="" /> Lima - Perú -->
                     </a>
@@ -28,7 +28,7 @@
                 <div class="footer__contact">
                     <i class="footer__icon fa-solid fa-envelope"></i>
                     <div>
-                        <a href="mailto:dv.zubiate@outlook.com">dv.zubiate@outlook.com</a>
+                        <a href="mailto:dv.zubiate@outlook.com">eduardo.lozano@lyvenergy.com</a>
                     </div>
                 </div>
                 <div style="display: none;">
