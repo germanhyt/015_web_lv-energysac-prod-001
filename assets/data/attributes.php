@@ -215,202 +215,105 @@ $trainings = [
   //   "img" => "Nuestras capacitaciones50.jpg",
   //   "alt" => "capacitacion",
   // ],
-  [
-    "img" => "https://i.postimg.cc/T5nZjdGY/Nuestras-capacitaciones1.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/CnYVQBcf/Nuestras-capacitaciones10.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/tn5HQqcv/Nuestras-capacitaciones11.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/Wt6DbMLC/Nuestras-capacitaciones12.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/tZGT9gr9/Nuestras-capacitaciones13.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/rDbsYjx0/Nuestras-capacitaciones14.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/bdjDhmM1/Nuestras-capacitaciones15.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/bZddTWDf/Nuestras-capacitaciones16.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/GHL4BHb2/Nuestras-capacitaciones17.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/PN4xkT1k/Nuestras-capacitaciones18.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/QHdM8wqK/Nuestras-capacitaciones19.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/SXJQ6MPS/Nuestras-capacitaciones2.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/qzDvzwmb/Nuestras-capacitaciones20.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/Wdp14K6J/Nuestras-capacitaciones21.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/fVHTSKBq/Nuestras-capacitaciones3.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/jWmxZjVz/Nuestras-capacitaciones4.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/BLFqyGsR/Nuestras-capacitaciones5.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/4HTJRFxy/Nuestras-capacitaciones6.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/V5jfW1KC/Nuestras-capacitaciones7.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/QKkj8kFb/Nuestras-capacitaciones8.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/R6wBdQLB/Nuestras-capacitaciones9.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/Hj72SvM5/Nuestras-capacitaciones22.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/9D1t4633/Nuestras-capacitaciones23.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/dhJjVqxm/Nuestras-capacitaciones24.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/R3VdXM1V/Nuestras-capacitaciones25.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/nsRkW6TK/Nuestras-capacitaciones27.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/N9K4vpP3/Nuestras-capacitaciones28.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/T5mJphxQ/Nuestras-capacitaciones29.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/jL0hB661/Nuestras-capacitaciones30.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/6yrhK7Yp/Nuestras-capacitaciones31.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/7Cf75bM7/Nuestras-capacitaciones32.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/LJyL4jf2/Nuestras-capacitaciones33.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/LqbtDj6N/Nuestras-capacitaciones34.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/DWZQ1xFS/Nuestras-capacitaciones35.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/hQF9Wgmm/Nuestras-capacitaciones36.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/k6RxpD29/Nuestras-capacitaciones37.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/3dF26sxy/Nuestras-capacitaciones38.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/1fQpvmsh/Nuestras-capacitaciones39.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/K1cty010/Nuestras-capacitaciones40.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/w154wfSF/Nuestras-capacitaciones41.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/hzY2XHd4/Nuestras-capacitaciones42.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/R3XsB3CH/Nuestras-capacitaciones43.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/bGzCW0PP/Nuestras-capacitaciones44.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/dZT4r422/Nuestras-capacitaciones45.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/phr0X2y1/Nuestras-capacitaciones46.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/G9BMWhW4/Nuestras-capacitaciones47.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/t7LrpGb2/Nuestras-capacitaciones48.jpg",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/hXnpQ8fm/Nuestras-capacitaciones49.png",
-    "alt" => "capacitacion"
-  ],
-  [
-    "img" => "https://i.postimg.cc/sv7T2HDy/Nuestras-capacitaciones50.png",
-    "alt" => "capacitacion"
-  ]
+  // [
+  ["img" => "https://i.postimg.cc/43kRjsQT/Nuestras-capacitaciones15.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/3R9j0j8J/Nuestras-capacitaciones1.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/pVGY2Bcs/Nuestras-capacitaciones2.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/ZnR889nP/Nuestras-capacitaciones3.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/tCsd7VLp/Nuestras-capacitaciones4.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/8CwgK5NX/Nuestras-capacitaciones10.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/qRRV9T7J/Nuestras-capacitaciones11.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/x8Nr13HB/Nuestras-capacitaciones12.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/tCPTrhfr/Nuestras-capacitaciones13.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/FFwzgPPd/Nuestras-capacitaciones14.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/h4XhmF0R/Nuestras-capacitaciones16.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/Kj66k3Dj/Nuestras-capacitaciones17.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/XJmjLJgS/Nuestras-capacitaciones18.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/q7mMtQh7/Nuestras-capacitaciones19.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/d3CqxYW7/Nuestras-capacitaciones20.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/3xFwh33m/Nuestras-capacitaciones21.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/zBVDTWKF/Nuestras-capacitaciones22.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/kGWmyy4K/Nuestras-capacitaciones23.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/d1bFdfqJ/Nuestras-capacitaciones24.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/T25YwVRR/Nuestras-capacitaciones25.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/yYF1h7gt/Nuestras-capacitaciones27.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/cL0sXPfH/Nuestras-capacitaciones28.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/R00vzfsx/Nuestras-capacitaciones29.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/VNHms6pr/Nuestras-capacitaciones30.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/pThxmvM0/Nuestras-capacitaciones31.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/C1qTF4bX/Nuestras-capacitaciones32.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/GpNnwfTv/Nuestras-capacitaciones33.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/8kvNDTHc/Nuestras-capacitaciones34.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/9FjVQs8p/Nuestras-capacitaciones35.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/0ykspDqK/Nuestras-capacitaciones36.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/8PBGJwxV/Nuestras-capacitaciones37.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/W15PSz2W/Nuestras-capacitaciones38.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/HLj1Nmnp/Nuestras-capacitaciones39.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/Y0Bcjm39/Nuestras-capacitaciones40.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/D0r9Gyjc/Nuestras-capacitaciones41.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/PrhsjYJV/Nuestras-capacitaciones42.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/yYPqYxS1/Nuestras-capacitaciones43.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/G3vwVqLs/Nuestras-capacitaciones44.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/R0mvpyfh/Nuestras-capacitaciones45.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/Qtxhh7fr/Nuestras-capacitaciones46.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/mrSBvjNw/Nuestras-capacitaciones47.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/RFs9F0YJ/Nuestras-capacitaciones48.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/x8B2v4n0/Nuestras-capacitaciones49.png
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/tRcpGYPL/Nuestras-capacitaciones5.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/sxMzZrF6/Nuestras-capacitaciones50.png
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/zXR5z8F3/Nuestras-capacitaciones6.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/g2FprQgs/Nuestras-capacitaciones7.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/W1GvZ8Kv/Nuestras-capacitaciones8.jpg
+  ", "alt" => "capacitacion"],
+  ["img" => "https://i.postimg.cc/25Cf7vRB/Nuestras-capacitaciones9.jpg
+  ", "alt" => "capacitacion"]
 ];
 
 $clients = [

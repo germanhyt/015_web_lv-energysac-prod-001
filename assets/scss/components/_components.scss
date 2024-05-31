@@ -86,10 +86,10 @@
 // Swiper
 .swiper {
   &--trainings {
-    @apply h-[480px] sm:h-[470px] top-0 transition-all duration-500;
+    @apply h-[350px] sm:h-[470px] top-0 transition-all duration-500;
 
     & .swiper-slide {
-      @apply bottom-10 sm:bottom-5 flex delay-300 w-full h-[300px] sm:h-[350px]  border-2 shadow-xl rounded-sm;
+      @apply flex delay-300 w-full h-[300px] sm:h-[350px]  border-2 shadow-xl rounded-sm;
     }
 
     & .swiper-pagination-bullet-active {
@@ -98,15 +98,6 @@
 
     & .swiper-wrapper {
       @apply flex items-center;
-    }
-
-    & .swiper-pagination {
-      @apply -bottom-5 sm:bottom-0;
-      @apply sm:px-10 itm:px-60;
-    }
-
-    & .custom-bullet {
-      @apply h-4 w-4 bg-[#FF8300];
     }
   }
 
@@ -140,6 +131,7 @@
 
     & .swiper-slide {
       @apply bottom-10 xs:bottom-6 sm:bottom-5;
+      @apply rounded-sm;
       @apply flex delay-300 w-screen sm:w-full h-[350px] sm:h-[calc(100vh-200px)] itm:h-[calc(100vh-100px)]  border-2 shadow-xl rounded-sm;
     }
 

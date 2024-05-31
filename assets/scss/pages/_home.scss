@@ -113,7 +113,7 @@ html {
       @apply relative bg-cover h-[200vh] overflow-hidden;
     }
     &__figure img {
-      @apply absolute top-0 left-0 w-screen h-full;
+      @apply absolute top-0 left-0 w-full h-full;
     }
     &__figure::before {
       content: "";
@@ -140,10 +140,10 @@ html {
   }
 
   &__figure {
-    @apply w-screen sm:w-full h-full bg-cover overflow-hidden;
+    @apply w-screen sm:w-full h-full bg-cover overflow-hidden rounded-sm;
 
     img {
-      @apply w-screen sm:w-full h-full bg-cover overflow-hidden;
+      @apply w-screen sm:w-full h-full bg-cover overflow-hidden rounded-sm;
     }
   }
 
@@ -215,6 +215,10 @@ html {
 
   &__grid &__item {
     @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-8 sm:py-16 shadow-xl rounded-sm;
+  }
+
+  &__grid &__item:hover {
+    @apply shadow-2xl;
   }
 
   &__grid &__item &__title {
@@ -472,7 +476,16 @@ html {
   &--filter {
     .swiper-button-prev::after,
     .swiper-button-next::after {
-      @apply font-bold  text-sm bg-[#ff8300] w-8 h-8 text-white flex justify-center items-center  rounded-full;
+      @apply font-bold text-sm bg-[#ff8300] w-8 h-8 text-white flex justify-center items-center  rounded-full;
+    }
+  }
+
+  &--trainings {
+    @apply z-20;
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      @apply font-bold px-2 sm:px-4 text-sm sm:text-lg bg-[#ff8300] w-8 sm:w-10 h-8 sm:h-10 text-white flex justify-center items-center  rounded-full;
     }
   }
 }

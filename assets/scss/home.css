@@ -75,23 +75,16 @@
 }
 
 .swiper--trainings {
-  @apply h-[480px] sm:h-[470px] top-0 transition-all duration-500;
+  @apply h-[350px] sm:h-[470px] top-0 transition-all duration-500;
 }
 .swiper--trainings .swiper-slide {
-  @apply bottom-10 sm:bottom-5 flex delay-300 w-full h-[300px] sm:h-[350px]  border-2 shadow-xl rounded-sm;
+  @apply flex delay-300 w-full h-[300px] sm:h-[350px]  border-2 shadow-xl rounded-sm;
 }
 .swiper--trainings .swiper-pagination-bullet-active {
   @apply bg-white;
 }
 .swiper--trainings .swiper-wrapper {
   @apply flex items-center;
-}
-.swiper--trainings .swiper-pagination {
-  @apply -bottom-5 sm:bottom-0;
-  @apply sm:px-10 itm:px-60;
-}
-.swiper--trainings .custom-bullet {
-  @apply h-4 w-4 bg-[#FF8300];
 }
 .swiper--clients {
   @apply h-[280px] sm:h-[320px] top-0 transition-all duration-500;
@@ -117,6 +110,7 @@
 }
 .swiper--about .swiper-slide {
   @apply bottom-10 xs:bottom-6 sm:bottom-5;
+  @apply rounded-sm;
   @apply flex delay-300 w-screen sm:w-full h-[350px] sm:h-[calc(100vh-200px)] itm:h-[calc(100vh-100px)]  border-2 shadow-xl rounded-sm;
 }
 .swiper--about .swiper-pagination-bullet-active {
@@ -416,7 +410,7 @@ html {
     @apply relative bg-cover h-[200vh] overflow-hidden;
   }
   .home-hero__figure img {
-    @apply absolute top-0 left-0 w-screen h-full;
+    @apply absolute top-0 left-0 w-full h-full;
   }
   .home-hero__figure::before {
     content: "";
@@ -440,10 +434,10 @@ html {
   @apply max-h-[100vh] w-full xl:container flex flex-col-reverse sm:flex-row;
 }
 .home-section-about__figure {
-  @apply w-screen sm:w-full h-full bg-cover overflow-hidden;
+  @apply w-screen sm:w-full h-full bg-cover overflow-hidden rounded-sm;
 }
 .home-section-about__figure img {
-  @apply w-screen sm:w-full h-full bg-cover overflow-hidden;
+  @apply w-screen sm:w-full h-full bg-cover overflow-hidden rounded-sm;
 }
 .home-section-about__content {
   @apply sm:w-1/2 flex flex-col justify-center items-center sm:items-start py-5 sm:py-0 px-5 sm:px-12;
@@ -502,6 +496,9 @@ html {
 }
 .home-section-pillars__grid .home-section-pillars__item {
   @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-8 sm:py-16 shadow-xl rounded-sm;
+}
+.home-section-pillars__grid .home-section-pillars__item:hover {
+  @apply shadow-2xl;
 }
 .home-section-pillars__grid .home-section-pillars__item .home-section-pillars__title {
   @apply text-primary-100 text-dynamic-200 font-bold font-barlow;
@@ -703,7 +700,14 @@ html {
 }
 .swiper--filter .swiper-button-prev::after,
 .swiper--filter .swiper-button-next::after {
-  @apply font-bold  text-sm bg-[#ff8300] w-8 h-8 text-white flex justify-center items-center  rounded-full;
+  @apply font-bold text-sm bg-[#ff8300] w-8 h-8 text-white flex justify-center items-center  rounded-full;
+}
+.swiper--trainings {
+  @apply z-20;
+}
+.swiper--trainings .swiper-button-prev::after,
+.swiper--trainings .swiper-button-next::after {
+  @apply font-bold px-2 sm:px-4 text-sm sm:text-lg bg-[#ff8300] w-8 sm:w-10 h-8 sm:h-10 text-white flex justify-center items-center  rounded-full;
 }
 
 .btn {

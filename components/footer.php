@@ -16,26 +16,19 @@
                     <i class="footer__icon fa-solid fa-location-dot"></i>
                     <a href="https://maps.app.goo.gl/PE4zb8ikHm68DLX98" target="_blank">
                         Lima - Perú
-                        <!-- <br class="" /> Lima - Perú -->
                     </a>
                 </div>
                 <div class="footer__contact">
                     <i class="footer__icon fa-solid fa-phone"></i>
                     <div class="footer__row">
-                        <a href="https://api.whatsapp.com/send?phone=+951733305&text=hola,%20¿qué%20tal,%20deseo%20más%20información?" target="_blank">948 030 253</a>
+                        <a href="https://api.whatsapp.com/send?phone=+51948030253&text=Hola👋,%20me%20puede%20brindar%20más%20información" target="_blank">948 030 253</a>
                     </div>
                 </div>
                 <div class="footer__contact">
                     <i class="footer__icon fa-solid fa-envelope"></i>
                     <div>
-                        <a href="mailto:dv.zubiate@outlook.com">eduardo.lozano@lyvenergy.com</a>
+                        <a href="mailto:contacto@lyvenergy.com">contacto@lyvenergy.com</a>
                     </div>
-                </div>
-                <div style="display: none;">
-                    <a href="https://pe.linkedin.com/in/eduardo-lozano-5b516984"><button>
-                            Linkedin
-                        </button></a>
-                    <a href=""><button></button></a>
                 </div>
             </div>
             <div class="footer__sections-list">

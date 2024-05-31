@@ -78,10 +78,6 @@ swiperFilter.on("slideChange", function () {
   let btn = document.querySelector(".swiper-slide-active .btn--filter");
   let filter = btn.getAttribute("data-filter");
 
-  const filtervalue = filter.split(".")[1];
-  console.log("filtervalue", filtervalue);
-  console.log("btnsFilter", btnsFilter);
-
   mixerPorfolio.filter(filter);
 
   btnsFilter.forEach((btn) => {
@@ -127,6 +123,11 @@ var swiperCapacitaciones = new Swiper(".swiper--trainings", {
       slidesPerView: 3,
     },
   },
+  speed: 400,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 swiperCapacitaciones.init();
 
@@ -159,6 +160,7 @@ var swiperClientes = new Swiper(".swiper--clients", {
       slidesPerView: 3,
     },
   },
+  speed: 300,
 });
 swiperClientes.init();
 
@@ -223,7 +225,7 @@ form.addEventListener("submit", (e) => {
     Swal.fire({
       icon: "success",
       title: "Mensaje enviado",
-      text: "¡Gracias, En breve nos comunicaremos contigo",
+      text: "¡Gracias, En breve nos comunicaremos contigo!",
       confirmButtonText: "Cerrar",
       confirmButtonColor: "#3085d6",
     });

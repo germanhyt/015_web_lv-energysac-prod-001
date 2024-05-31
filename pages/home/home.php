@@ -32,19 +32,18 @@
     <meta property="fb:admins" content="727542943">
     <link rel="canonical" href="https://lyvenergy.com/" />
 
-    <meta property="og:title" content="L &amp; V Energy S.A.C.">
-    <meta property="og:url" content="https://lyvenergy.com/#courses">
-    <meta property="og:site_name" content="L &amp; V ENERGY">
-    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lyvenergy.com">
-    <meta property="og:title" content="L &amp; V ENERGY | Capacitaciones en distribución de energía eléctrica">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="L &amp; V ENERGY">
+    <meta property="og:title" content="L &amp; V Energy S.A.C.">
     <meta property="og:description" content="En L &amp; V ENERGY S.A.C., te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
-    <meta property="og:image" content="https://lyvenergy.com/public/img/logo.svg">
-    <meta property="og:image:secure_url" content="https://lyvenergy.com/public/img/logo.svg">
+    <meta property="og:image" content="https://lyvenergy.com/public/img/favicon.ico">
+    <meta property="og:image:secure_url" content="https://lyvenergy.com/public/img/favicon.ico">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Capacitaciones en redes de distribución de energía eléctrica">
     <meta property="og:locale" content="es_PE">
+    <meta name="googlebot" content="index, follow">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@lyvenergy">
@@ -52,10 +51,10 @@
     <meta name="twitter:url" content="https://lyvenergy.com">
     <meta name="twitter:title" content="Capacitaciones en redes de distribución de energía eléctrica">
     <meta name="twitter:description" content="En L&V ENERGY, te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
-    <meta name="twitter:image" content="https://lyvenergy.com/public/img/header-bg.png">
+    <meta name="twitter:image" content="https://lyvenergy.com/favicon.ico">
     <meta name="twitter:image:alt" content="Capacitaciones en redes de distribución de energía eléctrica">
 
-    <link data-rh="true" type="image/x-icon" rel="apple-touch-icon" href="https://www.lyvenergy.com/public/img/favicon.ico" sizes="16x16">
+    <link data-rh="true" type="image/x-icon" rel="apple-touch-icon" href="https://www.lyvenergy.com/favicon.ico" sizes="16x16">
 
     <meta property="fb:app_id" content="1670810126502653">
 
@@ -70,12 +69,12 @@
 
 
     <!-- Icon -->
-    <link rel="icon" href="https://www.lyvenergy.com/public/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="32x32">
-    <link rel="icon" href="https://www.lyvenergy.com/public/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="192x192">
-    <link rel="shortcut icon" href="https://www.lyvenergy.com/public/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="32x32">
-    <link rel="shortcut icon" href="https://www.lyvenergy.com/public/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="48x48">
-    <link rel="shortcut icon" href="https://www.lyvenergy.com/public/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="192x192">
-
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" sizes="32x32">
+    <!-- <link rel="icon" href="https://www.lyvenergy.com/favicon.ico" type="image/vnd.microsoft.icon" sizes="192x192"> -->
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" sizes="32x32">
+    <!-- <link rel="shortcut icon" href="https://www.lyvenergy.com/favicon.ico" type="image/vnd.microsoft.icon" sizes="48x48"> -->
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" sizes="192x192">
+    <meta name="msapplication-TileImage" content="https://www.lyvenergy.com/favicon.ico">
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo constant('HOST') ?>/assets/css/vendors/all.min.css">
@@ -188,7 +187,7 @@
                 </div>
                 <p class="">
                     “Disciplina, compromiso y seguridad son los pilares de nuestro método de enseñanza en L&V ENERGY”. </p>
-                <span class="">Eduardo Lozano / Fundador.</span>
+                <span class="">Eduardo Lozano / Fundador</span>
             </div>
             <figure class="home-section-founder__figure scroll-animation-item-multimedia-right">
                 <img class="" src="<?php echo constant("HOST") ?>/public/img/founder.png" alt="img">
@@ -198,7 +197,7 @@
 
     <section id="about-us-pillars" class="home-section-pillars">
         <div class="home-section-pillars__contain scroll-animation-item-contain">
-            <div class="home-section-pillars__contain-title">Nuestros Pilares</div>
+            <!-- <div class="home-section-pillars__contain-title">Nuestros Pilares</div> -->
             <div class="home-section-pillars__grid">
                 <div class="home-section-pillars__item">
                     <div class="home-section-pillars__title">Visión</div>
@@ -308,15 +307,15 @@
                     <p class="home-section-best-option__description">Nuestros instructores son altamente calificados en el mercado peruano y pioneros en trabajos en líneas energizadas en el país desde 1997.</p>
                 </div>
                 <div class="home-section-best-option__item">
-                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-2.svg" alt="img">
-                    <p class="home-section-best-option__description">L&V Energy formará a tu personal promoviendo el trabajo en equipo y siguiendo los lineamientos del RESESATE y demás normativas.</p>
-                </div>
-                <div class="home-section-best-option__item">
-                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-4.svg" alt="img">
+                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-3.svg" alt="img">
                     <p class="home-section-best-option__description">Aprenderás y/o reforzarás tanto los conocimientos teóricos de tus trabajadores como sus habilidades en el campo.</p>
                 </div>
                 <div class="home-section-best-option__item">
-                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-2.svg" alt="img">
+                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-4.svg" alt="img">
+                    <p class="home-section-best-option__description">L&V Energy formará a tu personal promoviendo el trabajo en equipo y siguiendo los lineamientos del RESESATE y demás normativas.</p>
+                </div>
+                <div class="home-section-best-option__item">
+                    <img class="home-section-best-option__img" src="<?php echo constant("HOST") ?>/public/img/option-5.svg" alt="img">
                     <p class="home-section-best-option__description">Nuestra metodología permitirá que tu personal sea certificado bajo los mejores estándares de enseñanza.</p>
                 </div>
             </div>
@@ -432,7 +431,9 @@
                     </div>
                 <?php endforeach ?>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-pagination"></div> -->
         </div>
     </section>
 
