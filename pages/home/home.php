@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- SEO -->
-    <meta name="title" content="L &amp; V ENERGY S.A.C | Capacitaciones en distribución de energía eléctrica">
-    <meta name="description" content="En L &amp; V ENERGY, te ofrecemos capacitaciiones de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
+    <meta name="title" content="L&amp;V ENERGY S.A.C | Capacitaciones en distribución de energía eléctrica">
+    <meta name="description" content="En L&amp;V ENERGY, te ofrecemos capacitaciones capacitaciones en redes de distribución eléctrica de alto nivel con nuestros especialistas !Contáctanos ya!">
 
     <?php
     include_once(__DIR__ . "/../../assets/data/keywords.php");
@@ -34,9 +34,9 @@
 
     <meta property="og:url" content="https://lyvenergy.com">
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="L &amp; V ENERGY">
-    <meta property="og:title" content="L &amp; V Energy S.A.C.">
-    <meta property="og:description" content="En L &amp; V ENERGY S.A.C., te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
+    <meta property="og:site_name" content="L&amp;V ENERGY">
+    <meta property="og:title" content="L&amp;V Energy S.A.C.">
+    <meta property="og:description" content="En L&amp;V ENERGY, te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
     <meta property="og:image" content="https://lyvenergy.com/public/img/favicon.ico">
     <meta property="og:image:secure_url" content="https://lyvenergy.com/public/img/favicon.ico">
     <meta property="og:image:width" content="1200">
@@ -202,7 +202,7 @@
                 <div class="home-section-pillars__item">
                     <div class="home-section-pillars__title">Visión</div>
                     <p class="home-section-pillars__description">
-                        Ser el principal centro de capacitación peruano que colabore con las empresas del mercado de energía electrica para el suministro continuo y seguro de energía eléctrica a nivel nacional.
+                        Ser el principal centro de capacitación peruano que colabore con las empresas del mercado de energía electrica para el suministro contínuo y seguro de energía eléctrica a nivel nacional.
                     </p>
                 </div>
                 <div class="home-section-pillars__item">
@@ -220,7 +220,7 @@
     ?>
 
     <section id="benefits" class="home-section-benefits scroll-animation-item-contain">
-        <div class="home-section-benefits__title">Potenciar el crecimiento de tus trabajadores, brindará a tu equipo beneficios como...</div>
+        <div class="home-section-benefits__title">Brinda a tus trabajadores beneficios como...</div>
         <div class="home-section-benefits__container">
             <div class=" home-section-benefits__card">
                 <figure class="home-section-benefits__figure">
@@ -235,7 +235,7 @@
                         </div>
                     </div>
                     <p class="home-section-benefits__card-p">
-                        Brindamos una formación actualizada en técnicas operativas y de seguridad que puedn aumentar la eficiencia del trabajo diario de tus trabajadores, lo que se traducirá en una mayor productividad para tu empresa.
+                        Brindamos una formación actualizada en técnicas operativas y de seguridad que pueden aumentar la eficiencia del trabajo diario de tus trabajadores, lo que se traducirá en una mayor productividad para tu empresa.
                     </p>
                     <!-- <a class="home-section-benefits__card-a" href="#">Learn More</a> -->
                 </div>

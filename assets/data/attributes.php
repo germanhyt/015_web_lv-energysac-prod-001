@@ -216,8 +216,8 @@ $trainings = [
   //   "alt" => "capacitacion",
   // ],
   // [
-  ["img" => "https://i.postimg.cc/43kRjsQT/Nuestras-capacitaciones15.jpg
-  ", "alt" => "capacitacion"],
+  // ["img" => "https://i.postimg.cc/43kRjsQT/Nuestras-capacitaciones15.jpg
+  // ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/3R9j0j8J/Nuestras-capacitaciones1.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/pVGY2Bcs/Nuestras-capacitaciones2.jpg

@@ -86,7 +86,7 @@
 // Swiper
 .swiper {
   &--trainings {
-    @apply h-[350px] sm:h-[470px] top-0 transition-all duration-500;
+    @apply h-[350px] sm:h-[420px] top-0 transition-all duration-500;
 
     & .swiper-slide {
       @apply flex delay-300 w-full h-[300px] sm:h-[350px]  border-2 shadow-xl rounded-sm;
