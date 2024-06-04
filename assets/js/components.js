@@ -99,7 +99,7 @@ var swiperCapacitaciones = new Swiper(".swiper--trainings", {
   loop: true,
   effect: "slider",
   grabCursor: true,
-  spaceBetween: 30,
+  spaceBetween: 15,
   slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",
@@ -107,7 +107,7 @@ var swiperCapacitaciones = new Swiper(".swiper--trainings", {
     bulletClass: "swiper-pagination-bullet custom-bullet",
   },
   autoplay: {
-    delay: 1500,
+    delay: 2500,
     disableOnInteraction: false,
   },
   breakpoints: {
@@ -167,7 +167,8 @@ swiperClientes.init();
 // Swiper de section about
 var swiperAbout = new Swiper(".swiper--about", {
   loop: true,
-  effect: "slider",
+  // effect: "slider",
+  effect: "fade",
   grabCursor: true,
   spaceBetween: 1,
   slidesPerView: 1,
@@ -177,7 +178,7 @@ var swiperAbout = new Swiper(".swiper--about", {
     bulletClass: "swiper-pagination-bullet custom-bullet",
   },
   autoplay: {
-    delay: 2000,
+    delay: 2500,
     disableOnInteraction: false,
   },
 });
@@ -198,9 +199,9 @@ form.addEventListener("submit", (e) => {
   const mensaje = formData.get("mensaje");
 
   // const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-  const regexNotEmpty = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+  const regexNotEmpty = /^[a-zA-ZÀ-ÿ\s]/;
   const errors = [];
-
+  // Validar campos vacios
   regexNotEmpty.test(representante)
     ? null
     : errors.push(" Nombre del representante vacío o errado");
@@ -208,10 +209,29 @@ form.addEventListener("submit", (e) => {
     ? null
     : errors.push(" Nombre de la empresa vacío o errado");
   regexNotEmpty.test(mensaje) ? null : errors.push(" Mensaje vacío o errado");
-
-  if (errors.length > 0) {
-    errors.push(" Debe contener más de 2 letras");
-  }
+  // Validar longitud de campos
+  empresa.length > 2
+    ? null
+    : errors.push(" Nombre de la empresa debe contener más de 2 letras");
+  empresa.length <= 400
+    ? null
+    : errors.push(
+        " Nombre de la empresa debe contener menos de 400 caracteres"
+      );
+  representante.length > 2
+    ? null
+    : errors.push(" Nombre del representante debe contener más de 2 letras");
+  representante.length <= 400
+    ? null
+    : errors.push(
+        " Nombre del representante debe contener menos de 400 caracteres"
+      );
+  mensaje.length > 2
+    ? null
+    : errors.push(" Nombre del mensaje debe contener más de 2 letras");
+  mensaje.length <= 400
+    ? null
+    : errors.push(" Nombre del mensaje debe contener menos de 400 caracteres");
 
   if (errors.length > 0) {
     Swal.fire({
@@ -240,4 +260,39 @@ form.addEventListener("submit", (e) => {
     window.open(url, "_blank");
     form.reset();
   }
+});
+
+let itemsLinksFooter = [...document.querySelectorAll("#itemActive")];
+function onClickSectionsStopFooter() {
+  itemsLinksFooter.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      const href = item.getAttribute("href");
+      const section = document.querySelector(href);
+      const top = section.offsetTop;
+      window.scrollTo({
+        top: top - 75,
+        behavior: "smooth",
+      });
+    });
+  });
+}
+
+let itemArrow = document.querySelectorAll("#itemactivehero");
+itemArrow.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    const href = item.getAttribute("href");
+    const section = document.querySelector(href);
+    const top = section.offsetTop;
+    window.scrollTo({
+      top: top - 120,
+      behavior: "smooth",
+    });
+  });
+});
+
+window.addEventListener("click", () => {
+  onClickSectionsStop();
+  onClickSectionsStopFooter();
 });

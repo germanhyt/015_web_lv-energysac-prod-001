@@ -50,10 +50,10 @@ function onScrollNavbar() {
     // && lastScrollY <= 96
   ) {
     header.style.height = "115px";
-    logo.style.width = "120px";
+    logo.style.width = "125px";
   } else if (window.scrollY <= 96 && lastScrollY > 96) {
-    header.style.height = "130px";
-    logo.style.width = "130px";
+    header.style.height = "132px";
+    logo.style.width = "125px";
   }
   lastScrollY = window.scrollY;
 }
@@ -90,9 +90,48 @@ function onScrollBtn() {
   }
 }
 
+// Para activar los active de los items del menu automaticamente
+function onSCrollActiveAutomatic() {
+  const sections = document.querySelectorAll("section");
+  sections.forEach((section) => {
+    const top = section.offsetTop;
+    const height = section.offsetHeight;
+
+    if (window.scrollY >= top - 100 && window.scrollY < top + height - 100) {
+      itemsLinks.forEach((item) => {
+        item.classList.remove("active");
+        const href = item.getAttribute("href").substring(1);
+        if (section.getAttribute("id") === href) {
+          item.classList.add("active");
+        }
+      });
+    }
+  });
+}
+
+function onClickSectionsStop() {
+  itemsLinks.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      const href = item.getAttribute("href");
+      const section = document.querySelector(href);
+      const top = section.offsetTop;
+      window.scrollTo({
+        top: top - 75,
+        behavior: "smooth",
+      });
+    });
+  });
+}
+
+window.addEventListener("click", () => {
+  onClickSectionsStop();
+});
+
 window.addEventListener("scroll", () => {
   onScrollNavbar();
   onScrollBtn();
+  onSCrollActiveAutomatic();
 });
 
 window.addEventListener("resize", () => {

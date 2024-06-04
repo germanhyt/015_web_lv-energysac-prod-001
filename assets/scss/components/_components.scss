@@ -15,7 +15,7 @@
   @apply bg-[#FFF] text-primary-100  shadow-lg font-barlow;
 
   &__inner {
-    @apply container h-[130px] flex justify-between items-center;
+    @apply container h-[132px] flex justify-between items-center;
     @apply transition-all duration-300;
   }
 
@@ -24,7 +24,7 @@
 
     img {
       @apply transition-all duration-300;
-      @apply w-[130px];
+      @apply w-[125px];
     }
   }
 
@@ -44,6 +44,7 @@
   }
 
   &__link {
+    @apply transition-all duration-300;
     @apply text-dynamic-300  block cursor-pointer font-bold;
     @apply relative py-0 px-8;
     @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-primary-200 after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
@@ -127,12 +128,13 @@
   }
 
   &--about {
-    @apply w-full sm:w-1/2 h-[55vh] sm:h-[75vh] itm:h-[95vh]  transition-all duration-500;
+    @apply w-full sm:w-1/2 h-[55vh] sm:h-[75vh] itm:h-[95vh] transition-all;
 
     & .swiper-slide {
       @apply bottom-10 xs:bottom-6 sm:bottom-5;
       @apply rounded-sm;
-      @apply flex delay-300 w-screen sm:w-full h-[350px] sm:h-[calc(100vh-200px)] itm:h-[calc(100vh-100px)]  border-2 shadow-xl rounded-sm;
+      @apply transition-all;
+      @apply flex w-screen sm:w-full h-[350px] sm:h-[calc(100vh-200px)] itm:h-[calc(100vh-100px)] shadow-xl rounded-sm;
     }
 
     & .swiper-pagination-bullet-active {
@@ -140,7 +142,7 @@
     }
 
     & .swiper-wrapper {
-      @apply min-h-[350px] flex items-center;
+      @apply min-h-[350px]  flex items-center;
     }
 
     & .swiper-pagination {

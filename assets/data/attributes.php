@@ -7,7 +7,7 @@ $aboutus = [
     "alt" => "capacitacion"
   ],
   [
-    "img" => "https://i.postimg.cc/YSXVHK7T/about-2.jpg",
+    "img" => "https://i.postimg.cc/Y981sKq4/about-2.jpg",
     "alt" => "capacitacion"
   ],
   [
@@ -238,13 +238,13 @@ $trainings = [
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/h4XhmF0R/Nuestras-capacitaciones16.jpg
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/Kj66k3Dj/Nuestras-capacitaciones17.jpg
+  ["img" => "https://i.postimg.cc/Zq8P6vGx/Nuestras-capacitaciones17.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/XJmjLJgS/Nuestras-capacitaciones18.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/q7mMtQh7/Nuestras-capacitaciones19.jpg
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/d3CqxYW7/Nuestras-capacitaciones20.jpg
+  ["img" => "https://i.postimg.cc/NMQ6DfYq/Nuestras-capacitaciones20.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/3xFwh33m/Nuestras-capacitaciones21.jpg
   ", "alt" => "capacitacion"],
@@ -256,11 +256,7 @@ $trainings = [
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/T25YwVRR/Nuestras-capacitaciones25.jpg
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/yYF1h7gt/Nuestras-capacitaciones27.jpg
-  ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/cL0sXPfH/Nuestras-capacitaciones28.jpg
-  ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/R00vzfsx/Nuestras-capacitaciones29.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/VNHms6pr/Nuestras-capacitaciones30.jpg
   ", "alt" => "capacitacion"],
@@ -276,21 +272,11 @@ $trainings = [
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/0ykspDqK/Nuestras-capacitaciones36.jpg
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/8PBGJwxV/Nuestras-capacitaciones37.jpg
-  ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/W15PSz2W/Nuestras-capacitaciones38.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/HLj1Nmnp/Nuestras-capacitaciones39.jpg
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/Y0Bcjm39/Nuestras-capacitaciones40.jpg
-  ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/D0r9Gyjc/Nuestras-capacitaciones41.jpg
-  ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/PrhsjYJV/Nuestras-capacitaciones42.jpg
-  ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/yYPqYxS1/Nuestras-capacitaciones43.jpg
-  ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/G3vwVqLs/Nuestras-capacitaciones44.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/R0mvpyfh/Nuestras-capacitaciones45.jpg
   ", "alt" => "capacitacion"],
@@ -302,7 +288,7 @@ $trainings = [
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/x8B2v4n0/Nuestras-capacitaciones49.png
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/tRcpGYPL/Nuestras-capacitaciones5.jpg
+  ["img" => "https://i.postimg.cc/Df1p3CL7/Nuestras-capacitaciones5.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/sxMzZrF6/Nuestras-capacitaciones50.png
   ", "alt" => "capacitacion"],
@@ -381,14 +367,6 @@ $products = [
   ],
   [
     "id_category" => "modulo-capacitaciones",
-    "title" => "Mantenimientos en caliente de subestaciones",
-    "objetivo" => "Verificar las óptimas condiciones de operatividad del servicio.",
-    "consiste" => [
-      "Entrenamiento de personal para el cambio de transformadores en subestaciones convencionales y aéreas.",
-    ]
-  ],
-  [
-    "id_category" => "modulo-capacitaciones",
     "title" => "Trabajo sin Tensión (TST)",
     "objetivo" => "Formación técnica de linieros.",
     "consiste" => [
@@ -432,6 +410,14 @@ $products = [
     "objetivo" => "Capacitación en trabajos en altura con el método de escalamiento vertical y telescópico.",
     "consiste" => [
       "Capacitación teórica y entrenamiento práctico de linieros para el uso adecuado de escaleras aisladas en el entorno de redes aéreas energizadas de baja tensión (BT) y media tensión (MT).",
+    ]
+  ],
+  [
+    "id_category" => "modulo-capacitaciones",
+    "title" => "Mantenimientos en caliente de subestaciones",
+    "objetivo" => "Verificar las óptimas condiciones de operatividad del servicio.",
+    "consiste" => [
+      "Entrenamiento de personal para el cambio de transformadores en subestaciones convencionales y aéreas.",
     ]
   ],
   [

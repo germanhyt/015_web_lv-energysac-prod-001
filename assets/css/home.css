@@ -87,7 +87,7 @@
 
 .header__inner{
   display: flex;
-  height: 130px;
+  height: 132px;
   align-items: center;
   justify-content: space-between;
   transition-property: all;
@@ -116,7 +116,7 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
-  width: 130px;
+  width: 125px;
 }
 
 .header__icon{
@@ -146,6 +146,9 @@
 }
 
 .header__link{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
   display: block;
   cursor: pointer;
   font-size: clamp(1rem, 0.5vw + 0.9rem, 1.5rem);
@@ -352,7 +355,7 @@
   width: 100%;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
+  transition-duration: 150ms;
 }
 
 @media (min-width: 640px){
@@ -385,15 +388,16 @@
 }
 
 .swiper--about .swiper-slide{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   display: flex;
   height: 350px;
   width: 100vw;
   border-radius: 0.125rem;
-  border-width: 2px;
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  transition-delay: 300ms;
 }
 
 @media (min-width: 640px){
@@ -945,7 +949,7 @@ html {
 
 .home-hero{
   position: relative;
-  margin-top: 130px;
+  margin-top: 135px;
   width: 100%;
   overflow: hidden;
 }
@@ -1254,7 +1258,7 @@ html {
 .home-section-about{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 5rem;
+  padding-top: 2.5rem;
 }
 
 .home-section-about__container{
@@ -1721,6 +1725,7 @@ html {
 
 .home-section-benefits{
   width: 100%;
+  padding-top: 5rem;
 }
 
 @media (min-width: 1600px){
@@ -1778,7 +1783,8 @@ html {
 .home-section-benefits__title{
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   padding-bottom: 1.25rem;
   text-align: center;
   font-family: Barlow, sans-serif;
@@ -1791,7 +1797,6 @@ html {
 @media (min-width: 640px){
   .home-section-benefits__title{
     max-width: 75vw;
-    padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 }
@@ -2240,14 +2245,8 @@ html {
 }
 
 .home-section-filter{
-  margin-top: 2.5rem;
+  padding-top: 5rem;
   font-family: Barlow, sans-serif;
-}
-
-@media (min-width: 640px){
-  .home-section-filter{
-    margin-top: 5rem;
-  }
 }
 
 .home-section-filter__title{
@@ -2731,13 +2730,19 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 
 @media (min-width: 640px){
   .card-product__content-objective{
     min-height: 130px;
+  }
+}
+
+@media (min-width: 1100px){
+  .card-product__content-objective{
+    min-height: 1px;
   }
 }
 
@@ -2760,7 +2765,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 

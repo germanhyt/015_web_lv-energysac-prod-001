@@ -8,7 +8,7 @@ html {
 
 // Home hero
 .home-hero {
-  @apply relative w-full mt-[130px] overflow-hidden;
+  @apply relative w-full mt-[135px] overflow-hidden;
 
   &__figure {
     @apply relative bg-cover w-[950px] sm:w-full h-[70vh] sm:h-[90vh] overflow-hidden;
@@ -133,7 +133,7 @@ html {
 }
 
 .home-section-about {
-  @apply bg-primary-300 pt-20;
+  @apply bg-primary-300 pt-10;
 
   &__container {
     @apply max-h-[100vh] w-full xl:container flex flex-col-reverse sm:flex-row;
@@ -230,10 +230,10 @@ html {
 }
 
 .home-section-benefits {
-  @apply w-full 2xl:container;
+  @apply w-full 2xl:container pt-20;
 
   &__title {
-    @apply sm:max-w-[75vw] mx-auto text-dynamic-200 text-primary-100 font-bold text-center py-5 sm:py-10 font-barlow;
+    @apply sm:max-w-[75vw] mx-auto text-dynamic-200 text-primary-100 font-bold text-center pb-5 sm:pb-10 px-5 font-barlow;
   }
 
   &__container {
@@ -428,7 +428,7 @@ html {
 }
 
 .home-section-filter {
-  @apply mt-10 sm:mt-20 font-barlow;
+  @apply pt-20 font-barlow;
 
   &__title {
     @apply text-primary-100 text-dynamic-200 font-bold text-center pb-5 sm:pb-10;
@@ -527,7 +527,7 @@ html {
     @apply flex flex-col justify-center gap-6 py-5 sm:py-8 px-5 sm:px-10;
   }
   &__content-objective {
-    @apply flex flex-col items-start justify-center gap-2 sm:min-h-[130px];
+    @apply flex flex-col items-start justify-start gap-2 sm:min-h-[130px] itm:min-h-[1px];
 
     &-title {
       @apply text-primary-100 text-dynamic-300 font-bold font-barlow;
@@ -537,7 +537,7 @@ html {
     }
   }
   &__content-about {
-    @apply flex flex-col items-start justify-center gap-2;
+    @apply flex flex-col items-start justify-start gap-2;
 
     &-title {
       @apply text-primary-100 text-dynamic-300 font-bold font-barlow;

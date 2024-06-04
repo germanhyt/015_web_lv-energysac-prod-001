@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- SEO -->
-    <meta name="title" content="L&amp;V ENERGY S.A.C | Capacitaciones en distribución de energía eléctrica">
+    <meta name="title" content="L&amp;V ENERGY | Capacitaciones en Redes de Distribución Eléctrica">
     <meta name="description" content="En L&amp;V ENERGY, te ofrecemos capacitaciones capacitaciones en redes de distribución eléctrica de alto nivel con nuestros especialistas !Contáctanos ya!">
 
     <?php
@@ -36,7 +36,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="L&amp;V ENERGY">
     <meta property="og:title" content="L&amp;V Energy S.A.C.">
-    <meta property="og:description" content="En L&amp;V ENERGY, te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
+    <meta property="og:description" content="En L&amp;V ENERGY, te ofrecemos capacitaciones capacitaciones en redes de distribución eléctrica de alto nivel con nuestros especialistas !Contáctanos ya!">
     <meta property="og:image" content="https://lyvenergy.com/public/img/favicon.ico">
     <meta property="og:image:secure_url" content="https://lyvenergy.com/public/img/favicon.ico">
     <meta property="og:image:width" content="1200">
@@ -50,7 +50,7 @@
     <meta name="twitter:creator" content="@lyvenergy">
     <meta name="twitter:url" content="https://lyvenergy.com">
     <meta name="twitter:title" content="Capacitaciones en redes de distribución de energía eléctrica">
-    <meta name="twitter:description" content="En L&V ENERGY, te ofrecemos una capacitación de alto nivel con nuestros especialistas, quienes impulsarán tu empresa para obtener los mejores resultados">
+    <meta name="twitter:description" content="En L&amp;V ENERGY, te ofrecemos capacitaciones capacitaciones en redes de distribución eléctrica de alto nivel con nuestros especialistas !Contáctanos ya!">
     <meta name="twitter:image" content="https://lyvenergy.com/favicon.ico">
     <meta name="twitter:image:alt" content="Capacitaciones en redes de distribución de energía eléctrica">
 
@@ -64,7 +64,7 @@
 
     <!-- titulo adecuado a la web segun SEO -->
     <title>
-        L&amp;V ENERGY | Capacitaciones en distribución eléctrica
+        L&amp;V ENERGY | Capacitaciones en Distribución Eléctrica
     </title>
 
 
@@ -179,7 +179,7 @@
         </div>
     </section>
 
-    <section id="about-us-founder" class="home-section-founder">
+    <section id="about-us" class="home-section-founder">
         <div class="home-section-founder__container">
             <div class="home-section-founder__content scroll-animation-item-contain">
                 <div class="">
@@ -195,7 +195,7 @@
         </div>
     </section>
 
-    <section id="about-us-pillars" class="home-section-pillars">
+    <section id="about-us" class="home-section-pillars">
         <div class="home-section-pillars__contain scroll-animation-item-contain">
             <!-- <div class="home-section-pillars__contain-title">Nuestros Pilares</div> -->
             <div class="home-section-pillars__grid">
@@ -294,7 +294,7 @@
         </div>
     </section>
 
-    <section id="benefits-best-option" class="home-section-best-option">
+    <section id="benefits" class="home-section-best-option">
         <div class="home-section-best-option__contain scroll-animation-item-contain">
             <div class="home-section-best-option__contain-title">¿Por qué somos tu mejor opción?</div>
             <div class="home-section-best-option__grid">
@@ -414,7 +414,7 @@
         </div>
     </section>
 
-    <section id="courses-trainings" class="home-trainings scroll-animation-item-contain">
+    <section id="customers" class="home-trainings scroll-animation-item-contain">
         <div class="home-trainings__heading">
             <div>Nuestras capacitaciones</div>
             <p>Formamos al personal siguiendo los lineamientos establecidos en el Reglamento de Salud y Seguridad en el Trabajo con Electricidad (RESESATE), Código Nacional de Electricidad, normativas y legislaciones vigentes.</p>

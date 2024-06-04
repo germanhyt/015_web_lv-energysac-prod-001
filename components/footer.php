@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="footer__arrow">
-        <a href="#home-hero">
+        <a id="itemactivehero" href="#home-hero">
             <i class="fa-solid fa-arrow-up"></i>
         </a>
     </div>
@@ -33,10 +33,10 @@
             </div>
             <div class="footer__sections-list">
                 <ul>
-                    <li class="footer__li"><a href="#about-us">Nosotros</a></li>
-                    <li class="footer__li"><a href="#benefits">Beneficios</a></li>
-                    <li class="footer__li"><a href="#courses">Cursos</a></li>
-                    <li class="footer__li"><a href="#customers">Clientes</a></li>
+                    <li class="footer__li"><a id="itemActive" href="#about-us">Nosotros</a></li>
+                    <li class="footer__li"><a id="itemActive" href="#benefits">Beneficios</a></li>
+                    <li class="footer__li"><a id="itemActive" href="#courses">Cursos</a></li>
+                    <li class="footer__li"><a id="itemActive" href="#customers">Clientes</a></li>
                 </ul>
             </div>
             <div class="footer__form">
