@@ -167,8 +167,8 @@ swiperClientes.init();
 // Swiper de section about
 var swiperAbout = new Swiper(".swiper--about", {
   loop: true,
-  // effect: "slider",
-  effect: "fade",
+  effect: "slider",
+  // effect: "fade",
   grabCursor: true,
   spaceBetween: 1,
   slidesPerView: 1,
@@ -178,7 +178,7 @@ var swiperAbout = new Swiper(".swiper--about", {
     bulletClass: "swiper-pagination-bullet custom-bullet",
   },
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false,
   },
 });
@@ -292,7 +292,6 @@ itemArrow.forEach((item) => {
   });
 });
 
-window.addEventListener("click", () => {
-  onClickSectionsStop();
+window.addEventListener("DOMContentLoaded", () => {
   onClickSectionsStopFooter();
 });

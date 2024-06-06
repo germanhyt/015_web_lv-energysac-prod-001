@@ -8,7 +8,7 @@ html {
 
 // Home hero
 .home-hero {
-  @apply relative w-full mt-[135px] overflow-hidden;
+  @apply relative w-full mt-[132px] overflow-hidden;
 
   &__figure {
     @apply relative bg-cover w-[950px] sm:w-full h-[70vh] sm:h-[90vh] overflow-hidden;
@@ -143,7 +143,7 @@ html {
     @apply w-screen sm:w-full h-full bg-cover overflow-hidden rounded-sm;
 
     img {
-      @apply w-screen sm:w-full h-full bg-cover overflow-hidden rounded-sm;
+      @apply w-screen sm:w-full h-full bg-cover  rounded-sm;
     }
   }
 
@@ -214,11 +214,11 @@ html {
   }
 
   &__grid &__item {
-    @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-8 sm:py-16 shadow-xl rounded-sm;
+    @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-8 sm:py-16 shadow-lg rounded-sm;
   }
 
   &__grid &__item:hover {
-    @apply shadow-2xl;
+    @apply shadow-xl;
   }
 
   &__grid &__item &__title {
@@ -230,7 +230,7 @@ html {
 }
 
 .home-section-benefits {
-  @apply w-full 2xl:container pt-20;
+  @apply w-full 2xl:container pt-20 overflow-hidden;
 
   &__title {
     @apply sm:max-w-[75vw] mx-auto text-dynamic-200 text-primary-100 font-bold text-center pb-5 sm:pb-10 px-5 font-barlow;
@@ -244,7 +244,7 @@ html {
     @apply relative text-[#FFF] h-full bg-cover pt-24 mx-auto;
   }
   &__card &__figure {
-    @apply absolute top-0 left-0 w-full sm:w-screen h-full sm:h-screen z-0 sm:transform sm:-translate-x-1/3;
+    @apply absolute top-0 left-0 w-full sm:w-screen h-[400px] sm:h-screen z-0 sm:transform sm:-translate-x-1/3;
   }
   &__card &__figure img {
     @apply w-full h-full bg-no-repeat bg-cover overflow-hidden;
@@ -527,13 +527,13 @@ html {
     @apply flex flex-col justify-center gap-6 py-5 sm:py-8 px-5 sm:px-10;
   }
   &__content-objective {
-    @apply flex flex-col items-start justify-start gap-2 sm:min-h-[130px] itm:min-h-[1px];
+    @apply flex flex-col items-start justify-start gap-2 sm:min-h-[110px] md:min-h-[120px] itm:min-h-[140px];
 
     &-title {
       @apply text-primary-100 text-dynamic-300 font-bold font-barlow;
     }
     &-description {
-      @apply text-primary-100 text-dynamic-400  font-barlow;
+      @apply text-primary-100 text-dynamic-400 font-barlow;
     }
   }
   &__content-about {
@@ -548,10 +548,10 @@ html {
 
       //dar estilos a ul con puntos en los li
       ul {
-        @apply list-disc list-item;
+        @apply list-disc;
 
         li {
-          @apply text-primary-100 text-dynamic-400 mr-4;
+          @apply text-primary-100 text-dynamic-400 mr-2;
         }
       }
     }

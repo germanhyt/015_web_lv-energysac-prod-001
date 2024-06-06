@@ -79,7 +79,7 @@
   @apply h-[350px] sm:h-[420px] top-0 transition-all duration-500;
 }
 .swiper--trainings .swiper-slide {
-  @apply flex delay-300 w-full h-[300px] sm:h-[350px]  border-2 shadow-xl rounded-sm;
+  @apply flex delay-300 w-full h-[300px] sm:h-[350px]  shadow-xl rounded-sm;
 }
 .swiper--trainings .swiper-pagination-bullet-active {
   @apply bg-white;
@@ -92,7 +92,7 @@
 }
 .swiper--clients .swiper-slide {
   @apply bottom-0 sm:bottom-2;
-  @apply flex delay-300 w-full h-[180px] sm:h-[220px]  border-2 shadow-xl rounded-sm;
+  @apply flex delay-300 w-full h-[180px] sm:h-[220px]  shadow-xl rounded-sm;
 }
 .swiper--clients .swiper-pagination-bullet-active {
   @apply bg-white;
@@ -107,13 +107,13 @@
   @apply h-4 w-4 bg-primary-200;
 }
 .swiper--about {
-  @apply w-full sm:w-1/2 h-[55vh] sm:h-[75vh] itm:h-[95vh] transition-all;
+  @apply w-full sm:w-1/2 h-[55vh] sm:h-[75vh] itm:h-[95vh];
 }
 .swiper--about .swiper-slide {
   @apply bottom-10 xs:bottom-6 sm:bottom-5;
   @apply rounded-sm;
-  @apply transition-all;
-  @apply flex w-screen sm:w-full h-[350px] sm:h-[calc(100vh-200px)] itm:h-[calc(100vh-100px)] shadow-xl rounded-sm;
+  @apply transition-all duration-[3000];
+  @apply flex w-screen sm:w-full h-[350px] sm:h-[calc(100vh-200px)] itm:h-[calc(100vh-100px)];
 }
 .swiper--about .swiper-pagination-bullet-active {
   @apply bg-white;
@@ -325,7 +325,7 @@ html {
 }
 
 .home-hero {
-  @apply relative w-full mt-[135px] overflow-hidden;
+  @apply relative w-full mt-[132px] overflow-hidden;
 }
 .home-hero__figure {
   @apply relative bg-cover w-[950px] sm:w-full h-[70vh] sm:h-[90vh] overflow-hidden;
@@ -439,7 +439,7 @@ html {
   @apply w-screen sm:w-full h-full bg-cover overflow-hidden rounded-sm;
 }
 .home-section-about__figure img {
-  @apply w-screen sm:w-full h-full bg-cover overflow-hidden rounded-sm;
+  @apply w-screen sm:w-full h-full bg-cover  rounded-sm;
 }
 .home-section-about__content {
   @apply sm:w-1/2 flex flex-col justify-center items-center sm:items-start py-5 sm:py-0 px-5 sm:px-12;
@@ -497,10 +497,10 @@ html {
   @apply relative grid grid-cols-1 sm:grid-cols-2 gap-6;
 }
 .home-section-pillars__grid .home-section-pillars__item {
-  @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-8 sm:py-16 shadow-xl rounded-sm;
+  @apply flex flex-col items-center gap-5 px-10 sm:px-12 py-8 sm:py-16 shadow-lg rounded-sm;
 }
 .home-section-pillars__grid .home-section-pillars__item:hover {
-  @apply shadow-2xl;
+  @apply shadow-xl;
 }
 .home-section-pillars__grid .home-section-pillars__item .home-section-pillars__title {
   @apply text-primary-100 text-dynamic-200 font-bold font-barlow;
@@ -510,7 +510,7 @@ html {
 }
 
 .home-section-benefits {
-  @apply w-full 2xl:container pt-20;
+  @apply w-full 2xl:container pt-20 overflow-hidden;
 }
 .home-section-benefits__title {
   @apply sm:max-w-[75vw] mx-auto text-dynamic-200 text-primary-100 font-bold text-center pb-5 sm:pb-10 px-5 font-barlow;
@@ -522,7 +522,7 @@ html {
   @apply relative text-[#FFF] h-full bg-cover pt-24 mx-auto;
 }
 .home-section-benefits__card .home-section-benefits__figure {
-  @apply absolute top-0 left-0 w-full sm:w-screen h-full sm:h-screen z-0 sm:transform sm:-translate-x-1/3;
+  @apply absolute top-0 left-0 w-full sm:w-screen h-[400px] sm:h-screen z-0 sm:transform sm:-translate-x-1/3;
 }
 .home-section-benefits__card .home-section-benefits__figure img {
   @apply w-full h-full bg-no-repeat bg-cover overflow-hidden;
@@ -747,13 +747,13 @@ html {
   @apply flex flex-col justify-center gap-6 py-5 sm:py-8 px-5 sm:px-10;
 }
 .card-product__content-objective {
-  @apply flex flex-col items-start justify-start gap-2 sm:min-h-[130px] itm:min-h-[1px];
+  @apply flex flex-col items-start justify-start gap-2 sm:min-h-[110px] md:min-h-[120px] itm:min-h-[140px];
 }
 .card-product__content-objective-title {
   @apply text-primary-100 text-dynamic-300 font-bold font-barlow;
 }
 .card-product__content-objective-description {
-  @apply text-primary-100 text-dynamic-400  font-barlow;
+  @apply text-primary-100 text-dynamic-400 font-barlow;
 }
 .card-product__content-about {
   @apply flex flex-col items-start justify-start gap-2;
@@ -765,10 +765,10 @@ html {
   @apply pl-4;
 }
 .card-product__content-about-description ul {
-  @apply list-disc list-item;
+  @apply list-disc;
 }
 .card-product__content-about-description ul li {
-  @apply text-primary-100 text-dynamic-400 mr-4;
+  @apply text-primary-100 text-dynamic-400 mr-2;
 }
 
 .scroll-animation-item-multimedia-left {

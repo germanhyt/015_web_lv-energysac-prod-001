@@ -109,23 +109,17 @@ function onSCrollActiveAutomatic() {
   });
 }
 
-function onClickSectionsStop() {
-  itemsLinks.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      e.preventDefault();
-      const href = item.getAttribute("href");
-      const section = document.querySelector(href);
-      const top = section.offsetTop;
-      window.scrollTo({
-        top: top - 75,
-        behavior: "smooth",
-      });
+itemsLinks.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    const href = item.getAttribute("href");
+    const section = document.querySelector(href);
+    const top = section.offsetTop;
+    window.scrollTo({
+      top: top - 75,
+      behavior: "smooth",
     });
   });
-}
-
-window.addEventListener("click", () => {
-  onClickSectionsStop();
 });
 
 window.addEventListener("scroll", () => {

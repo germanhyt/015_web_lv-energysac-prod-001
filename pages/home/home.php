@@ -69,11 +69,12 @@
 
 
     <!-- Icon -->
-    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" sizes="32x32">
+    <link rel="icon" href="https://www.lyvenergy.com/faviconDesktop.ico" type="image/x-icon" sizes="192x192">
+    <link rel="shortcut icon" href="https://www.lyvenergy.com/favicon.ico" type="image/x-icon" sizes="32x32">
+    <link rel="icon" href="https://www.lyvenergy.com/favicon.ico" type="image/x-icon" sizes="32x32">
     <!-- <link rel="icon" href="https://www.lyvenergy.com/favicon.ico" type="image/vnd.microsoft.icon" sizes="192x192"> -->
-    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" sizes="32x32">
+    <!-- <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" sizes="32x32"> -->
     <!-- <link rel="shortcut icon" href="https://www.lyvenergy.com/favicon.ico" type="image/vnd.microsoft.icon" sizes="48x48"> -->
-    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" sizes="192x192">
     <meta name="msapplication-TileImage" content="https://www.lyvenergy.com/favicon.ico">
 
     <!-- Styles -->
