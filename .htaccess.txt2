@@ -1,53 +1,31 @@
+
 RewriteEngine On
 
-# Redireccionar HTTP a HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [NE,L,R=301]
-
-# Forzar el uso de www en el dominio
-RewriteCond %{HTTP_HOST} !^www\.lyvenergy\.com$
-RewriteRule ^(.*)$ https://www.lyvenergy.com/$1 [NE,L,R=301]
-
-# Redireccionar URLs con barra final a URLs sin barra final
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*/)([^/]+)$ /$1 [NE,L,R=301]
-RewriteRule ^(.*/)([^/]+)/$ /$1 [NE,L]
-
-<IfModule mod_headers.c>
-    Header unset X-Powered-By
-
-    # Configurar caché del navegador
-    <FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|swf)$">
-        Header set Cache-Control "max-age=2592000, public"
-    </FilesMatch>
-
-    <FilesMatch "\.(html|htm|php)$">
-        Header set Cache-Control "max-age=7200, private, must-revalidate"
-    </FilesMatch>
-
-    # Habilitar compresión Gzip
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml
-
-    # Configurar la seguridad
-    Header always set X-Content-Type-Options "nosniff"
-    Header always set X-XSS-Protection "1; mode=block"
-    Header always set X-Frame-Options "SAMEORIGIN"
-    Header always set Referrer-Policy "no-referrer-when-downgrade"
-    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-    @REM Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
-
-</IfModule>
-
-# Evitar el listado de directorios
+# Eliminar el índice de directorio
 Options -Indexes
 
-# Redirigir 404 a una página personalizada
-ErrorDocument 404 /404.html
+# Habilitar el modo de reescritura de URL
+RewriteEngine On
 
-# Configurar reglas de redireccionamiento de errores
-ErrorDocument 403 /403.html
-ErrorDocument 500 /500.html
+# Redireccionar todas las solicitudes al archivo index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+
+
+====================================
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Denegar el acceso a robots conocidos por realizar ataques
@@ -140,6 +118,8 @@ Deny from env=bad_bot
     RewriteRule \.(jpg|jpeg|png|gif|bmp)$ - [F,NC]
 </IfModule>
 
+
+
 # Prevenir exploración de vulnerabilidades (escaneos automáticos)
 RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
 RewriteCond %{QUERY_STRING} (\<|%3C).*iframe.*(\>|%3E) [NC,OR]
@@ -149,6 +129,18 @@ RewriteCond %{QUERY_STRING} (\<|%3C).*object.*(\>|%3E) [NC,OR]
 RewriteCond %{QUERY_STRING} (\<|%3C).*form.*(\>|%3E) [NC]
 RewriteRule .* - [F]
 
+
+# Prevenir acceso a archivos sensibles
+<FilesMatch "\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp|git|svn|env)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Desactivar ejecución de scripts en directorios subidos por usuarios
+<FilesMatch "\.(php|php3|php4|php5|php7|phtml|pl|py|cgi|asp|aspx|js)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
 
 # Protección adicional contra Clickjacking
 Header always append X-Frame-Options DENY

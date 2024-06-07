@@ -233,10 +233,10 @@ form.addEventListener("submit", (e) => {
       );
   mensaje.length > 2
     ? null
-    : errors.push(" Nombre del mensaje debe contener más de 2 letras");
+    : errors.push(" Mensaje debe contener más de 2 letras");
   mensaje.length <= 400
     ? null
-    : errors.push(" Nombre del mensaje debe contener menos de 400 caracteres");
+    : errors.push(" Mensaje debe contener menos de 400 caracteres");
 
   if (errors.length > 0) {
     Swal.fire({
