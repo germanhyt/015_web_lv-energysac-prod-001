@@ -339,12 +339,11 @@
 
             <div class="home-section-filter__inner swiper swiper--filter">
                 <div class="swiper-wrapper">
-                    <?php foreach ($filterTabs as $key => $filterTab) : ?>
+                    <?php foreach ($filterTabsMobile as $key => $filterTab) : ?>
 
                         <div class="swiper-slide">
                             <div class="home-section-filter__tab-wrapper">
 
-                                <!-- <button class="btn btn--filter active" data-filter="all">Todos</button> -->
                                 <button class="btn btn--filter 
                                     <?= ($key === 0) ? "active" : "" ?>" data-filter=".<?= $filterTab["id"] ?>">
                                     <?= $filterTab["title"] ?>
@@ -358,12 +357,12 @@
             </div>
 
             <div class="home-section-filter__tabs ">
-                <div class="">
+                <!-- <div class="">
                     <button class="btn btn--filter active" data-filter="all">Todos</button>
-                </div>
-                <?php foreach ($filterTabs as $key => $filterTab) : ?>
+                </div> -->
+                <?php foreach ($filterTabsDesktop as $key => $filterTab) : ?>
                     <div class="">
-                        <button class="btn btn--filter" data-filter=".<?= $filterTab["id"] ?>"><?= $filterTab["title"] ?></button>
+                        <button class="btn btn--filter <?= ($key === 0) ? "active" : "" ?>" data-filter="<?= $filterTab["id"] ?>"><?= $filterTab["title"] ?></button>
                     </div>
                 <?php endforeach ?>
             </div>

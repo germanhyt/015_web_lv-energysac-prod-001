@@ -93,6 +93,11 @@ swiperFilter.on("slideChange", function () {
       btn.classList.remove("active");
     }
   });
+
+  // generar logica para que todos los elementos se muestren
+  if (filter === ".all") {
+    mixerPorfolio.filter("all");
+  }
 });
 
 var swiperCapacitaciones = new Swiper(".swiper--trainings", {
@@ -107,7 +112,7 @@ var swiperCapacitaciones = new Swiper(".swiper--trainings", {
     bulletClass: "swiper-pagination-bullet custom-bullet",
   },
   autoplay: {
-    delay: 2500,
+    delay: 6000,
     disableOnInteraction: false,
   },
   breakpoints: {
@@ -144,7 +149,7 @@ var swiperClientes = new Swiper(".swiper--clients", {
     bulletClass: "swiper-pagination-bullet custom-bullet",
   },
   autoplay: {
-    delay: 2000,
+    delay: 6000,
     disableOnInteraction: false,
   },
   breakpoints: {
@@ -178,7 +183,7 @@ var swiperAbout = new Swiper(".swiper--about", {
     bulletClass: "swiper-pagination-bullet custom-bullet",
   },
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
 });
@@ -244,8 +249,8 @@ form.addEventListener("submit", (e) => {
   } else {
     Swal.fire({
       icon: "success",
-      title: "Mensaje enviado",
-      text: "¡Gracias, En breve nos comunicaremos contigo!",
+      title: "Mensaje en proceso",
+      text: "Contínúe con la consulta en WhatsApp",
       confirmButtonText: "Cerrar",
       confirmButtonColor: "#3085d6",
     });
@@ -259,6 +264,20 @@ form.addEventListener("submit", (e) => {
 
     window.open(url, "_blank");
     form.reset();
+  }
+});
+
+// contador de caracteres
+const mensaje = document.getElementById("mensaje");
+const counter = document.getElementById("counter");
+mensaje.addEventListener("input", (e) => {
+  const value = e.target.value;
+  counter.textContent = value.length;
+
+  if (counter.textContent > 400) {
+    counter.style.color = "red";
+  } else {
+    counter.style.color = "white";
   }
 });
 

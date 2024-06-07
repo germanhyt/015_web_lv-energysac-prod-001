@@ -48,10 +48,13 @@
                     <div class="footer__form-content-group">
                         <input type="text" name="empresa" placeholder="Nombre la empresa" />
                         <input type="text" name="representante" placeholder="Nombre del representante" />
-                        <textarea name="mensaje" placeholder="Mensaje"></textarea>
-                    </div>
-                    <div class="footer__form-content-button">
-                        <button type="submit">Enviar</button>
+                        <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <div id="count-text" class="flex justify-end">
+                            <span class="" id="counter">0</span><span>/400</span>
+                        </div>
+                        <div class="footer__form-content-button">
+                            <button type="submit">Enviar</button>
+                        </div>
                     </div>
                 </form>
             </div>

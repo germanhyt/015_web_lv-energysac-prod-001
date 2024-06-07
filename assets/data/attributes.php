@@ -220,11 +220,11 @@ $trainings = [
   // ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/3R9j0j8J/Nuestras-capacitaciones1.jpg
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/pVGY2Bcs/Nuestras-capacitaciones2.jpg
+  ["img" => "https://i.postimg.cc/J7BkJgpp/Nuestras-capacitaciones2.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/ZnR889nP/Nuestras-capacitaciones3.jpg
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/tCsd7VLp/Nuestras-capacitaciones4.jpg
+  ["img" => "https://i.postimg.cc/XYTwTb1B/Nuestras-capacitaciones4.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/8CwgK5NX/Nuestras-capacitaciones10.jpg
   ", "alt" => "capacitacion"],
@@ -232,7 +232,7 @@ $trainings = [
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/x8Nr13HB/Nuestras-capacitaciones12.jpg
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/tCPTrhfr/Nuestras-capacitaciones13.jpg
+  ["img" => "https://i.postimg.cc/hG6hfx33/Nuestras-capacitaciones13.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/FFwzgPPd/Nuestras-capacitaciones14.jpg
   ", "alt" => "capacitacion"],
@@ -280,7 +280,7 @@ $trainings = [
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/R0mvpyfh/Nuestras-capacitaciones45.jpg
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/Qtxhh7fr/Nuestras-capacitaciones46.jpg
+  ["img" => "https://i.postimg.cc/X7Z02h2m/Nuestras-capacitaciones46.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/mrSBvjNw/Nuestras-capacitaciones47.jpg
   ", "alt" => "capacitacion"],
@@ -296,7 +296,7 @@ $trainings = [
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/g2FprQgs/Nuestras-capacitaciones7.jpg
   ", "alt" => "capacitacion"],
-  ["img" => "https://i.postimg.cc/W1GvZ8Kv/Nuestras-capacitaciones8.jpg
+  ["img" => "https://i.postimg.cc/Y90DC835/Nuestras-capacitaciones8.jpg
   ", "alt" => "capacitacion"],
   ["img" => "https://i.postimg.cc/25Cf7vRB/Nuestras-capacitaciones9.jpg
   ", "alt" => "capacitacion"]
@@ -316,12 +316,36 @@ $clients = [
     "alt" => "customer",
   ],
   [
-    "img" => "customer-4.png",
+    "img" => "customer-4.jpg",
     "alt" => "customer",
   ]
 ];
 
-$filterTabs = [
+$filterTabsDesktop = [
+  [
+    "id" => "all",
+    "title" => "Todos",
+  ],
+  [
+    "id" => ".modulo-capacitaciones",
+    "title" => "Capacitaciones",
+  ],
+  [
+    "id" => ".modulo-asesorias",
+    "title" => "Asesorías",
+  ],
+  [
+    "id" => ".modulo-inspeccion",
+    "title" => "Inspecciones",
+  ]
+];
+
+
+$filterTabsMobile = [
+  [
+    "id" => "all",
+    "title" => "Todos",
+  ],
   [
     "id" => "modulo-capacitaciones",
     "title" => "Capacitaciones",
@@ -414,7 +438,7 @@ $products = [
   ],
   [
     "id_category" => "modulo-capacitaciones",
-    "title" => "Mantenimientos en caliente de subestaciones",
+    "title" => "Mantenimiento en caliente de subestaciones",
     "objetivo" => "Verificar las óptimas condiciones de operatividad del servicio.",
     "consiste" => [
       "Entrenamiento de personal para el cambio de transformadores en subestaciones convencionales y aéreas.",
