@@ -203,7 +203,7 @@
                 <div class="home-section-pillars__item">
                     <div class="home-section-pillars__title">Visión</div>
                     <p class="home-section-pillars__description">
-                        Ser el principal centro de capacitación peruano que colabore con las empresas del mercado de energía electrica para el suministro contínuo y seguro de energía eléctrica a nivel nacional.
+                        Ser el principal centro de capacitación peruano que colabore con las empresas del mercado de energía eléctrica para el suministro continuo y seguro de energía eléctrica a nivel nacional.
                     </p>
                 </div>
                 <div class="home-section-pillars__item">

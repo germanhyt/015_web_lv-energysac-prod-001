@@ -391,7 +391,7 @@ $products = [
   ],
   [
     "id_category" => "modulo-capacitaciones",
-    "title" => "Trabajo sin Tensión (TST)",
+    "title" => "Trabajos sin Tensión (TST)",
     "objetivo" => "Formación técnica de linieros.",
     "consiste" => [
       "Capacitación y entrenamiento técnico de personal para trabajos en obras y  mantenimiento en redes aéreas  desenergizadas.",
@@ -403,7 +403,7 @@ $products = [
   [
     "id_category" => "modulo-capacitaciones",
     "title" => "Trabajos con Tensión (TCT)",
-    "objetivo" => "Formación técnica de linieros sin afectar la continuidad del servicio de energía electríca.",
+    "objetivo" => "Formación técnica de linieros sin afectar la continuidad del servicio de energía eléctríca.",
     "consiste" => [
       "Capacitación y entrenamiento de linieros para trabajos en redes de distribución energizadas de media tensión (MT).",
       "Metodologías y procedimientos TCT con brazo aislado.",
@@ -447,7 +447,7 @@ $products = [
   [
     "id_category" => "modulo-capacitaciones",
     "title" => "Alumbrado público",
-    "objetivo" => "Capacitación en trabajos en altura con el método de escalamiento vertical y telescópico.",
+    "objetivo" => "Mantenimiento preventivo y confiabilidad en el sistema de alumbrado público de las redes de distribución.",
     "consiste" => [
       "Capacitación teórica y entrenamiento práctico de linieros para realizar el mantenimiento de las instalaciones de alumbrado público (AP) utilizando brazos hidráulicos (BH) aislados o no aislados.",
       "Evaluación de peligros y riesgo de la actividad y la cercanía a redes de media tensión (MT) y alta tensión (AT)."
