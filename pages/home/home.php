@@ -116,7 +116,7 @@
 <body>
 
     <!-- // loading -->
-    <div id="loading" class="loading"></div>
+    <!-- <div id="loading" class="loading"></div> -->
 
     <?php
     include_once(__DIR__ . "/../../components/nav.php");
@@ -155,11 +155,14 @@
     </div>
 
     <section id="about-us" class="home-section-about">
-        <div class="home-section-about__container">
+        <div class="home-section-about__container ">
             <!-- <figure class="home-section-about__figure scroll-animation-item-multimedia-left ">
                 <img class="" src="<?php echo constant("HOST") ?>/public/img/about.jpg" alt="img">
             </figure> -->
-            <div class="swiper swiper--about scroll-animation-item-multimedia-left">
+            <div class="swiper swiper--about scroll-animation-item-multimedia-left relative">
+                <?php
+                include(__DIR__ . "/../../components/loadingImages.php");
+                ?>
                 <div class="swiper-wrapper">
                     <?php foreach ($aboutus as $about) : ?>
                         <div class="swiper-slide">
@@ -181,7 +184,7 @@
     </section>
 
     <section id="about-us" class="home-section-founder">
-        <div class="home-section-founder__container">
+        <div class="home-section-founder__container ">
             <div class="home-section-founder__content scroll-animation-item-contain">
                 <div class="">
                     Guiados por el legado de nuestro fundador, nos comprometemos a ofrecer un servicio de calidad que refleje su visión y valores.
@@ -190,7 +193,10 @@
                     “Disciplina, compromiso y seguridad son los pilares de nuestro método de enseñanza en L&V ENERGY”. </p>
                 <span class="">Eduardo Lozano / Fundador</span>
             </div>
-            <figure class="home-section-founder__figure scroll-animation-item-multimedia-right">
+            <figure class="home-section-founder__figure scroll-animation-item-multimedia-right relative">
+                <?php
+                include(__DIR__ . "/../../components/loadingImages.php");
+                ?>
                 <img class="" src="<?php echo constant("HOST") ?>/public/img/founder.png" alt="img">
             </figure>
         </div>
@@ -222,8 +228,13 @@
 
     <section id="benefits" class="home-section-benefits scroll-animation-item-contain">
         <div class="home-section-benefits__title">Brinda a tus trabajadores beneficios como...</div>
-        <div class="home-section-benefits__container">
+        <div class="home-section-benefits__container relative">
+            <?php
+            include(__DIR__ . "/../../components/loadingImages.php");
+            ?>
+
             <div class=" home-section-benefits__card">
+
                 <figure class="home-section-benefits__figure">
                     <img class="" src="<?php echo constant("HOST") ?>/public/img/benefit-1.png" alt="img">
                 </figure>
@@ -332,12 +343,14 @@
         <h3 class="home-section-filter__title scroll-animation-item-contain">Nuestros Servicios</h3>
 
         <div class="home-section-filter__inner-tabs">
+
             <figure class="home-section-filter__figure">
                 <!-- <img src="<?php echo constant("HOST") ?>/public/img/courses-bg.png" alt="img"> -->
                 <img src="https://i.postimg.cc/4N6c8qDg/courses-bg.png" alt="bg-filter-courses">
             </figure>
 
             <div class="home-section-filter__inner swiper swiper--filter">
+
                 <div class="swiper-wrapper">
                     <?php foreach ($filterTabsMobile as $key => $filterTab) : ?>
 
@@ -401,6 +414,9 @@
         </div>
 
         <div class="swiper swiper--clients">
+            <?php
+            include(__DIR__ . "/../../components/loadingImages.php");
+            ?>
             <div class="swiper-wrapper">
                 <?php foreach ($clients as $client) : ?>
                     <div class="swiper-slide">
@@ -420,7 +436,10 @@
             <p>Formamos al personal siguiendo los lineamientos establecidos en el Reglamento de Salud y Seguridad en el Trabajo con Electricidad (RESESATE), Código Nacional de Electricidad, normativas y legislaciones vigentes.</p>
         </div>
 
-        <div class="swiper swiper--trainings">
+        <div class="swiper swiper--trainings relative">
+            <?php
+            include(__DIR__ . "/../../components/loadingImages.php");
+            ?>
             <div class="swiper-wrapper">
                 <?php foreach ($trainings as $training) : ?>
                     <div class="swiper-slide">
@@ -477,10 +496,13 @@
         script2.src = "<?php echo constant("HOST") ?>/assets/js/components.js" + getTimeBody;
         document.body.appendChild(script2);
 
-        let loading = document.getElementById("loading");
-        window.addEventListener('load', () => {
-            loading.style.display = 'none';
-        })
+        let loading = document.querySelectorAll("#contenedor");
+        for (let i = 0; i < loading.length; i++) {
+            window.addEventListener('load', () => {
+                loading[i].style.display = "none";
+                // loading.style.display = 'none';
+            })
+        }
     </script>
 
     <!-- Google Tag Manager (noscript) -->
